@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 18bf40f9d12703740bef94e3d5a4fda7
+timeCreated: 1441188812
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: settings_0
+    21300002: Menu_Tags_1
+    21300004: Menu_Tags_2
+    21300006: Menu_Tags_3
+    21300008: New_Game
+    21300010: Menu_Tags_5
+    21300012: Menu_Tags_6
+    21300014: settings_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: settings_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 787
+        width: 538
+        height: 129
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Menu_Tags_1
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 655
+        width: 586
+        height: 155
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Menu_Tags_2
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 532
+        width: 480
+        height: 211
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Menu_Tags_3
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 388
+        width: 809
+        height: 133
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: New_Game
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 61
+        width: 638
+        height: 139
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Menu_Tags_5
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 244
+        width: 599
+        height: 129
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Menu_Tags_6
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 236
+        width: 359
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: settings_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 51
+        width: 388
+        height: 148
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

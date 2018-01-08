@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: ace810879fe23094abb8b9765d5d4eb0
+timeCreated: 1428364331
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Vasilis_Pitky_0
+    21300002: Vasilis_Pitky_1
+    21300004: Vasilis_Pitky_2
+    21300006: Vasilis_Pitky_3
+    21300008: Vasilis_Pitky_4
+    21300010: Vasilis_Pitky_5
+    21300012: Vasilis_Pitky_6
+    21300014: Vasilis_Pitky_7
+    21300016: Vasilis_Pitky_8
+    21300018: Vasilis_Pitky_9
+    21300020: Vasilis_Pitky_10
+    21300022: Vasilis_Pitky_11
+    21300024: Vasilis_Pitky_12
+    21300026: Vasilis_Pitky_13
+    21300028: Vasilis_Pitky_14
+    21300030: Vasilis_Pitky_15
+    21300032: Vasilis_Pitky_16
+    21300034: Vasilis_Pitky_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Vasilis_Pitky_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 852
+        width: 250
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_1
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 852
+        width: 250
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 852
+        width: 250
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_3
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 852
+        width: 250
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 852
+        width: 250
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_5
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 852
+        width: 250
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 250
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_7
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 432
+        width: 250
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_8
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 432
+        width: 250
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_9
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 432
+        width: 250
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 432
+        width: 250
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_11
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 432
+        width: 250
+        height: 420
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 250
+        height: 401
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_13
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 12
+        width: 250
+        height: 398
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_14
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 12
+        width: 250
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_15
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 12
+        width: 250
+        height: 401
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_16
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 12
+        width: 250
+        height: 388
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Pitky_17
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 12
+        width: 250
+        height: 391
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

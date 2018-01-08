@@ -1,0 +1,323 @@
+fileFormatVersion: 2
+guid: c202f7c3735f5c14b8cf951ad4451d1c
+timeCreated: 1440531627
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PeterNormalWalk_0
+    21300002: PeterNormalWalk_1
+    21300004: PeterNormalWalk_2
+    21300006: PeterNormalWalk_3
+    21300008: PeterNormalWalk_4
+    21300010: PeterNormalWalk_5
+    21300012: PeterNormalWalk_6
+    21300014: PeterNormalWalk_7
+    21300016: PeterNormalWalk_8
+    21300018: PeterNormalWalk_9
+    21300020: PeterNormalWalk_10
+    21300022: PeterNormalWalk_11
+    21300024: PeterNormalWalk_12
+    21300026: PeterNormalWalk_13
+    21300028: PeterNormalWalk_14
+    21300030: PeterNormalWalk_15
+    21300032: PeterNormalWalk_16
+    21300034: PeterNormalWalk_17
+    21300036: PeterNormalWalk_18
+    21300038: PeterNormalWalk_19
+    21300040: PeterNormalWalk_20
+    21300042: PeterNormalWalk_21
+    21300044: PeterNormalWalk_22
+    21300046: PeterNormalWalk_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: PeterNormalWalk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 934
+        width: 237
+        height: 450
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 934
+        width: 237
+        height: 450
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 934
+        width: 237
+        height: 456
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_3
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 934
+        width: 237
+        height: 453
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_4
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 941
+        width: 237
+        height: 451
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_5
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 941
+        width: 237
+        height: 446
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_6
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 941
+        width: 237
+        height: 446
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_7
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 941
+        width: 237
+        height: 446
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 463
+        width: 237
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_9
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 455
+        width: 237
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_10
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 457
+        width: 237
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_11
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 457
+        width: 237
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_12
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 457
+        width: 237
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_13
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 458
+        width: 237
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_14
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 458
+        width: 237
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_15
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 465
+        width: 237
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 237
+        height: 434
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_17
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 2
+        width: 237
+        height: 434
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_18
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 0
+        width: 237
+        height: 436
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_19
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 2
+        width: 237
+        height: 437
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_20
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 2
+        width: 258
+        height: 432
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_21
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 2
+        width: 234
+        height: 441
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_22
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 2
+        width: 237
+        height: 434
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: PeterNormalWalk_23
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 2
+        width: 237
+        height: 434
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

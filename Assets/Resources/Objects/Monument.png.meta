@@ -1,0 +1,77 @@
+fileFormatVersion: 2
+guid: bb9521848fa2c1d4390ac0354b242ad4
+timeCreated: 1442664560
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Monument_0
+    21300002: Monument_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Monument_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 46
+        width: 371
+        height: 948
+      alignment: 9
+      pivot: {x: .432756811, y: .0344155692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Monument_1
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 50
+        width: 796
+        height: 622
+      alignment: 9
+      pivot: {x: .184181869, y: .0711520389}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

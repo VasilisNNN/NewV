@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 16f30ed1a87bca04792b3520f27bd451
+timeCreated: 1438874809
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Line_Kid_Mum_0
+    21300002: Line_Kid_Mum_1
+    21300004: Line_Kid_Mum_2
+    21300006: Line_Kid_Mum_3
+    21300008: Line_Kid_Mum_4
+    21300010: Line_Kid_Mum_5
+    21300012: Line_Kid_Mum_6
+    21300014: Line_Kid_Mum_7
+    21300016: Line_Kid_Mum_8
+    21300018: Line_Kid_Mum_9
+    21300020: Line_Kid_Mum_10
+    21300022: Line_Kid_Mum_11
+    21300024: Line_Kid_Mum_12
+    21300026: Line_Kid_Mum_13
+    21300028: Line_Kid_Mum_14
+    21300030: Line_Kid_Mum_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Line_Kid_Mum_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 217
+        height: 293
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_1
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 900
+        width: 217
+        height: 293
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_2
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 900
+        width: 217
+        height: 290
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_3
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 900
+        width: 217
+        height: 295
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 588
+        width: 217
+        height: 292
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_5
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 586
+        width: 217
+        height: 291
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_6
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 584
+        width: 217
+        height: 300
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_7
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 586
+        width: 217
+        height: 294
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 282
+        width: 217
+        height: 289
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_9
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 284
+        width: 217
+        height: 287
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_10
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 282
+        width: 217
+        height: 289
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_11
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 282
+        width: 217
+        height: 289
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 217
+        height: 283
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_13
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 0
+        width: 217
+        height: 286
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_14
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 0
+        width: 217
+        height: 279
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_Kid_Mum_15
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 0
+        width: 217
+        height: 283
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

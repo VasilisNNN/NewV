@@ -1,0 +1,251 @@
+fileFormatVersion: 2
+guid: 213ab2c6b6931f14191b7e257f15028c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Walker_3_0
+    21300002: Walker_3_1
+    21300004: Walker_3_2
+    21300006: Walker_3_3
+    21300008: Walker_3_4
+    21300010: Walker_3_5
+    21300012: Walker_3_6
+    21300014: Walker_3_7
+    21300016: Walker_3_8
+    21300018: Walker_3_9
+    21300020: Walker_3_10
+    21300022: Walker_3_11
+    21300024: Walker_3_12
+    21300026: Walker_3_13
+    21300028: Walker_3_14
+    21300030: Walker_3_15
+    21300032: Walker_3_16
+    21300034: Walker_3_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Walker_3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1881
+        width: 535
+        height: 857
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_1
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1894
+        width: 535
+        height: 844
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_2
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 1887
+        width: 535
+        height: 851
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_3
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 1881
+        width: 535
+        height: 857
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_4
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 1874
+        width: 535
+        height: 864
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_5
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 1874
+        width: 535
+        height: 864
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 953
+        width: 535
+        height: 893
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_7
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 960
+        width: 535
+        height: 893
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_8
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 960
+        width: 535
+        height: 900
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_9
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 973
+        width: 535
+        height: 880
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_10
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 960
+        width: 535
+        height: 900
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_11
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 967
+        width: 535
+        height: 861
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8
+        width: 535
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_13
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 8
+        width: 515
+        height: 910
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_14
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 8
+        width: 525
+        height: 910
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_15
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 8
+        width: 558
+        height: 910
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_16
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 8
+        width: 535
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walker_3_17
+      rect:
+        serializedVersion: 2
+        x: 2675
+        y: 8
+        width: 535
+        height: 910
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

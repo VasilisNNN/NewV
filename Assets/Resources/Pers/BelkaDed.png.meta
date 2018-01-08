@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: 9a00f04a0c3fec249a417f0548488a59
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BelkaDed_0
+    21300002: BelkaDed_1
+    21300004: BelkaDed_2
+    21300006: BelkaDed_3
+    21300008: BelkaDed_4
+    21300010: BelkaDed_5
+    21300012: BelkaDed_6
+    21300014: BelkaDed_7
+    21300016: BelkaDed_8
+    21300018: BelkaDed_9
+    21300020: BelkaDed_10
+    21300022: BelkaDed_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BelkaDed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1511
+        width: 610
+        height: 750
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BelkaDed_1
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 1511
+        width: 610
+        height: 750
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BelkaDed_2
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 1511
+        width: 610
+        height: 750
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BelkaDed_3
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 1511
+        width: 610
+        height: 750
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BelkaDed_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 761
+        width: 610
+        height: 730
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BelkaDed_5
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 767
+        width: 610
+        height: 724
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BelkaDed_6
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 761
+        width: 610
+        height: 730
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BelkaDed_7
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 761
+        width: 610
+        height: 724
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BelkaDed_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 610
+        height: 725
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BelkaDed_9
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 11
+        width: 610
+        height: 736
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BelkaDed_10
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 5
+        width: 610
+        height: 737
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BelkaDed_11
+      rect:
+        serializedVersion: 2
+        x: 1830
+        y: 0
+        width: 610
+        height: 736
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

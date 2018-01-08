@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: ebaa35423e6ed22458790dd10d95ec73
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Husbend_Killer_0
+    21300002: Husbend_Killer_1
+    21300004: Husbend_Killer_2
+    21300006: Husbend_Killer_3
+    21300008: Husbend_Killer_4
+    21300010: Husbend_Killer_5
+    21300012: Husbend_Killer_6
+    21300014: Husbend_Killer_7
+    21300016: Husbend_Killer_8
+    21300018: Husbend_Killer_9
+    21300020: Husbend_Killer_10
+    21300022: Husbend_Killer_11
+    21300024: Husbend_Killer_12
+    21300026: Husbend_Killer_13
+    21300028: Husbend_Killer_14
+    21300030: Husbend_Killer_15
+    21300032: Husbend_Killer_16
+    21300034: Husbend_Killer_17
+    21300036: Husbend_Killer_18
+    21300038: Husbend_Killer_19
+    21300040: Husbend_Killer_20
+    21300042: Husbend_Killer_21
+    21300044: Husbend_Killer_22
+    21300046: Husbend_Killer_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Husbend_Killer_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2724
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 2724
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_2
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 2724
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_3
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 2724
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_4
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 2724
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_5
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 2724
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1816
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_7
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1816
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_8
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 1816
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_9
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1816
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_10
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1816
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_11
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 1816
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 908
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_13
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 908
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_14
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 908
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_15
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 908
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_16
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 908
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_17
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 908
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_19
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_20
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 0
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_21
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_22
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 0
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Husbend_Killer_23
+      rect:
+        serializedVersion: 2
+        x: 2300
+        y: 0
+        width: 460
+        height: 908
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

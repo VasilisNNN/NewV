@@ -1,0 +1,154 @@
+fileFormatVersion: 2
+guid: 90873405c0209dc43bf04a24d4292308
+timeCreated: 1440616401
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Dead_Bodies_Gour_0
+    21300002: Dead_Bodies_Gour_1
+    21300004: Dead_Bodies_Gour_2
+    21300006: Dead_Bodies_Gour_3
+    21300008: Dead_Bodies_Gour_5
+    21300010: Dead_Bodies_Gour_4
+    21300012: Dead_Bodies_Gour_6
+    21300014: Dead_Bodies_Gour_7
+    21300016: Dead_Bodies_Gour_8
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Dead_Bodies_Gour_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 612
+        width: 307
+        height: 317
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dead_Bodies_Gour_1
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 326
+        width: 258
+        height: 270
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dead_Bodies_Gour_2
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 637
+        width: 285
+        height: 276
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dead_Bodies_Gour_3
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 575
+        width: 311
+        height: 284
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dead_Bodies_Gour_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 323
+        width: 245
+        height: 270
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dead_Bodies_Gour_4
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 144
+        width: 510
+        height: 141
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dead_Bodies_Gour_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 14
+        width: 481
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dead_Bodies_Gour_7
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 162
+        width: 278
+        height: 150
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Dead_Bodies_Gour_8
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 16
+        width: 428
+        height: 107
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

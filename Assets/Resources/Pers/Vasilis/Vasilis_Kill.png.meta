@@ -1,0 +1,583 @@
+fileFormatVersion: 2
+guid: 46b5d78fb6e675f478d3a20b85787d25
+timeCreated: 1428107363
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Vasilis_Kill_0
+    21300002: Vasilis_Kill_1
+    21300004: Vasilis_Kill_2
+    21300006: Vasilis_Kill_3
+    21300008: Vasilis_Kill_4
+    21300010: Vasilis_Kill_5
+    21300012: Vasilis_Kill_6
+    21300014: Vasilis_Kill_7
+    21300016: Vasilis_Kill_8
+    21300018: Vasilis_Kill_9
+    21300020: Vasilis_Kill_10
+    21300022: Vasilis_Kill_11
+    21300024: Vasilis_Kill_12
+    21300026: Vasilis_Kill_13
+    21300028: Vasilis_Kill_14
+    21300030: Vasilis_Kill_15
+    21300032: Vasilis_Kill_16
+    21300034: Vasilis_Kill_17
+    21300036: Vasilis_Kill_18
+    21300038: Vasilis_Kill_19
+    21300040: Vasilis_Kill_20
+    21300042: Vasilis_Kill_21
+    21300044: Vasilis_Kill_22
+    21300046: Vasilis_Kill_23
+    21300048: Vasilis_Kill_24
+    21300050: Vasilis_Kill_25
+    21300052: Vasilis_Kill_26
+    21300054: Vasilis_Kill_27
+    21300056: Vasilis_Kill_28
+    21300058: Vasilis_Kill_29
+    21300060: Vasilis_Kill_30
+    21300062: Vasilis_Kill_31
+    21300064: Vasilis_Kill_32
+    21300066: Vasilis_Kill_33
+    21300068: Vasilis_Kill_34
+    21300070: Vasilis_Kill_35
+    21300072: Vasilis_Kill_36
+    21300074: Vasilis_Kill_37
+    21300076: Vasilis_Kill_38
+    21300078: Vasilis_Kill_39
+    21300080: Vasilis_Kill_40
+    21300082: Vasilis_Kill_41
+    21300084: Vasilis_Kill_42
+    21300086: Vasilis_Kill_43
+    21300088: Vasilis_Kill_44
+    21300090: Vasilis_Kill_45
+    21300092: Vasilis_Kill_46
+    21300094: Vasilis_Kill_47
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Vasilis_Kill_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1359
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_1
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1359
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_2
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1359
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_3
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1359
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_4
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 1359
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_5
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 1359
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_6
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 1359
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_7
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 1359
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_8
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 1359
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_9
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 1359
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_10
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 1359
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_11
+      rect:
+        serializedVersion: 2
+        x: 3652
+        y: 1359
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 907
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_13
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 907
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_14
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 907
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_15
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 907
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_16
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 907
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_17
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 907
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_18
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 907
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_19
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 907
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_20
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 907
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_21
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 907
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_22
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 907
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_23
+      rect:
+        serializedVersion: 2
+        x: 3652
+        y: 907
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 455
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_25
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 455
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_26
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 455
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_27
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 455
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_28
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 455
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_29
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 455
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_30
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 455
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_31
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 455
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_32
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 455
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_33
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 455
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_34
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 455
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_35
+      rect:
+        serializedVersion: 2
+        x: 3652
+        y: 455
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_37
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 3
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_38
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 3
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_39
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 3
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_40
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 3
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_41
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 3
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_42
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 3
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_43
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 3
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_44
+      rect:
+        serializedVersion: 2
+        x: 2656
+        y: 3
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_45
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 3
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_46
+      rect:
+        serializedVersion: 2
+        x: 3320
+        y: 3
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_Kill_47
+      rect:
+        serializedVersion: 2
+        x: 3652
+        y: 3
+        width: 332
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

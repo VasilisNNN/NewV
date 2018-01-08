@@ -1,0 +1,176 @@
+fileFormatVersion: 2
+guid: 7a75bf40524f0214fb23830d03d5e99f
+timeCreated: 1440616668
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Neighbor_Anim_0
+    21300002: Neighbor_Anim_1
+    21300004: Neighbor_Anim_2
+    21300006: Neighbor_Anim_3
+    21300008: Neighbor_Anim_4
+    21300010: Neighbor_Anim_5
+    21300012: Neighbor_Anim_6
+    21300014: Neighbor_Anim_7
+    21300016: Neighbor_Anim_8
+    21300018: Neighbor_Anim_9
+    21300020: Neighbor_Anim_10
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Neighbor_Anim_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 528
+        width: 169
+        height: 509
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Neighbor_Anim_1
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 530
+        width: 157
+        height: 510
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Neighbor_Anim_2
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 528
+        width: 149
+        height: 512
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Neighbor_Anim_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 528
+        width: 141
+        height: 512
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Neighbor_Anim_4
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 524
+        width: 159
+        height: 509
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Neighbor_Anim_5
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 526
+        width: 153
+        height: 501
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Neighbor_Anim_6
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 524
+        width: 146
+        height: 501
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Neighbor_Anim_7
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 524
+        width: 139
+        height: 505
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Neighbor_Anim_8
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 31
+        width: 142
+        height: 462
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Neighbor_Anim_9
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 35
+        width: 152
+        height: 466
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Neighbor_Anim_10
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 39
+        width: 165
+        height: 464
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

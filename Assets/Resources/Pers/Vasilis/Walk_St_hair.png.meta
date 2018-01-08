@@ -1,0 +1,342 @@
+fileFormatVersion: 2
+guid: 3b0a6c515e5df534080ecb9f7d895aa6
+timeCreated: 1446483819
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Walk_St_hair_0
+    21300002: Walk_St_hair_1
+    21300004: Walk_St_hair_2
+    21300006: Walk_St_hair_3
+    21300008: Walk_St_hair_4
+    21300010: Walk_St_hair_5
+    21300012: Walk_St_hair_6
+    21300014: Walk_St_hair_7
+    21300016: Walk_St_hair_8
+    21300018: Walk_St_hair_9
+    21300020: Walk_St_hair_10
+    21300022: Walk_St_hair_11
+    21300024: Walk_St_hair_12
+    21300026: Walk_St_hair_13
+    21300028: Walk_St_hair_14
+    21300030: Walk_St_hair_15
+    21300032: Walk_St_hair_16
+    21300034: Walk_St_hair_17
+    21300036: Walk_St_hair_18
+    21300038: Walk_St_hair_19
+    21300040: Walk_St_hair_20
+    21300042: Walk_St_hair_21
+    21300044: Walk_St_hair_22
+    21300046: Walk_St_hair_23
+    21300048: Walk_St_hair_24
+    21300050: Walk_St_hair_25
+    21300052: Walk_St_hair_26
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 9
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Walk_St_hair_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 649
+        width: 160
+        height: 321
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 652
+        width: 160
+        height: 318
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_2
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 650
+        width: 160
+        height: 320
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 651
+        width: 160
+        height: 319
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_4
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 652
+        width: 160
+        height: 318
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 654
+        width: 160
+        height: 316
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_6
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 650
+        width: 160
+        height: 318
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_7
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 650
+        width: 160
+        height: 320
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 651
+        width: 160
+        height: 319
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 650
+        width: 160
+        height: 320
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_10
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 324
+        width: 151
+        height: 323
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_11
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 324
+        width: 168
+        height: 323
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_12
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 326
+        width: 160
+        height: 323
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_13
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 324
+        width: 160
+        height: 323
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_14
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 324
+        width: 160
+        height: 323
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_15
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 324
+        width: 160
+        height: 323
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_16
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 324
+        width: 160
+        height: 323
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_17
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 324
+        width: 160
+        height: 323
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_18
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 324
+        width: 160
+        height: 323
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_19
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 324
+        width: 160
+        height: 323
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1
+        width: 119
+        height: 319
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_21
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1
+        width: 118
+        height: 320
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_22
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 0
+        width: 118
+        height: 319
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_23
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 0
+        width: 121
+        height: 321
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_24
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 121
+        height: 321
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_St_hair_25
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 121
+        height: 320
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,179 @@
+fileFormatVersion: 2
+guid: ed1c969cd11e1ff4bae5ab3f4cef26b9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: FireSceenHospital_0
+    21300002: FireSceenHospital_1
+    21300004: FireSceenHospital_2
+    21300006: FireSceenHospital_3
+    21300008: FireSceenHospital_4
+    21300010: FireSceenHospital_5
+    21300012: FireSceenHospital_6
+    21300014: FireSceenHospital_7
+    21300016: FireSceenHospital_8
+    21300018: FireSceenHospital_9
+    21300020: FireSceenHospital_10
+    21300022: FireSceenHospital_11
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: FireSceenHospital_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2498
+        width: 410
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FireSceenHospital_1
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 2498
+        width: 410
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FireSceenHospital_2
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 2498
+        width: 410
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FireSceenHospital_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1668
+        width: 410
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FireSceenHospital_4
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 1668
+        width: 410
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FireSceenHospital_5
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 1668
+        width: 410
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FireSceenHospital_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 838
+        width: 410
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FireSceenHospital_7
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 838
+        width: 410
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FireSceenHospital_8
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 838
+        width: 410
+        height: 830
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FireSceenHospital_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 410
+        height: 830
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FireSceenHospital_10
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 2
+        width: 410
+        height: 830
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: FireSceenHospital_11
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 0
+        width: 410
+        height: 830
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

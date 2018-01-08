@@ -1,0 +1,110 @@
+fileFormatVersion: 2
+guid: 80f2cde14b1b2a94d903c1b86dfece27
+timeCreated: 1440089733
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Breathing_Men_0
+    21300002: Breathing_Men_1
+    21300004: Breathing_Men_2
+    21300006: Breathing_Men_3
+    21300008: Breathing_Men_4
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Breathing_Men_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 285
+        height: 900
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Breathing_Men_1
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 48
+        width: 300
+        height: 900
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Breathing_Men_2
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 50
+        width: 300
+        height: 900
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Breathing_Men_3
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 50
+        width: 300
+        height: 900
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Breathing_Men_4
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 50
+        width: 300
+        height: 900
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

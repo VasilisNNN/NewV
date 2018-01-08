@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: 57f3f980b925a2349a5ae7ee4bb532fc
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Palasch_0
+    21300002: Palasch_1
+    21300004: Palasch_2
+    21300006: Palasch_3
+    21300008: Palasch_4
+    21300010: Palasch_5
+    21300012: Palasch_6
+    21300014: Palasch_7
+    21300016: Palasch_8
+    21300018: Palasch_9
+    21300020: Palasch_10
+    21300022: Palasch_11
+    21300024: Palasch_12
+    21300026: Palasch_13
+    21300028: Palasch_14
+    21300030: Palasch_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Palasch_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 729
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_1
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 729
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_2
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 729
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_3
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 729
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_4
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 729
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_5
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 729
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_6
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 729
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_7
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 729
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_9
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_10
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_11
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 1
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_12
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_13
+      rect:
+        serializedVersion: 2
+        x: 1875
+        y: 1
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_14
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Palasch_15
+      rect:
+        serializedVersion: 2
+        x: 2625
+        y: 1
+        width: 375
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

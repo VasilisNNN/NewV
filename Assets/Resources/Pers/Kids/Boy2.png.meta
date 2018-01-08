@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: 709779a5296aabb46a4b06149678e8ba
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Boy2_0
+    21300002: Boy2_1
+    21300004: Boy2_2
+    21300006: Boy2_3
+    21300008: Boy2_4
+    21300010: Boy2_5
+    21300012: Boy2_6
+    21300014: Boy2_7
+    21300016: Boy2_8
+    21300018: Boy2_9
+    21300020: Boy2_10
+    21300022: Boy2_11
+    21300024: Boy2_12
+    21300026: Boy2_13
+    21300028: Boy2_14
+    21300030: Boy2_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Boy2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 883
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_1
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 883
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_2
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 883
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_3
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 883
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_4
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 883
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_5
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 883
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_6
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 883
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_7
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 883
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_9
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 18
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_10
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 18
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_11
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 18
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_12
+      rect:
+        serializedVersion: 2
+        x: 1748
+        y: 18
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_13
+      rect:
+        serializedVersion: 2
+        x: 2185
+        y: 18
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_14
+      rect:
+        serializedVersion: 2
+        x: 2622
+        y: 18
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Boy2_15
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 18
+        width: 437
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

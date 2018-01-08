@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: a808f03bfef7e404b8ab1af4e609e7f2
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: GrandMaShoot_0
+    21300002: GrandMaShoot_1
+    21300004: GrandMaShoot_2
+    21300006: GrandMaShoot_3
+    21300008: GrandMaShoot_4
+    21300010: GrandMaShoot_5
+    21300012: GrandMaShoot_6
+    21300014: GrandMaShoot_7
+    21300016: GrandMaShoot_8
+    21300018: GrandMaShoot_9
+    21300020: GrandMaShoot_10
+    21300022: GrandMaShoot_11
+    21300024: GrandMaShoot_12
+    21300026: GrandMaShoot_13
+    21300028: GrandMaShoot_14
+    21300030: GrandMaShoot_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: GrandMaShoot_0
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 4264
+        width: 777
+        height: 1266
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_1
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 4277
+        width: 916
+        height: 1267
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_2
+      rect:
+        serializedVersion: 2
+        x: 2359
+        y: 4250
+        width: 1001
+        height: 1294
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_3
+      rect:
+        serializedVersion: 2
+        x: 3451
+        y: 4250
+        width: 1029
+        height: 1294
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_4
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 2924
+        width: 791
+        height: 1275
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_5
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 2924
+        width: 903
+        height: 1261
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_6
+      rect:
+        serializedVersion: 2
+        x: 2415
+        y: 2924
+        width: 945
+        height: 1261
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_7
+      rect:
+        serializedVersion: 2
+        x: 3464
+        y: 2938
+        width: 1016
+        height: 1247
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 1543
+        width: 832
+        height: 1283
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_9
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 1543
+        width: 916
+        height: 1283
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_10
+      rect:
+        serializedVersion: 2
+        x: 2401
+        y: 1543
+        width: 959
+        height: 1284
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_11
+      rect:
+        serializedVersion: 2
+        x: 3451
+        y: 1543
+        width: 1029
+        height: 1283
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_12
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 94
+        width: 1036
+        height: 1311
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_13
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 108
+        width: 1022
+        height: 1310
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_14
+      rect:
+        serializedVersion: 2
+        x: 2401
+        y: 108
+        width: 1050
+        height: 1283
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: GrandMaShoot_15
+      rect:
+        serializedVersion: 2
+        x: 3437
+        y: 108
+        width: 1043
+        height: 1283
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

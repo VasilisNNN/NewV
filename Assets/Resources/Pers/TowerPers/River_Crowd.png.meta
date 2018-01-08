@@ -1,0 +1,242 @@
+fileFormatVersion: 2
+guid: a5996b2364315dc4283ef6afda8b10a0
+timeCreated: 1437570515
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: River_Crowd_0
+    21300002: River_Crowd_1
+    21300004: River_Crowd_2
+    21300006: River_Crowd_3
+    21300008: River_Crowd_4
+    21300010: River_Crowd_5
+    21300012: River_Crowd_6
+    21300014: River_Crowd_7
+    21300016: River_Crowd_8
+    21300018: River_Crowd_9
+    21300020: River_Crowd_10
+    21300022: River_Crowd_11
+    21300024: River_Crowd_12
+    21300026: River_Crowd_13
+    21300028: River_Crowd_14
+    21300030: River_Crowd_15
+    21300032: River_Crowd_16
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: River_Crowd_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 665
+        width: 163
+        height: 527
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 667
+        width: 138
+        height: 534
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_2
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 668
+        width: 162
+        height: 524
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_3
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 674
+        width: 149
+        height: 515
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_4
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 698
+        width: 132
+        height: 500
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_5
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 696
+        width: 138
+        height: 500
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_6
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 703
+        width: 137
+        height: 500
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_7
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 677
+        width: 163
+        height: 500
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_8
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 677
+        width: 160
+        height: 500
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_9
+      rect:
+        serializedVersion: 2
+        x: 1635
+        y: 682
+        width: 154
+        height: 500
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_10
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 684
+        width: 167
+        height: 500
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_11
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 77
+        width: 245
+        height: 509
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_12
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 86
+        width: 231
+        height: 500
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_13
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 86
+        width: 242
+        height: 500
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_14
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 107
+        width: 246
+        height: 513
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_15
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 110
+        width: 253
+        height: 500
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: River_Crowd_16
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 128
+        width: 278
+        height: 487
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

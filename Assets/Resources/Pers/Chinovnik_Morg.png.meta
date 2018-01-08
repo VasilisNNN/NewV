@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 18e960c5140d05b41839146e76a18cd7
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Chinovnik_Morg_0
+    21300002: Chinovnik_Morg_1
+    21300004: Chinovnik_Morg_2
+    21300006: Chinovnik_Morg_3
+    21300008: Chinovnik_Morg_4
+    21300010: Chinovnik_Morg_5
+    21300012: Chinovnik_Morg_6
+    21300014: Chinovnik_Morg_7
+    21300016: Chinovnik_Morg_8
+    21300018: Chinovnik_Morg_9
+    21300020: Chinovnik_Morg_10
+    21300022: Chinovnik_Morg_11
+    21300024: Chinovnik_Morg_12
+    21300026: Chinovnik_Morg_13
+    21300028: Chinovnik_Morg_14
+    21300030: Chinovnik_Morg_15
+    21300032: Chinovnik_Morg_16
+    21300034: Chinovnik_Morg_17
+    21300036: Chinovnik_Morg_18
+    21300038: Chinovnik_Morg_19
+    21300040: Chinovnik_Morg_20
+    21300042: Chinovnik_Morg_21
+    21300044: Chinovnik_Morg_22
+    21300046: Chinovnik_Morg_23
+    21300048: Chinovnik_Morg_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Chinovnik_Morg_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3459
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3459
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3459
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3459
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3459
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2599
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_6
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2599
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_7
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2599
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_8
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2599
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_9
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2599
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1739
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_11
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1739
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_12
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1739
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_13
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1739
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_14
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1739
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 879
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_16
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 879
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_17
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 879
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_18
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 879
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_19
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 879
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 19
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_21
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 19
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_22
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 19
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_23
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 19
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Chinovnik_Morg_24
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 19
+        width: 600
+        height: 860
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

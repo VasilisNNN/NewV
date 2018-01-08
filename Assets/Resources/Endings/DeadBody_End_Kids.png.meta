@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 01e2a1185dde85d47a5270672375b75a
+timeCreated: 1437862736
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DeadBody_End_Kids_0
+    21300002: DeadBody_End_Kids_1
+    21300004: DeadBody_End_Kids_2
+    21300006: DeadBody_End_Kids_3
+    21300008: DeadBody_End_Kids_4
+    21300010: DeadBody_End_Kids_5
+    21300012: DeadBody_End_Kids_6
+    21300014: DeadBody_End_Kids_7
+    21300016: DeadBody_End_Kids_8
+    21300018: DeadBody_End_Kids_9
+    21300020: DeadBody_End_Kids_12
+    21300022: DeadBody_End_Kids_13
+    21300024: DeadBody_End_Kids_14
+    21300026: DeadBody_End_Kids_15
+    21300028: DeadBody_End_Kids_16
+    21300030: DeadBody_End_Kids_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: DeadBody_End_Kids_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1019
+        width: 230
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_1
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1017
+        width: 230
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 892
+        width: 230
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_3
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 870
+        width: 230
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 748
+        width: 211
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_5
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 726
+        width: 230
+        height: 130
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_6
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 588
+        width: 191
+        height: 120
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 560
+        width: 213
+        height: 144
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_8
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 391
+        width: 191
+        height: 142
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_9
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 391
+        width: 193
+        height: 145
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_12
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 224
+        width: 206
+        height: 151
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_13
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 233
+        width: 194
+        height: 138
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_14
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 93
+        width: 167
+        height: 137
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_15
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 101
+        width: 178
+        height: 124
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_16
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 29
+        width: 176
+        height: 70
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DeadBody_End_Kids_17
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 29
+        width: 201
+        height: 79
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

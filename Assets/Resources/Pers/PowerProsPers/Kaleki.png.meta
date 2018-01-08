@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: becc30b9a325c4548a12ade5ee7d27b9
+timeCreated: 1428438192
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Kaleki_0
+    21300002: Kaleki_1
+    21300004: Kaleki_2
+    21300006: Kaleki_3
+    21300008: Kaleki_5
+    21300010: Kaleki_6
+    21300012: Kaleki_7
+    21300014: Kaleki_8
+    21300016: Kaleki_10
+    21300018: Kaleki_11
+    21300020: Kaleki_12
+    21300022: Kaleki_13
+    21300024: Kaleki_14
+    21300026: Kaleki_15
+    21300028: Kaleki_16
+    21300030: Kaleki_17
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Kaleki_0
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1468
+        width: 200
+        height: 465
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_1
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 1464
+        width: 200
+        height: 467
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_2
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1462
+        width: 200
+        height: 473
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_3
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 1470
+        width: 200
+        height: 468
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 935
+        width: 200
+        height: 516
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_6
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 939
+        width: 200
+        height: 508
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_7
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 935
+        width: 200
+        height: 503
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_8
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 939
+        width: 183
+        height: 495
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_10
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 472
+        width: 200
+        height: 450
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 464
+        width: 200
+        height: 450
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_12
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 464
+        width: 200
+        height: 450
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_13
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 468
+        width: 200
+        height: 450
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 74
+        width: 200
+        height: 389
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_15
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 72
+        width: 200
+        height: 385
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_16
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 79
+        width: 200
+        height: 375
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Kaleki_17
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 74
+        width: 200
+        height: 384
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

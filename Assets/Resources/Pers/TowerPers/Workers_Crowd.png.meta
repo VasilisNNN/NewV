@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: ff62a21a5ed90fb4481859006be96422
+timeCreated: 1437572218
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Workers_Crowd_0
+    21300002: Workers_Crowd_1
+    21300004: Workers_Crowd_2
+    21300006: Workers_Crowd_3
+    21300008: Workers_Crowd_4
+    21300010: Workers_Crowd_5
+    21300012: Workers_Crowd_6
+    21300014: Workers_Crowd_7
+    21300016: Workers_Crowd_8
+    21300018: Workers_Crowd_9
+    21300020: Workers_Crowd_10
+    21300022: Workers_Crowd_11
+    21300024: Workers_Crowd_12
+    21300026: Workers_Crowd_13
+    21300028: Workers_Crowd_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Workers_Crowd_0
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 559
+        width: 220
+        height: 497
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Workers_Crowd_1
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 571
+        width: 213
+        height: 480
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Workers_Crowd_2
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 576
+        width: 220
+        height: 480
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Workers_Crowd_3
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 605
+        width: 331
+        height: 451
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Workers_Crowd_4
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 601
+        width: 353
+        height: 455
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Workers_Crowd_5
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 610
+        width: 331
+        height: 446
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Workers_Crowd_6
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 74
+        width: 284
+        height: 474
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Workers_Crowd_7
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 73
+        width: 272
+        height: 480
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Workers_Crowd_8
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 114
+        width: 242
+        height: 434
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Workers_Crowd_9
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 103
+        width: 233
+        height: 452
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Workers_Crowd_10
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 112
+        width: 259
+        height: 432
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Workers_Crowd_11
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 83
+        width: 107
+        height: 480
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Workers_Crowd_12
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 82
+        width: 109
+        height: 480
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Workers_Crowd_13
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 80
+        width: 107
+        height: 480
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Workers_Crowd_14
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 76
+        width: 101
+        height: 480
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

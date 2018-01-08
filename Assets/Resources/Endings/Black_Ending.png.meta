@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 8d5f96461c764de4e83f97698f80ffbe
+timeCreated: 1439323389
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Black_Ending_0
+    21300002: Black_Ending_1
+    21300004: Black_Ending_2
+    21300006: Black_Ending_3
+    21300008: Black_Ending_Raine_0
+    21300010: Black_Ending_5
+    21300012: Black_Ending_6
+    21300014: Black_Ending_Raine_1
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Black_Ending_0
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 607
+        width: 311
+        height: 456
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black_Ending_1
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 609
+        width: 238
+        height: 239
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black_Ending_2
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 588
+        width: 243
+        height: 475
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black_Ending_3
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 839
+        width: 601
+        height: 203
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black_Ending_Raine_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 30
+        width: 850
+        height: 354
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black_Ending_5
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 598
+        width: 349
+        height: 138
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black_Ending_6
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 397
+        width: 1166
+        height: 161
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Black_Ending_Raine_1
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 36
+        width: 796
+        height: 348
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

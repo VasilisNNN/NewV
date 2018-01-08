@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: a93b3b3bfe199eb49af7d03cadb05edf
+timeCreated: 1442150313
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Port_Power_0
+    21300002: Port_Power_1
+    21300004: Port_Power_2
+    21300006: Port_Power_3
+    21300008: Port_Power_4
+    21300010: Port_Power_5
+    21300012: Port_Power_6
+    21300014: Port_Power_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Port_Power_0
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 685
+        width: 270
+        height: 310
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Port_Power_1
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 659
+        width: 302
+        height: 361
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Port_Power_2
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 818
+        width: 49
+        height: 141
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Port_Power_3
+      rect:
+        serializedVersion: 2
+        x: 1043
+        y: 816
+        width: 42
+        height: 143
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Port_Power_4
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 818
+        width: 44
+        height: 141
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Port_Power_5
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 818
+        width: 43
+        height: 140
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Port_Power_6
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 349
+        width: 549
+        height: 430
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Port_Power_7
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 124
+        width: 166
+        height: 514
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

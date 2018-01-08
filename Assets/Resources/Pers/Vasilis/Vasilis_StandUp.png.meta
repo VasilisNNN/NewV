@@ -1,0 +1,407 @@
+fileFormatVersion: 2
+guid: 7f1c1bdca0abb0a4c834c77d682d7051
+timeCreated: 1439927056
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Vasilis_StandUp_0
+    21300002: Vasilis_StandUp_1
+    21300004: Vasilis_StandUp_2
+    21300006: Vasilis_StandUp_3
+    21300008: Vasilis_StandUp_4
+    21300010: Vasilis_StandUp_5
+    21300012: Vasilis_StandUp_6
+    21300014: Vasilis_StandUp_7
+    21300016: Vasilis_StandUp_8
+    21300018: Vasilis_StandUp_9
+    21300020: Vasilis_StandUp_10
+    21300022: Vasilis_StandUp_11
+    21300024: Vasilis_StandUp_12
+    21300026: Vasilis_StandUp_13
+    21300028: Vasilis_StandUp_14
+    21300030: Vasilis_StandUp_15
+    21300032: Vasilis_StandUp_16
+    21300034: Vasilis_StandUp_17
+    21300036: Vasilis_StandUp_18
+    21300038: Vasilis_StandUp_19
+    21300040: Vasilis_StandUp_20
+    21300042: Vasilis_StandUp_21
+    21300044: Vasilis_StandUp_22
+    21300046: Vasilis_StandUp_23
+    21300048: Vasilis_StandUp_24
+    21300050: Vasilis_StandUp_25
+    21300052: Vasilis_StandUp_26
+    21300054: Vasilis_StandUp_27
+    21300056: Vasilis_StandUp_28
+    21300058: Vasilis_StandUp_29
+    21300060: Vasilis_StandUp_30
+    21300062: Vasilis_StandUp_31
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 2
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Vasilis_StandUp_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2093
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_1
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 2093
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_2
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 2093
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_3
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 2093
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1798
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1798
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_6
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1798
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_7
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1798
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1503
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_9
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1503
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_10
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1503
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_11
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1503
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1208
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_13
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 1208
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_14
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 1208
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_15
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 1208
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 913
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_17
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 913
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_18
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 913
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_19
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 913
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 618
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_21
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 618
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_22
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 618
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_23
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 618
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 323
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_25
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 323
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_26
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 323
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_27
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 323
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_29
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 28
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_30
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 28
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Vasilis_StandUp_31
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 28
+        width: 425
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

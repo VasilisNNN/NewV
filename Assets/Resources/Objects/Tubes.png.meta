@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 974b0aaff174e5041876063a159b02f4
+timeCreated: 1437755947
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Tubes_0
+    21300002: Tubes_1
+    21300004: Tubes_2
+    21300006: Tubes_3
+    21300008: Tubes_4
+    21300010: Tubes_5
+    21300012: Tubes_6
+    21300014: Tubes_7
+    21300016: Tubes_8
+    21300018: Tubes_9
+    21300020: Tubes_10
+    21300022: Tubes_11
+    21300024: Tubes_12
+    21300026: Tubes_13
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Tubes_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 437
+        width: 210
+        height: 100
+      alignment: 9
+      pivot: {x: .151794285, y: .489157706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tubes_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 434
+        width: 186
+        height: 100
+      alignment: 9
+      pivot: {x: .0990977958, y: .489158034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tubes_2
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 441
+        width: 192
+        height: 100
+      alignment: 9
+      pivot: {x: .0960006714, y: .434945375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tubes_3
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 439
+        width: 168
+        height: 100
+      alignment: 9
+      pivot: {x: .1226229, y: .500000298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tubes_4
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 328
+        width: 207
+        height: 100
+      alignment: 9
+      pivot: {x: .0838063955, y: .413260818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tubes_5
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 330
+        width: 206
+        height: 100
+      alignment: 9
+      pivot: {x: .105266534, y: .467472851}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tubes_6
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 332
+        width: 184
+        height: 100
+      alignment: 9
+      pivot: {x: .141423106, y: .45663026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tubes_7
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 332
+        width: 200
+        height: 100
+      alignment: 9
+      pivot: {x: .173479304, y: .478315115}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tubes_8
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 182
+        width: 200
+        height: 100
+      alignment: 9
+      pivot: {x: .0867396146, y: .478315264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tubes_9
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 183
+        width: 200
+        height: 100
+      alignment: 9
+      pivot: {x: .140951842, y: .489158034}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tubes_10
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 183
+        width: 200
+        height: 100
+      alignment: 9
+      pivot: {x: .168058172, y: .521685004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tubes_11
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 53
+        width: 200
+        height: 100
+      alignment: 9
+      pivot: {x: .363222092, y: .467472762}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tubes_12
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 48
+        width: 200
+        height: 100
+      alignment: 9
+      pivot: {x: .330694735, y: .467472613}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tubes_13
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 47
+        width: 200
+        height: 100
+      alignment: 9
+      pivot: {x: .211427763, y: .521685123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

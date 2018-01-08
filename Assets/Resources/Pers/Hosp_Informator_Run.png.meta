@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: 18fadfca2bc83314681683a9c5298c22
+timeCreated: 1439846112
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Hosp_Informator_Run_0
+    21300002: Hosp_Informator_Run_1
+    21300004: Hosp_Informator_Run_2
+    21300006: Hosp_Informator_Run_3
+    21300008: Hosp_Informator_Run_4
+    21300010: Hosp_Informator_Run_5
+    21300012: Hosp_Informator_Run_6
+    21300014: Hosp_Informator_Run_7
+    21300016: Hosp_Informator_Run_8
+    21300018: Hosp_Informator_Run_9
+    21300020: Hosp_Informator_Run_10
+    21300022: Hosp_Informator_Run_11
+    21300024: Hosp_Informator_Run_12
+    21300026: Hosp_Informator_Run_13
+    21300028: Hosp_Informator_Run_14
+    21300030: Hosp_Informator_Run_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Hosp_Informator_Run_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 936
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_1
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 936
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_2
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 936
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_3
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 936
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 625
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 625
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_6
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 625
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_7
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 625
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 314
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_9
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 314
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_10
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 314
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_11
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 314
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_13
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 3
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_14
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 3
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Hosp_Informator_Run_15
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 3
+        width: 224
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

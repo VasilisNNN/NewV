@@ -1,0 +1,246 @@
+fileFormatVersion: 2
+guid: 5a864d98660c71842a1141a62d74afb8
+timeCreated: 1429010269
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: HaosTower_0
+    21300002: HaosTower_1
+    21300004: HaosTower_2
+    21300006: HaosTower_3
+    21300008: HaosTower_6
+    21300010: HaosTower_7
+    21300012: HaosTower_8
+    21300014: HaosTower_9
+    21300016: HaosTower_10
+    21300018: HaosTower_11
+    21300020: HaosTower_12
+    21300022: HaosTower_13
+    21300024: HaosTower_14
+    21300026: HaosTower_17
+    21300028: HaosTower_18
+    21300030: HaosTower_20
+    21300032: HaosTower_22
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: HaosTower_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1369
+        width: 300
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_1
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1284
+        width: 300
+        height: 319
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_2
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1317
+        width: 300
+        height: 237
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_3
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 980
+        width: 300
+        height: 301
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1003
+        width: 300
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 966
+        width: 288
+        height: 318
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_8
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 985
+        width: 300
+        height: 280
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_9
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 691
+        width: 316
+        height: 226
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_10
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 630
+        width: 300
+        height: 334
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_11
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 708
+        width: 308
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 450
+        width: 316
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_13
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 419
+        width: 300
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_14
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 603
+        width: 300
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_17
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 434
+        width: 330
+        height: 200
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_18
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 15
+        width: 300
+        height: 295
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_20
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 15
+        width: 331
+        height: 310
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: HaosTower_22
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 21
+        width: 300
+        height: 308
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

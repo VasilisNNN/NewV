@@ -1,0 +1,290 @@
+fileFormatVersion: 2
+guid: a1ba0dac93ab2c2439b09fc7d264cd7f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Drinker3_0
+    21300002: Drinker3_1
+    21300004: Drinker3_2
+    21300006: Drinker3_3
+    21300008: Drinker3_4
+    21300010: Drinker3_5
+    21300012: Drinker3_6
+    21300014: Drinker3_7
+    21300016: Drinker3_8
+    21300018: Drinker3_9
+    21300020: Drinker3_10
+    21300022: Drinker3_11
+    21300024: Drinker3_12
+    21300026: Drinker3_13
+    21300028: Drinker3_14
+    21300030: Drinker3_15
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Drinker3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 874
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_1
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 874
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_2
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 874
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_3
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 874
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_4
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 874
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_5
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 874
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_6
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 874
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_7
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 874
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_9
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 9
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_10
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 9
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_11
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 9
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_12
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 9
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_13
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 9
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_14
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 9
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: Drinker3_15
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 9
+        width: 410
+        height: 865
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

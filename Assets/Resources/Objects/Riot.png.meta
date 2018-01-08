@@ -1,0 +1,213 @@
+fileFormatVersion: 2
+guid: 9809795dcb8903145ad915bca0c41ca5
+timeCreated: 1440339248
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Riot_Bus_0
+    21300002: Riot_Ob_0
+    21300004: Riot_Ob_1
+    21300006: Riot_Ob_2
+    21300008: Window_0
+    21300010: Window_1
+    21300012: Window_2
+    21300014: BroukenW_0
+    21300016: BroukenW_1
+    21300018: BroukenW_2
+    21300020: BroukenW_3
+    21300022: BroukenW_4
+    21300024: Riot_Bus_1
+    21300026: Riot_Car
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Riot_Bus_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1112
+        width: 517
+        height: 244
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Riot_Ob_0
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 997
+        width: 345
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Riot_Ob_1
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1098
+        width: 226
+        height: 226
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Riot_Ob_2
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1098
+        width: 351
+        height: 186
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Window_0
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 814
+        width: 164
+        height: 220
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Window_1
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 814
+        width: 159
+        height: 220
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Window_2
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 820
+        width: 175
+        height: 217
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BroukenW_0
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 443
+        width: 231
+        height: 289
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BroukenW_1
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 342
+        width: 191
+        height: 278
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BroukenW_2
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 72
+        width: 191
+        height: 374
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BroukenW_3
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 66
+        width: 178
+        height: 247
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BroukenW_4
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 43
+        width: 209
+        height: 281
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Riot_Bus_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 676
+        width: 517
+        height: 263
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Riot_Car
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 435
+        width: 414
+        height: 186
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

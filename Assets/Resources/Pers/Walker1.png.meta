@@ -1,0 +1,223 @@
+fileFormatVersion: 2
+guid: 6c8a02a1f9af50b4e82c04902913b92f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Walk2_0
+    21300002: Walk2_1
+    21300004: Walk2_2
+    21300006: Walk2_3
+    21300008: Walk2_4
+    21300010: Walk2_5
+    21300012: Walk2_6
+    21300014: Walk2_7
+    21300016: Walk2_8
+    21300018: Walk2_9
+    21300020: Walk2_10
+    21300022: Walk2_11
+    21300024: Walk2_12
+    21300026: Walk2_13
+    21300028: Walk2_14
+    21300030: Walk2_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Walk2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1282
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_1
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 1282
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_2
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 1282
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_3
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 1282
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_4
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 1282
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_5
+      rect:
+        serializedVersion: 2
+        x: 2915
+        y: 1282
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_6
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 1282
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_7
+      rect:
+        serializedVersion: 2
+        x: 4081
+        y: 1282
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_9
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 2
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_10
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 2
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_11
+      rect:
+        serializedVersion: 2
+        x: 1749
+        y: 2
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_12
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 2
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_13
+      rect:
+        serializedVersion: 2
+        x: 2915
+        y: 2
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_14
+      rect:
+        serializedVersion: 2
+        x: 3498
+        y: 2
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk2_15
+      rect:
+        serializedVersion: 2
+        x: 4081
+        y: 2
+        width: 583
+        height: 1280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

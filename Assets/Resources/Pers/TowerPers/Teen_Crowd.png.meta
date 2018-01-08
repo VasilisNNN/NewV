@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: 805c23890c8513b4c9734ed1c1fcc86d
+timeCreated: 1440489412
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Teen_Crowd_0
+    21300002: Teen_Crowd_1
+    21300004: Teen_Crowd_2
+    21300006: Teen_Crowd_3
+    21300008: Teen_Crowd_4
+    21300010: Teen_Crowd_5
+    21300012: Teen_Crowd_6
+    21300014: Teen_Crowd_7
+    21300016: Teen_Crowd_8
+    21300018: Teen_Crowd_9
+    21300020: Teen_Crowd_10
+    21300022: Teen_Crowd_11
+    21300024: Teen_Crowd_12
+    21300026: Teen_Crowd_13
+    21300028: Teen_Crowd_14
+    21300030: Teen_Crowd_20
+    21300032: Teen_Crowd_21
+    21300034: Teen_Crowd_22
+    21300036: Teen_Crowd_23
+    21300038: Teen_Crowd_25
+    21300040: Teen_Crowd_26
+    21300042: Teen_Crowd_27
+    21300044: Teen_Crowd_28
+    21300046: Teen_Crowd_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Teen_Crowd_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 945
+        width: 234
+        height: 507
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_1
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 939
+        width: 250
+        height: 513
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_2
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 939
+        width: 250
+        height: 513
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_3
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 930
+        width: 250
+        height: 516
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_4
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 930
+        width: 193
+        height: 522
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_5
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 924
+        width: 176
+        height: 528
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_6
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 1125
+        width: 499
+        height: 324
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_7
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 797
+        width: 519
+        height: 325
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_8
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 451
+        width: 498
+        height: 349
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_9
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 362
+        width: 250
+        height: 440
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_10
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 362
+        width: 237
+        height: 451
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_11
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 362
+        width: 253
+        height: 454
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_12
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 419
+        width: 250
+        height: 400
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_13
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 429
+        width: 249
+        height: 400
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_14
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 459
+        width: 250
+        height: 386
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 61
+        width: 502
+        height: 277
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_21
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 67
+        width: 499
+        height: 280
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_22
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 33
+        width: 250
+        height: 400
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_23
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 27
+        width: 250
+        height: 400
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_25
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 35
+        width: 256
+        height: 400
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_26
+      rect:
+        serializedVersion: 2
+        x: 2103
+        y: 1122
+        width: 348
+        height: 321
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_27
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 819
+        width: 315
+        height: 306
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_28
+      rect:
+        serializedVersion: 2
+        x: 2076
+        y: 451
+        width: 363
+        height: 373
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Teen_Crowd_29
+      rect:
+        serializedVersion: 2
+        x: 2043
+        y: 33
+        width: 411
+        height: 400
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

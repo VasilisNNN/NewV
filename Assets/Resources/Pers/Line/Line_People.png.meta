@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: 680bd9ba6a79ef4428b02c0c6bb272d7
+timeCreated: 1438865130
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Line_People_X_0
+    21300002: Line_People_X_1
+    21300004: Line_People_X_2
+    21300006: Mum_Kid_0
+    21300008: Mum_Kid_1
+    21300010: Mum_Kid_2
+    21300012: Mum_Kid_3
+    21300014: Grand_0
+    21300016: Grand_1
+    21300018: Grand_2
+    21300020: Grand_3
+    21300022: SmokingGirl_0
+    21300024: SmokingGirl_1
+    21300026: SmokingGirl_2
+    21300028: SmokingGirl_3
+    21300030: Men_0
+    21300032: Men_1
+    21300034: Men_2
+    21300036: Men_3
+    21300038: TableMen_0
+    21300040: TableMen_1
+    21300042: TableMen_2
+    21300044: TableMen_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Line_People_X_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1066
+        width: 316
+        height: 322
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_People_X_1
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1063
+        width: 285
+        height: 325
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Line_People_X_2
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1068
+        width: 277
+        height: 320
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mum_Kid_0
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 740
+        width: 130
+        height: 300
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mum_Kid_1
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 748
+        width: 131
+        height: 300
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mum_Kid_2
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 748
+        width: 126
+        height: 300
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Mum_Kid_3
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 737
+        width: 138
+        height: 300
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Grand_0
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 742
+        width: 120
+        height: 290
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Grand_1
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 743
+        width: 120
+        height: 291
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Grand_2
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 742
+        width: 120
+        height: 292
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Grand_3
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 737
+        width: 120
+        height: 294
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SmokingGirl_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 392
+        width: 134
+        height: 330
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SmokingGirl_1
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 398
+        width: 139
+        height: 324
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SmokingGirl_2
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 403
+        width: 140
+        height: 316
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: SmokingGirl_3
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 397
+        width: 120
+        height: 317
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Men_0
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 402
+        width: 135
+        height: 314
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Men_1
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 402
+        width: 120
+        height: 317
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Men_2
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 400
+        width: 120
+        height: 319
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Men_3
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 408
+        width: 120
+        height: 309
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TableMen_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 51
+        width: 220
+        height: 333
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TableMen_1
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 48
+        width: 221
+        height: 333
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TableMen_2
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 48
+        width: 216
+        height: 328
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TableMen_3
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 48
+        width: 234
+        height: 329
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

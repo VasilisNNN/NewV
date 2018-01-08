@@ -1,0 +1,671 @@
+fileFormatVersion: 2
+guid: 80edcf6d4228c734ab4a96aceeb78c51
+timeCreated: 1438164325
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Petr_4_0
+    21300002: Petr_4_1
+    21300004: Petr_4_2
+    21300006: Petr_4_3
+    21300008: Petr_2_0
+    21300010: Petr_2_1
+    21300012: Petr_2_2
+    21300014: Petr_2_3
+    21300016: TV_Bus_0
+    21300018: TV_Bus_1
+    21300020: TV_Bus_2
+    21300022: TV_Bus_3
+    21300024: Petr_1_0
+    21300026: Petr_1_1
+    21300028: Petr_1_2
+    21300030: Petr_1_3
+    21300032: TV_Bus_4
+    21300034: TV_Bus_5
+    21300036: TV_Bus_6
+    21300038: TV_Bus_7
+    21300040: Petr_0_0
+    21300042: Petr_0_1
+    21300044: Petr_0_2
+    21300046: Petr_0_3
+    21300048: TV_Bus_8
+    21300050: TV_Bus_9
+    21300052: TV_Bus_10
+    21300054: TV_Bus_11
+    21300056: Petr_3_0
+    21300058: Petr_3_1
+    21300060: Petr_3_2
+    21300062: Petr_3_3
+    21300064: TV_Bus_12
+    21300066: TV_Bus_13
+    21300068: Plice_0
+    21300070: Plice_1
+    21300072: Petr_3_4
+    21300074: Petr_3_5
+    21300076: Petr_3_6
+    21300078: Petr_3_7
+    21300080: BigFire_0
+    21300082: BigFire_1
+    21300084: smallFire_0
+    21300086: smallFire_1
+    21300088: Petr_3_8
+    21300090: Petr_3_9
+    21300092: Petr_3_10
+    21300094: Petr_3_11
+    21300096: BigFire_2
+    21300098: BigFire_3
+    21300100: smallFire_2
+    21300102: smallFire_3
+    21300104: fire_0
+    21300106: fire_1
+    21300108: fire_2
+    21300110: fire_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 100
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Petr_4_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1171
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_4_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1171
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_4_2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1171
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_4_3
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 1171
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1004
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_2_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1004
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_2_2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1004
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_2_3
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 1004
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TV_Bus_0
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 1004
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TV_Bus_1
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 1004
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TV_Bus_2
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 1004
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TV_Bus_3
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 1004
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 837
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_1_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 837
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_1_2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 837
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_1_3
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 837
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TV_Bus_4
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 837
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TV_Bus_5
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 837
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TV_Bus_6
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 837
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TV_Bus_7
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 837
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_0_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 670
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_0_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 670
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_0_2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 670
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_0_3
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 670
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TV_Bus_8
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 670
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TV_Bus_9
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 670
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TV_Bus_10
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 670
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TV_Bus_11
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 670
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 503
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_3_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 503
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_3_2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 503
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_3_3
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 503
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TV_Bus_12
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 503
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: TV_Bus_13
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 503
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plice_0
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 503
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Plice_1
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 503
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_3_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_3_5
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 336
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_3_6
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 336
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_3_7
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 336
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigFire_0
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 336
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigFire_1
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 336
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallFire_0
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 336
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallFire_1
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 336
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_3_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 169
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_3_9
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 169
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_3_10
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 169
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Petr_3_11
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 169
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigFire_2
+      rect:
+        serializedVersion: 2
+        x: 948
+        y: 169
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: BigFire_3
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 169
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallFire_2
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 169
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smallFire_3
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 169
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire_1
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 2
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire_2
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 2
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire_3
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 2
+        width: 237
+        height: 167
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

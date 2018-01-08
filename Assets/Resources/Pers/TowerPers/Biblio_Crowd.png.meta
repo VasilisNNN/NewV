@@ -1,0 +1,253 @@
+fileFormatVersion: 2
+guid: 7869abb76d34c6d46bf703dd514024b1
+timeCreated: 1445608862
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Biblio_Crowd_0
+    21300002: Biblio_Crowd_1
+    21300004: Biblio_Crowd_2
+    21300006: Biblio_Crowd_3
+    21300008: Biblio_Crowd_4
+    21300010: Biblio_Crowd_5
+    21300012: Biblio_Crowd_6
+    21300014: Biblio_Crowd_8
+    21300016: Biblio_Crowd_9
+    21300018: Biblio_Crowd_10
+    21300020: Biblio_Crowd_11
+    21300022: Biblio_Crowd_12
+    21300024: Biblio_Crowd_13
+    21300026: Biblio_Crowd_14
+    21300028: Biblio_Crowd_15
+    21300030: Biblio_Crowd_16
+    21300032: Biblio_Crowd_17
+    21300034: Biblio_Crowd_18
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -2
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Biblio_Crowd_0
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 1377
+        width: 247
+        height: 400
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_1
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 1377
+        width: 232
+        height: 400
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_2
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 1377
+        width: 238
+        height: 400
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 1231
+        width: 300
+        height: 546
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1235
+        width: 300
+        height: 542
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1027
+        width: 416
+        height: 350
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_6
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 1027
+        width: 415
+        height: 347
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_8
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 737
+        width: 300
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_9
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 748
+        width: 320
+        height: 183
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_10
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 552
+        width: 287
+        height: 178
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_11
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 532
+        width: 327
+        height: 207
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_12
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 50
+        width: 172
+        height: 472
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_13
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 48
+        width: 170
+        height: 477
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_14
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 52
+        width: 165
+        height: 470
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_15
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 51
+        width: 183
+        height: 481
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_16
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 68
+        width: 374
+        height: 549
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_17
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 75
+        width: 331
+        height: 542
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Biblio_Crowd_18
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 78
+        width: 360
+        height: 542
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
