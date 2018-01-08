@@ -1,0 +1,20 @@
+fileFormatVersion: 2
+guid: 7d0efbf477bd061448505705d1c73634
+<<<<<<< HEAD
+timeCreated: 1432494290
+=======
+timeCreated: 1430341185
+>>>>>>> parent of 884424f... Исправление квеста с коктейлем
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+<<<<<<< HEAD
+  executionOrder: 45
+=======
+  executionOrder: 0
+>>>>>>> parent of 884424f... Исправление квеста с коктейлем
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
