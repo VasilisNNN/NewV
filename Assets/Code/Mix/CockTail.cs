@@ -8,7 +8,6 @@ public class CockTail : MonoBehaviour {
 	public int[] number ;
 	private int FinalCock;
 	private int Count = 0;
-	private DialogItem DI;
 
 	private Mix_ChangeItems MCI;
 	private bool t;
@@ -18,7 +17,6 @@ public class CockTail : MonoBehaviour {
 	void Start () {
 		Inv = GameObject.Find("Inventory").GetComponent<Inventory>();
 		CI = GameObject.Find("ChInt").GetComponent<ChoiseInterface>();
-		DI = gameObject.GetComponent<DialogItem>();
 		MCI = gameObject.GetComponent<Mix_ChangeItems> ();
 	
 	}
@@ -34,14 +32,7 @@ public class CockTail : MonoBehaviour {
 			if (MCI.GetCollisinWithItem ()) {
 				t = true;
 			}
-			
-			if (t && DI.PlayIn == false) {
 
-
-				CI.SetAll (true);
-				t = false;
-			}
-		
 
 
 			if (Count == 3 && Input.GetButtonDown ("Enter")) {

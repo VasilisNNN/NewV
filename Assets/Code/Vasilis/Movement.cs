@@ -10,7 +10,8 @@ public static Movement Instance{get;private set;}
 	private Inventory Inv;
 	private GameObject[] Pers;
 	public float speed = 0.1f; 
-	private float _normalHSpeed,_normalVSpeed;
+	public float _normalHSpeed{ get; set;}
+	public float _normalVSpeed{ get; set;}
 	private float speednormal; 
     private bool isFacingRight = true;
     private Animator anim;
@@ -22,7 +23,6 @@ public static Movement Instance{get;private set;}
 
 	public bool flip = true;
 	private AudioSource Au;
-	public AudioClip[] StepsSound;
 	public float NextFoot;
 	private float soundtimer,SpeedCountTimer;
 	public bool draw = true;
@@ -60,8 +60,16 @@ public static Movement Instance{get;private set;}
 	private Vector3 CorrentPos, ExPos,camx;
 	public Texture CursorT;
 	private Rect CursorRect;
+	public bool steps = true;
 	void Awake()
 	{
+		if (GameObject.Find ("Steps(Clone)") == null&&steps) {
+			GameObject Stepss  = new GameObject();
+			Stepss = (GameObject)Instantiate(Resources.Load("PrefabObjects/Steps"));
+			Stepss.transform.parent = GameObject.Find("VasilisA").transform;
+			GameObject.Find ("Steps(Clone)").transform.position = new Vector3(transform.position.x+0.3f,transform.position.y,0);
+		}
+		
 		Inv = GetComponent<Inventory> ();
 		Pers = GameObject.FindGameObjectsWithTag("Pers");
 
@@ -189,8 +197,6 @@ public static Movement Instance{get;private set;}
 				
 			}
 
-			if (Au != null)
-				PlayFootSteps ();
 
 
 			if (_horizontal != 0 && _vertical != 0)
@@ -245,32 +251,6 @@ public static Movement Instance{get;private set;}
 	                    
 
 
-
-private void PlayFootSteps()
-	{
-
-		if (_horizontal!=0) {
-						Au.clip = StepsSound [Random.Range (0, StepsSound.Length)];
-
-						if (Au.enabled)
-								Au.Play ();
-						else
-								Au.Pause ();
-
-				}
-
-         if (Input.GetButtonUp ("Horizontal") || Input.GetAxisRaw ("Horizontal") == 0)Au.Pause ();
-				
-
-
-		if (soundtimer + NextFoot < Time.fixedTime) 
-		{
-			Au.clip = StepsSound [Random.Range (0, StepsSound.Length)];
-			Au.Play ();
-			soundtimer = Time.fixedTime;
-		}
-
-	}
 
 
 		private void OnGUI () {
