@@ -3,17 +3,15 @@ using System.Collections;
 
 public class AnimationTriger : MonoBehaviour {
 	
-	  //private Animator anim;
+	 private Animator anim;
 	  private bool AnimSw;
 
 	public bool DialogTrgr = false;
 	private Movement move;
 	void Start () {
 		move = GameObject.Find ("Vasilis").GetComponent<Movement> ();
-		if(GameObject.Find("Dialog")!=null)
 	
-
-		 //anim = GetComponent<Animator>();
+		 anim = GetComponent<Animator>();
 	     AnimSw = false;
 	}
 
@@ -23,14 +21,7 @@ public class AnimationTriger : MonoBehaviour {
 			AnimSw = true;
 		else
 			AnimSw = false;
-
-
-		/*if (DialogTrgr && GameObject.Find("Dialog")!=null) {
-			if (dialog.GetPlayIn ()&&AnimSw)
-				anim.SetInteger ("AnimSw", 1);
-			else if(!dialog.GetPlayIn ())
-				anim.SetInteger ("AnimSw", 0);
-		}else 
-			anim.SetBool ("AnimSw", AnimSw);*/
+        
+			anim.SetBool ("Start", AnimSw);
 	}
 }

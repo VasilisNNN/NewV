@@ -7,106 +7,198 @@ TextureImporter:
     21300004: Fire3_2
     21300006: Fire3_3
     21300008: Fire3_4
-  serializedVersion: 2
+  externalObjects: {}
+  serializedVersion: 7
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 8
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -2
   maxTextureSize: 1024
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 1
-    mipBias: -1
-    wrapMode: 1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings:
-  - buildTarget: Standalone
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
     maxTextureSize: 1024
-    textureFormat: -2
+    resizeAlgorithm: 0
+    textureFormat: 2
+    textureCompression: 1
     compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: 2
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Fire3_0
+    - serializedVersion: 2
+      name: Fire3_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 1846
+        x: 13
+        y: 1761
         width: 2007
-        height: 395
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        height: 350
+      alignment: 9
+      pivot: {x: 0.50188255, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Fire3_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ec34f15b384164e9030b6ba8a2d710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire3_1
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1372
+        x: 2
+        y: 1357
         width: 2046
-        height: 374
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        height: 350
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Fire3_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7916ca7e3c8527408d16ffdc72eee0a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire3_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 958
+        y: 926
         width: 2100
-        height: 380
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        height: 350
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Fire3_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4ffc007c78457429e411a810dbd5f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire3_3
       rect:
         serializedVersion: 2
         x: 17
-        y: 517
+        y: 487
         width: 2100
-        height: 358
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        height: 350
+      alignment: 9
+      pivot: {x: 0.49999988, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Fire3_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0fbd818a314b7478912b088b7b59c7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fire3_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 60
+        y: 56
         width: 2100
-        height: 368
-      alignment: 0
-      pivot: {x: .5, y: .5}
+        height: 350
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b5bd8a8b97f0f46afffe8c2e4bb5fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 3d6c5e0e7d597ef44938d981aff98f86
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -8,8 +8,8 @@ public class NumberCount : MonoBehaviour {
 	public int MinNumber = 0;
 	public GUIStyle skin;
 	public GUIStyle skin_1;
-	private TriggerMouse MPL;
-	private TriggerMouse MPR;
+	private Trigger MPL;
+	private Trigger MPR;
 	public bool On{ get; set;}
 	private Camera cam;
 	public bool Onoff =false;
@@ -28,8 +28,8 @@ public class NumberCount : MonoBehaviour {
 
 		//cam.WorldToScreenPoint;
 
-		MPL = GameObject.Find("LeftTrigger").GetComponent<TriggerMouse>();
-		MPR = GameObject.Find("RightTrigger").GetComponent<TriggerMouse>();
+		MPL = GameObject.Find("LeftTrigger").GetComponent<Trigger>();
+		MPR = GameObject.Find("RightTrigger").GetComponent<Trigger>();
 		timer = Time.fixedTime;
 	}
 

@@ -1,18 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour {
-	
-public static Movement Instance{get;private set;}
 
-	private List<GameObject> coll_obj = new List<GameObject>();
-	private Inventory Inv;
-	private GameObject[] Pers;
-	public float speed = 0.1f; 
-	public float _normalHSpeed{ get; set;}
-	public float _normalVSpeed{ get; set;}
-	private float speednormal; 
+    public static Movement Instance { get; private set; }
+
+    private List<GameObject> coll_obj = new List<GameObject>();
+    private Inventory Inv;
+    public float speed = 0.1f;
+    public float _normalHSpeed { get; set; }
+    public float _normalVSpeed { get; set; }
+    public float DayFinish { get; set; }
+    public string EndDayLocation{get;set;}
+
+    private float speednormal; 
     private bool isFacingRight = true;
     private Animator anim;
 
@@ -20,8 +23,8 @@ public static Movement Instance{get;private set;}
 	public bool VerMove;
 
 	public bool MovePers{ get; set;}
-
-	public bool flip = true;
+    public bool PlusDay { get; set; }
+    public bool flip = true;
 	private AudioSource Au;
 	public float NextFoot;
 	private float soundtimer,SpeedCountTimer;
@@ -29,65 +32,83 @@ public static Movement Instance{get;private set;}
 
 
 	public bool DrawDialog{ get; set; }
-
-
-	private bool mv ;
-
-	private Rect rectlable;
-	public GUISkin skin;
-	private string[] dialogText; 
-	
-	private TextB texB;
-	private TextEn texEn;
-	private int finalLine = 1;
-	private int finalLinePl = 1;
-
-	public bool PlayIn = false;
-	
+    
 	private bool menu_b;
 	public bool inventory_b{ get; set;}
 	
 	public bool enter_b{ get; set;}
 	public bool exit_b{ get; set;}
-	public float _horizontal { get; set; }
+    public bool journal { get; set; }
+    public float _horizontal { get; set; }
 	public float _vertical { get; set; }
-	private bool joystick;
-	private int nextline;
-	private Texture face;
-	private float MinimalDialogTimer,InvTimer;
+
+    private bool joystick;
+	private float InvTimer, ChoiseDeley, LocationStart;
 	private CharacterController2D _controller;
-	public bool DontLoadPosStart;
 	private Vector3 CorrentPos, ExPos,camx;
-	public Texture CursorT;
+
 	private Rect CursorRect;
 	public bool steps = true;
-	void Awake()
+    private Mouse _mouse;
+    private BoxCollider2D _boxcollider, PlayerBox;
+    private Transform _transform;
+    private string StartLayerName, ForG;
+    private Menu menu;
+    public float menubackdeley { get; set; }
+
+    void Awake()
 	{
-		if (GameObject.Find ("Steps(Clone)") == null&&steps) {
+        LocationStart = 1;
+        EndDayLocation = null;
+        StartLayerName = "Default";
+
+        if (GetComponent<Menu>() == null) gameObject.AddComponent<Menu>();
+        ForG = "FG";
+        _transform = transform;
+
+        GameObject VA = GameObject.Find("VasilisA");
+
+        if (VA.GetComponent<CollList>() == null)
+            VA.AddComponent<CollList>();
+
+        if (VA.GetComponent<Rigidbody2D>() == null) VA.AddComponent<Rigidbody2D>();
+        if (VA.GetComponent<BoxCollider2D>() == null) VA.AddComponent<BoxCollider2D>();
+
+        VA.GetComponent<BoxCollider2D>().size = new Vector2(0.7f,1.8f);
+        VA.GetComponent<BoxCollider2D>().isTrigger = true;
+        VA.GetComponent<Rigidbody2D>().gravityScale = 0;
+
+        if (GameObject.Find ("Steps(Clone)") == null&&steps) {
 			GameObject Stepss  = new GameObject();
 			Stepss = (GameObject)Instantiate(Resources.Load("PrefabObjects/Steps"));
 			Stepss.transform.parent = GameObject.Find("VasilisA").transform;
 			GameObject.Find ("Steps(Clone)").transform.position = new Vector3(transform.position.x+0.3f,transform.position.y,0);
 		}
-		
-		Inv = GetComponent<Inventory> ();
-		Pers = GameObject.FindGameObjectsWithTag("Pers");
 
-		rectlable = new Rect (0, 0, Screen.width, 100f);
-		
-		
+       
+
+        Inv = GetComponent<Inventory> ();
+        
 		_controller = GetComponent<CharacterController2D>();
-		speednormal = speed; 
-	}
+        
+        speednormal = speed;
+       if(SceneManager.GetActiveScene().name!="CarRide") DayFinish = 1.2f;
+        else DayFinish = 3.2f;
 
-    private void Start()
+        if (SceneManager.GetActiveScene().name == "CarRide") draw = false;
+       
+
+    }
+
+    void Start()
     {
-		CursorT = Resources.Load<Texture2D> ("Interface/Cursor");
-		Cursor.visible = false;
-		if(GameObject.Find("VasilisA").GetComponent<SpriteRenderer>()!=null)GameObject.Find("VasilisA").GetComponent<SpriteRenderer>().enabled = draw;
+
+        if (GetComponent<Menu>() != null) menu = GetComponent<Menu>();
+
+        if (GameObject.Find("VasilisA").GetComponent<SpriteRenderer>()!=null)GameObject.Find("VasilisA").GetComponent<SpriteRenderer>().enabled = draw;
 		GetComponent<BoxCollider2D>().enabled = draw;
 
-		
+        if (GetComponent<AudioSource>() == null) gameObject.AddComponent<AudioSource>();
 		Au = gameObject.GetComponent<AudioSource>(); 
 		if (Au != null)
 						Au.playOnAwake  =true;
@@ -101,87 +122,200 @@ public static Movement Instance{get;private set;}
 		else if(PlayerPrefs.GetInt ("FaceVector") == -1)
 			isFacingRight = false;
 
-		Vector3 theScale = transform.localScale;
-		theScale.x *= PlayerPrefs.GetInt ("FaceVector");
-		transform.localScale = theScale;
-        if(!DontLoadPosStart)
-		SetVasInLevel ();
+        if (PlayerPrefs.GetInt("FaceVector") == 0) PlayerPrefs.SetInt("FaceVector", 1);
 
-		PlayerPrefs.SetString ("CorrLevel", Application.loadedLevelName);
+        if (flip)
+        {
+            Vector3 theScale = transform.localScale;
+            theScale.x *= PlayerPrefs.GetInt("FaceVector");
+            transform.localScale = theScale;
+        }
+
+        if (SceneManager.GetActiveScene().name == "Police" && PlayerPrefs.GetInt("Day") == 2&&
+            transform.localScale.x>0) Flip();
 
 
+        _mouse = GameObject.Find("Mouse(Clone)").GetComponent<Mouse>();
+
+        PlayerPrefs.SetString ("CorrLevel", Application.loadedLevelName);
+
+        if (SceneManager.GetActiveScene().name == PlayerPrefs.GetString("CorrLoadingLevel") &&
+            GameObject.Find(PlayerPrefs.GetString("PrevLoadingLevel") + "Exit") != null)
+        {
+            transform.position = GameObject.Find(PlayerPrefs.GetString("PrevLoadingLevel") + "Exit").transform.position;
+        }
+
+
+
+       
     }
 
 	void Update()
     {
+       // if (PlayerPrefs.GetString("CorrLoadingLevel") != SceneManager.GetActiveScene().name) PlayerPrefs.SetString("CorrLoadingLevel", SceneManager.GetActiveScene().name);
 
-		for (int i = 0; i<Input.GetJoystickNames ().Length; i++) {
+
+        if (GameObject.Find("5DayWave")==null&&PlayerPrefs.GetInt("Day") == 5&& PlayerPrefs.GetInt("KladbCrossEMPTYProspektPowerSPRT") == 1
+            && PlayerPrefs.GetInt("KladbCrossEMPTYProspektWildSPRT") == 1 && PlayerPrefs.GetInt("KladbCrossEMPTYMorgStreetSPRT") == 1)
+        {
+            GameObject Wave = new GameObject();
+            Wave = (GameObject)Instantiate(Resources.Load("PrefabObjects/5DayWave"));
+            Wave.name = "5DayWave";
+            Wave.transform.parent = transform;
+            Wave.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+        }
+
+
+        if (PlayerPrefs.GetInt("FirstRun") == 0)
+            PlayerPrefs.SetInt("FirstRun", 1);
+
+                if (Cursor.visible)
+        Cursor.visible = false;
+     
+        if (Input.GetKeyDown("=") && PlayerPrefs.GetInt("Day") < 8)
+            PlayerPrefs.SetInt("Day", PlayerPrefs.GetInt("Day") + 1);
+        if (Input.GetKeyDown("-") && PlayerPrefs.GetInt("Day") > 0)
+            PlayerPrefs.SetInt("Day", PlayerPrefs.GetInt("Day") - 1);
+
+
+        if (PlayerPrefs.GetInt("Day")>0) PlayerPrefs.SetInt("PickJournal", 1);
+
+         if(SceneManager.GetActiveScene().name!="6Day") coll_obj = GameObject.Find("VasilisA").GetComponent<CollList>().Getcollob();
+         else coll_obj = GameObject.Find("6DayColl").GetComponent<CollList>().Getcollob();
+
+        LayerMove();
+
+        for (int i = 0; i<Input.GetJoystickNames ().Length; i++) {
 			if (Input.GetJoystickNames () [i] != "")
 				joystick = true;
 			else
 				joystick = false;
 		}
-		InputSets();
+        if (!menu.Options&& menubackdeley <= Time.fixedTime)
+            InputSets();
 
 
 		if(isFacingRight)PlayerPrefs.SetInt ("FaceVector",1);
 		else PlayerPrefs.SetInt ("FaceVector",-1);
 
 	float move  = Input.GetAxis("Horizontal");
-
+        if(!menu.Options&& menubackdeley<=Time.fixedTime)
 		Controls();
-		Cursor.visible = false;
+		
     
     }
-/*	void LateUpdate()
-	{
-		PlayerPrefs.DeleteAll ();
-	}*/
-	public void Controls()
-	{
-		//PersDialog ();
-	
-		if (inventory_b && Inv!=null)
-		Inv.showinvent = !Inv.showinvent;
-	
-		if (Input.GetKeyDown ("l")) {
+
+    private void LayerMove()
+    {
+        PlayerBox = GetComponent<BoxCollider2D>();
+
+        for (int ob = 0; ob < GameObject.FindGameObjectsWithTag("LayerFlip").Length; ob++)
+        {
+            _boxcollider = GameObject.FindGameObjectsWithTag("LayerFlip")[ob].GetComponent<BoxCollider2D>();
+
+            _transform = GameObject.FindGameObjectsWithTag("LayerFlip")[ob].transform;
+
+
+           
+                if (_boxcollider.bounds.min.y > PlayerBox.bounds.min.y)
+                    _transform.GetComponent<SpriteRenderer>().sortingLayerName = StartLayerName;
+                else _transform.GetComponent<SpriteRenderer>().sortingLayerName = ForG;
+
+            
+            for (int i = 0; i < _transform.childCount; i++)
+            {
+                if (_transform.GetChild(i).GetComponent<SpriteRenderer>() != null)
+                {
+                    if (_boxcollider.bounds.min.y > PlayerBox.bounds.min.y)
+                        _transform.GetChild(i).GetComponent<SpriteRenderer>().sortingLayerName = StartLayerName;
+                    else _transform.GetChild(i).GetComponent<SpriteRenderer>().sortingLayerName = ForG;
+
+                }
+
+                
+            }
+        }
+    }
+
+
+    public void Controls()
+    {
+        //PersDialog ();
+        if (GameObject.Find("Journal") != null)
+    { 
+        if (coll_obj.Contains(GameObject.Find("Journal"))&&enter_b)
+        {
+               
+                PlayerPrefs.SetInt("PickJournal", 1);
+                Inv.JournalDraw = true;
+        }
+            if (PlayerPrefs.GetInt("PickJournal") == 1) Destroy(GameObject.Find("Journal"));
+    }
+
+        if (journal&&PlayerPrefs.GetInt("PickJournal")==1)
+            Inv.JournalDraw =!Inv.JournalDraw;
+        if (Inv.JournalDraw)
+        {
+            if (ChoiseDeley < Time.fixedTime)
+            {
+                if (_horizontal > 0&& PlayerPrefs.GetInt("CorrentPage")< (int)(PlayerPrefs.GetInt("LastSlot")/6))
+                 PlayerPrefs.SetInt("CorrentPage", PlayerPrefs.GetInt("CorrentPage")+1);
+                if (_horizontal < 0&& PlayerPrefs.GetInt("CorrentPage")>0)
+                    PlayerPrefs.SetInt("CorrentPage", PlayerPrefs.GetInt("CorrentPage") - 1);
+                ChoiseDeley = Time.fixedTime + 0.105f;
+            }
+        }
+        if (inventory_b && Inv!=null)
+        {
+            Inv.showinvent = !Inv.showinvent;
+
+        if (Inv.showinvent) MovePers = false;
+        else MovePers = true;
+        }
+
+        if (Input.GetKeyDown ("l")) {
 			PlayerPrefs.SetString ("CorrLevel", Application.loadedLevelName);
 
 			if (Input.GetKeyDown ("n"))
 			Application.LoadLevel(PlayerPrefs.GetString ("CorrLevel"));
 
 		}
-		if(Input.GetKeyDown("=")&&PlayerPrefs.GetInt("Day")<14)
-			PlayerPrefs.SetInt("Day",PlayerPrefs.GetInt("Day")+1);
-		if(Input.GetKeyDown("-")&&PlayerPrefs.GetInt("Day")>0)
-			PlayerPrefs.SetInt("Day",PlayerPrefs.GetInt("Day")-1);
+
+		
 
 		if (MovePers) {
 			CountSpeed ();
 
 
 
+            /*if (_mouse.pointnclick)
+            {
+                if (Input.GetMouseButton(0))
+                {
+                    camx = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, 1f));
+                    if (camx.x > transform.position.x)
+                        _normalHSpeed = 1;
+                    if (camx.x < transform.position.x)
+                        _normalHSpeed = -1;
+                    if (camx.y > transform.position.y)
+                        _normalVSpeed = 1;
+                    if (camx.y < transform.position.y)
+                        _normalVSpeed = -1;
+                }
 
-			if (Input.GetMouseButton (0)) {
-				camx = Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, 1f));
-				if (camx.x > transform.position.x)
-					_normalHSpeed = 1;
-				if (camx.x < transform.position.x)
-					_normalHSpeed = -1;
-				if (camx.y > transform.position.y)
-					_normalVSpeed = 1;
-				if (camx.y < transform.position.y)
-					_normalVSpeed = -1;
+                if (transform.position.x < camx.x + 0.2f && transform.position.x > camx.x - 0.2f)
+                    _normalHSpeed = 0;
+                if (transform.position.y < camx.y + 0.2f && transform.position.y > camx.y - 0.2f)
+                    _normalVSpeed = 0;
+            }
+            else
+            {*/
+                _normalHSpeed = _horizontal;
+                _normalVSpeed = _vertical;
+            //}
 
 
-			}
-			if (transform.position.x < camx.x + 0.2f && transform.position.x > camx.x - 0.2f)
-				_normalHSpeed = 0;
-			if (transform.position.y < camx.y + 0.2f && transform.position.y > camx.y - 0.2f)
-				_normalVSpeed = 0;
-
-			
-			if (speed > 0) {
+            if (speed > 0) {
 				if (_normalVSpeed != 0 || _normalHSpeed != 0)
 					anim.SetBool ("Move", true);
 				else
@@ -238,9 +372,65 @@ public static Movement Instance{get;private set;}
 						//transform.localPosition(Vector3());
 				}
     }
-	
-	
-	public void SetVasInLevel()
+
+    private void OnGUI()
+    {
+        if (LocationStart > 0)
+        {
+            Texture BlackFG = Resources.Load<Texture>("ItemIcons/GunPower");
+            Color guiColor = GUI.color; // Save the current GUI color
+            GUI.color = new Color(1, 1, 1, LocationStart);
+            LocationStart -= 0.015f;
+            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), BlackFG);
+            GUI.color = guiColor; // Get back to previous GUI color
+        }
+
+        if (DayFinish < 1.2)
+        {
+            MovePers = false;
+            Texture BlackFG = Resources.Load<Texture>("ItemIcons/GunPower");
+            Color guiColor = GUI.color; // Save the current GUI color
+            GUI.color = new Color(1, 1, 1, DayFinish);
+            DayFinish += 0.01f;
+            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), BlackFG);
+            GUI.color = guiColor; // Get back to previous GUI color
+
+
+            if (DayFinish >=1f)
+            {
+                if (PlusDay)
+                {
+                    PlayerPrefs.SetInt("Day", PlayerPrefs.GetInt("Day") + 1);
+                    PlayerPrefs.SetFloat("DayStart", 1);
+                    PlusDay = false;
+                }
+                if(EndDayLocation!=null&& EndDayLocation.Length>2)
+                SceneManager.LoadScene(EndDayLocation);
+               // DayFinish = 1.3f;
+            }
+
+
+        }
+
+     
+        if (PlayerPrefs.GetFloat("DayStart")> 0)
+        {
+            
+            Texture BlackFG = Resources.Load<Texture>("ItemIcons/GunPower");
+            Color guiColor = GUI.color; // Save the current GUI color
+            GUI.color = new Color(1, 1, 1, PlayerPrefs.GetFloat("DayStart"));
+            PlayerPrefs.SetFloat("DayStart", PlayerPrefs.GetFloat("DayStart") - 0.0025f);
+            GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), BlackFG);
+            GUI.color = guiColor; // Get back to previous GUI color
+
+
+           
+
+        }
+
+      
+    }
+    public void SetVasInLevel()
 	{	
 		if (GameObject.Find (PlayerPrefs.GetString ("PrevName") + "Exit") != null) {
 			Vector3 t = GameObject.Find (PlayerPrefs.GetString ("PrevName") + "Exit").transform.position;
@@ -253,33 +443,15 @@ public static Movement Instance{get;private set;}
 
 
 
-		private void OnGUI () {
-		
-		
-	
-
-		GUI.DrawTexture(new Rect(Event.current.mousePosition.x, Event.current.mousePosition.y, 50, 50), CursorT);
-		
-		/*if (DrawDialog) {
-			
-			if (i == dialogText.Length) {
-				i = 0;
-				startDialog = false;
-				PlayIn = false;
-				finalLine = finalLinePl; 
-			}
-			
-			
-		}*/
-	}
 	void InputSets()
 	{
 		
 		if (!joystick) {
 			_horizontal = Input.GetAxis ("Horizontal");
 			_vertical = Input.GetAxis ("Vertical");
-			//atack_b = Input.GetButtonDown ("Atack");
-			enter_b = Input.GetButtonDown ("Enter");
+            //atack_b = Input.GetButtonDown ("Atack");
+            journal = Input.GetButtonDown("Journal");
+            enter_b = Input.GetButtonDown ("Enter");
 		
 			exit_b = Input.GetButtonDown ("Exit");
 			menu_b = Input.GetButton ("Exit");
@@ -292,7 +464,9 @@ public static Movement Instance{get;private set;}
 			//atack_b = Input.GetKeyDown(KeyCode.JoystickButton2);
 			enter_b = Input.GetKeyDown (KeyCode.JoystickButton2);
 
-			exit_b = Input.GetKey (KeyCode.JoystickButton1);
+            journal = Input.GetButtonDown("Journal_J");
+
+            exit_b = Input.GetKey (KeyCode.JoystickButton1);
 			menu_b = Input.GetKey (KeyCode.JoystickButton9);
 			inventory_b = Input.GetButtonDown ("Inventory_J");
 		
@@ -324,9 +498,13 @@ public static Movement Instance{get;private set;}
 	{
 		draw = dr;
 	}
+    public void Save()
+    {
+        Inv.SaveInv();
+    }
 
 
-	private void OnTriggerStay2D(Collider2D c)
+    /*private void OnTriggerStay2D(Collider2D c)
 	{
 		
 		if(!coll_obj.Contains(c.gameObject))
@@ -344,8 +522,8 @@ public static Movement Instance{get;private set;}
 			coll_obj.Remove(c.gameObject);
 		}
 		
-	}
-	public List<GameObject> Getcollob()
+	}*/
+    public List<GameObject> Getcollob()
 	{
 		return coll_obj;
 	}

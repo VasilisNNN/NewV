@@ -19,7 +19,7 @@ public class Mix_ChangeItems : MonoBehaviour {
 	public bool AddCorrentItem = false;
 
 	private int prevI;
-	private TriggerMouse MouseTrig;
+	private Trigger MouseTrig;
 	private bool DraggI = false;
 
 	public AudioSource AudioSS;
@@ -34,7 +34,7 @@ private void Start()
 
 		//ItemList = new int[ItemNumber];
 		Inv = GameObject.Find("Vasilis").GetComponent<Inventory>();
-		MouseTrig = gameObject.GetComponent<TriggerMouse>();
+		MouseTrig = gameObject.GetComponent<Trigger>();
 		//prevI  = Inv.GetCorrentItemMouse();
 
 	}
@@ -75,14 +75,6 @@ if(AddCorrentItem&&Input.GetKeyDown(KeyCode.Mouse0))Inv.AddItem(ItemList[i]);
 CollisinWithItem = true;
 					
 }*/
-
-			if(CollisinWithItem&&Inv.GetCorrentItemMouse()==ItemList[i]&&AddPreviousItem&&DraggI)
-			{
-					if(prevI !=0)Inv.AddItem(prevI);
-				prevI = Inv.GetCorrentItemMouse();	
-					DraggI = false;
-			}
-
 
 }
 		

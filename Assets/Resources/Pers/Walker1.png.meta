@@ -18,32 +18,55 @@ TextureImporter:
     21300026: Walk2_13
     21300028: Walk2_14
     21300030: Walk2_15
-  serializedVersion: 2
+    21300032: Walker1_0
+    21300034: Walker1_1
+    21300036: Walker1_2
+    21300038: Walker1_3
+    21300040: Walker1_4
+    21300042: Walker1_5
+    21300044: Walker1_6
+    21300046: Walker1_7
+    21300048: Walker1_8
+    21300050: Walker1_9
+    21300052: Walker1_10
+    21300054: Walker1_11
+    21300056: Walker1_12
+    21300058: Walker1_13
+    21300060: Walker1_14
+    21300062: Walker1_15
+  externalObjects: {}
+  serializedVersion: 5
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
   seamlessCubemap: 0
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 1
     mipBias: -1
-    wrapMode: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -51,173 +74,363 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Walk2_0
+    - serializedVersion: 2
+      name: Walker1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1282
-        width: 583
-        height: 1280
+        x: 48
+        y: 687
+        width: 192
+        height: 661
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30394476a05f2a498ba09da032fa26b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_1
       rect:
         serializedVersion: 2
-        x: 583
-        y: 1282
-        width: 583
-        height: 1280
+        x: 367
+        y: 692
+        width: 186
+        height: 651
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e21990787708bed42895c31adddf3e27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_2
       rect:
         serializedVersion: 2
-        x: 1166
-        y: 1282
-        width: 583
-        height: 1280
+        x: 688
+        y: 689
+        width: 153
+        height: 661
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a98d1065a82b7304587d0d8b47205b79
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_3
       rect:
         serializedVersion: 2
-        x: 1749
-        y: 1282
-        width: 583
-        height: 1280
+        x: 1005
+        y: 696
+        width: 139
+        height: 652
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221343eddf6df744bb7c7bdf7cac207c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_4
       rect:
         serializedVersion: 2
-        x: 2332
-        y: 1282
-        width: 583
-        height: 1280
+        x: 1322
+        y: 682
+        width: 153
+        height: 673
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_5
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d6a0de00a45184cae1fb369cd728bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_5
       rect:
         serializedVersion: 2
-        x: 2915
-        y: 1282
-        width: 583
-        height: 1280
+        x: 1632
+        y: 686
+        width: 176
+        height: 679
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_6
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7000ccb1af5a3f14185a56ecfc4bb114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_6
       rect:
         serializedVersion: 2
-        x: 3498
-        y: 1282
-        width: 583
-        height: 1280
+        x: 1942
+        y: 687
+        width: 191
+        height: 677
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_7
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1124e0b2425654f94a298c63559b7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_7
       rect:
         serializedVersion: 2
-        x: 4081
-        y: 1282
-        width: 583
-        height: 1280
+        x: 2243
+        y: 682
+        width: 202
+        height: 673
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_8
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a35d682e382d9345a37dd78aad2965a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2
-        width: 583
-        height: 1280
+        x: 53
+        y: 0
+        width: 219
+        height: 679
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_9
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8efd8de8ec3e6504a996bb34144f6a2b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_9
       rect:
         serializedVersion: 2
-        x: 583
-        y: 2
-        width: 583
-        height: 1280
+        x: 394
+        y: 0
+        width: 181
+        height: 682
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_10
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5461a2b77bd62814b9de069f9cc37752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_10
       rect:
         serializedVersion: 2
-        x: 1166
-        y: 2
-        width: 583
-        height: 1280
+        x: 695
+        y: 0
+        width: 153
+        height: 687
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_11
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a938c039cdf3cb448975f6735464c7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_11
       rect:
         serializedVersion: 2
-        x: 1749
-        y: 2
-        width: 583
-        height: 1280
+        x: 997
+        y: 0
+        width: 166
+        height: 654
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_12
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94773e8afd3478b4181a1fe489d0e8c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_12
       rect:
         serializedVersion: 2
-        x: 2332
-        y: 2
-        width: 583
-        height: 1280
+        x: 1312
+        y: 0
+        width: 164
+        height: 675
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_13
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb19b18138781034b9f498ce3b4802a1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_13
       rect:
         serializedVersion: 2
-        x: 2915
-        y: 2
-        width: 583
-        height: 1280
+        x: 1608
+        y: 0
+        width: 195
+        height: 672
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_14
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1c889c0ec21e84a997571b42cec9c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_14
       rect:
         serializedVersion: 2
-        x: 3498
-        y: 2
-        width: 583
-        height: 1280
+        x: 1910
+        y: 0
+        width: 230
+        height: 677
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Walk2_15
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a98bf363f4e0354a873ab55b975af80
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Walker1_15
       rect:
         serializedVersion: 2
-        x: 4081
-        y: 2
-        width: 583
-        height: 1280
+        x: 2238
+        y: 1
+        width: 190
+        height: 661
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcf0776a0bec2b2429fec2ed82fec70d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5cdde91379e045b4489797d42c764ff5
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

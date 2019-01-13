@@ -1,70 +1,68 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class PickObject : MonoBehaviour {
 	
     
-	public bool Picked {get;set;}	
-    public int IconNum;
+
+    public int AddedItem = -1;
+	public int ItemNum = 0;
 	private Inventory Inv;
-	private Texture2D Enter,Exit;
+
 	private Movement pl;
-void Start()
+	private Mouse _mouse;
+    public bool DestroyAfterGetItem = false;
+    private bool enter;
+    private List<GameObject> coll_obj = new List<GameObject>();
+
+    void Start()
 	{ 
 		Inv = GameObject.Find("Vasilis").GetComponent<Inventory>();
-		Picked = false;	
-		Enter = Resources.Load<Texture2D> ("Interface/CursorHand");
-		Exit = Resources.Load<Texture2D> ("Interface/Cursor");
+
+
 		if (PlayerPrefs.GetInt ("Death" + name) == 1)
 			Destroy (gameObject);
 		if(GameObject.Find("Vasilis")!=null)
 			pl = GameObject.Find("Vasilis").GetComponent<Movement> ();
 
-
-	}
+        _mouse = GameObject.Find("Mouse(Clone)").GetComponent<Mouse>();
+    }
 	
 private	void Update()
 	{
+    
+    if (_mouse.pointnclick)
+    {
+        enter = Input.GetMouseButtonDown(0);
+        coll_obj = _mouse.GetCollObj();
+    }
+    else
+    {
+        enter = pl.enter_b;
+        coll_obj = pl.Getcollob();
+    }
 
-	 
-      if(Picked)
-		{
-			if(Input.GetMouseButtonDown(0))
+    if (enter&& coll_obj.Contains(gameObject))
 			{
-				if(Inv.CheckSlot()){
-			    PlayerPrefs.SetInt (name, -1);
-		        Inv.AddItem(IconNum);
-				//Inv.SaveInvDestroy(IconNum);
-				Inv.SaveInv();
-				Destroy(gameObject);
-				//Cursor.SetCursor (Exit, Vector2.zero, CursorMode.Auto);
-					pl.CursorT = Exit;
-					PlayerPrefs.SetInt("Death"+name,1);
-			}
+            if (AddedItem > -1)
+            {
+                Inv.AddItem(AddedItem, ItemNum);
 
-			}
-		}
-		
-	}
-	private void OnMouseOver()
-	{
-		//Cursor.SetCursor (Enter, Vector2.zero, CursorMode.Auto);
-		//if (pl.Getcollob ().Contains (gameObject)) {
-			pl.CursorT = Enter;
-			Picked = true;
-		//}
-		
-	}
+                if (DestroyAfterGetItem)
+                {
+
+                    Destroy(gameObject);
+                    PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "Destroy", 1);
+                    pl.Save();
+                }
+            }
+        }
+
 	
-	private void OnMouseExit()
-	{
-		if (Picked) {
-			//Cursor.SetCursor (Exit, Vector2.zero, CursorMode.Auto);
-			pl.CursorT = Exit;
-			Picked = false;
-		}
-
 	}
+
 
 	private void Load()
 	{

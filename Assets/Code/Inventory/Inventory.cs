@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class Inventory : MonoBehaviour {
 		 
@@ -12,8 +13,9 @@ public class Inventory : MonoBehaviour {
 	public List<Item> slots = new List<Item>();
 	
 	public bool showinvent{get;set;}
-	public bool showI{get;set;}
-	private ItemDatabase database;
+    public bool JournalDraw { get; set; }
+    //public bool showI{get;set;}
+    private ItemDatabase database;
 	private bool showTooltip;
 	private string tooltip;
 	
@@ -24,15 +26,33 @@ public class Inventory : MonoBehaviour {
 	private PickObject PickOb;
 	private int previIndex;
 	private Event e;
-	private int correntItem = 0;
-	private int correntItemNum = 0;
+    public int correntSlot { get; set; }
+
 	private bool isMultipleT = false;
 	private Item item;
 	private float mousedeley;
-	// Use this for initialization
-void Start () {
+    private Movement pl;
+    private Mouse _mouse;
+    private Texture Choise;
+    private Texture2D JournalBG,CrossFace;
+    
+    void Awake()
+	{
+        pl = GameObject.Find("Vasilis").GetComponent<Movement>();
+        
+        if (GameObject.Find ("Mouse") == null) {
+			GameObject Stepss  = new GameObject();
+			Stepss = (GameObject)Instantiate(Resources.Load("PrefabObjects/Mouse"));
+		}
+        _mouse = GameObject.Find("Mouse(Clone)").GetComponent<Mouse>();
+        Choise = Resources.Load<Texture>("Invent/Seed");
+        JournalBG = Resources.Load<Texture2D>("Invent/Journal");
+        CrossFace = Resources.Load<Texture2D>("Invent/CrossFace");
+    }
+    // Use this for initialization
+    void Start () {
 	
-		showI= true;
+		//showI= true;
 		slotX = 15;
 		slotY = 1;
 		for(int i = 0; i<(slotX*slotY);i++)
@@ -43,18 +63,45 @@ void Start () {
 		
 	    database = GameObject.FindGameObjectWithTag("ItemDatabase").GetComponent<ItemDatabase>();
 	    
-	
-	LoadInv();
-	}
-	
 
-void OnGUI()
+
+	LoadInv();
+
+		if (SceneManager.GetActiveScene ().name == "BombCraft")
+			showinvent = true;
+        /*AddItem (0, 2);
+        AddItem(1, 2);*/
+        /*AddItem (8, 4);
+		AddItem (9, 5);*/
+        AddItem(18, 300);
+    }
+    private void Update()
+    {
+        if (!_mouse.pointnclick&&showinvent)
+        {
+            if (pl._horizontal < 0 && mousedeley < Time.fixedTime&& correntSlot > 0)
+            {
+                correntSlot--;
+                mousedeley = Time.fixedTime + 0.2f;
+            }
+            if (pl._horizontal > 0 && mousedeley < Time.fixedTime&& correntSlot < slotX-1)
+            {
+                correntSlot++;
+                mousedeley = Time.fixedTime + 0.2f;
+            }
+        }
+    }
+
+    void OnGUI()
 	{
-		
-		tooltip = "";
+
+        if (JournalDraw)
+            Journal();
+
+            tooltip = "";
 		GUI.skin = skin;
 		
-		if(showinvent&&showI)
+		if(showinvent)
 		{
 			DrawInventory();
 			
@@ -68,24 +115,90 @@ void OnGUI()
 			
 			}
 			}
-		if(draggingItem)
+
+        if(GameObject.Find("Mouse(Clone)").GetComponent<Mouse>().pointnclick)
+		GUI.DrawTexture(new Rect(Event.current.mousePosition.x, Event.current.mousePosition.y, 50, 50), 
+			GameObject.Find("Mouse(Clone)").GetComponent<Mouse>().GetTexture());
+
+		if(draggingItem&&draggedItem!=null)
 		{
 			GUI.DrawTexture(new Rect(Event.current.mousePosition.x,Event.current.mousePosition.y,50,50),draggedItem.itemIcon);
+			GUI.Box(new Rect(Event.current.mousePosition.x,Event.current.mousePosition.y,50,50),draggedItem.itemNum.ToString(),skin.customStyles[3]);
 		}
 		
 	}
 
 
 
+    void Journal()
+    {
+        GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), JournalBG);
 
+        int CorrentPage = PlayerPrefs.GetInt("CorrentPage");
+        
+        float XPos = 0;
+        Texture2D facet;
+        for (int i = 0; i < 6; i++)
+        {
+           
+           
+                if (i < 3) XPos = 0;
+                else if(i >= 3) XPos = 1;
+
+            float Y = 20 + 150 * i - XPos * 150*3;
+
+            if (PlayerPrefs.GetString((CorrentPage * 6 + i) + "Face").Length > 1)
+            {
+                facet = Resources.Load<Texture2D>("Pers/Portrey/" + PlayerPrefs.GetString((CorrentPage * 6 + i) + "Face"));
+
+                GUI.DrawTexture(new Rect(20 + (Screen.width / 2) * XPos, Y, 150, 150), facet);
+
+                if (PlayerPrefs.GetInt(PlayerPrefs.GetString((CorrentPage * 6 + i) + "Name") + "Quest") == 1)
+                {
+                    GUI.DrawTexture(new Rect(20 + (Screen.width / 2) * XPos, Y, 150, 150), CrossFace);
+                    // print(PlayerPrefs.GetString((CorrentPage * 6 + i) + "Name") + "Quest");
+                }
+
+                if (PlayerPrefs.GetString((CorrentPage * 6 + i).ToString()).Length > 1)
+                    GUI.Box(new Rect(170 + (Screen.width / 2) * XPos, Y, Screen.width / 2 - 200, 150),
+                             PlayerPrefs.GetString((CorrentPage * 6 + i).ToString()), skin.customStyles[2]);
+
+            }
+            else
+            {
+                if (PlayerPrefs.GetString((CorrentPage * 6 + i).ToString()).Length > 1)
+                    GUI.Box(new Rect(20 + (Screen.width / 2) * XPos, Y, Screen.width / 2 - 50, 150),
+                             PlayerPrefs.GetString((CorrentPage * 6 + i).ToString()), skin.customStyles[2]);
+            }
+
+            if (i < 3) XPos = 0;
+            else XPos = 1;
+
+          
+
+           
+
+
+
+
+        }
+
+
+
+    }
 void DrawInventory()
 	{
 		int i  =0 ;
 		e = Event.current;
-	
-			for(int x= 0; x<slotX;x++)
+        float w = Screen.width / slotX - 10;
+        if (!_mouse.pointnclick)
+        {
+            GUI.DrawTexture(new Rect((w + 10) * correntSlot - 5f, Screen.height - 110, 80, 80), Choise);
+        }
+        
+        for (int x= 0; x<slotX;x++)
 			{
-				Rect slotRect = new Rect(x*70,Screen.height - 60,60,60);
+				Rect slotRect = new Rect(x* (w + 10), Screen.height - w, w, w);
 				GUI.Box(slotRect,"",skin.GetStyle("Slot"));
 			    slots[i] = inventory[i];
 				item = slots[i];
@@ -93,7 +206,13 @@ void DrawInventory()
 				if(slots[i].itemName != null)
 				{
 					GUI.DrawTexture(slotRect,slots[i].itemIcon);
-					if(slotRect.Contains(e.mousePosition))
+                float numw = slotRect.width / 2.1f;
+                GUI.Box(new Rect(slotRect.x+ slotRect.width -numw, slotRect.y+ slotRect.width-numw, numw, numw),slots[i].itemNum.ToString(),skin.customStyles[3]);
+
+                if (slots[correntSlot].itemDescEN != null)
+                GUI.Box(new Rect((w + 10) * correntSlot - 5f, Screen.height - slotRect.width-150, 150, 150), CreateTooltip(slots[correntSlot]), skin.customStyles[2]);
+                
+               /* if (slotRect.Contains(e.mousePosition))
 					{
 						tooltip = CreateTooltip(slots[i]);
 						showTooltip = true;
@@ -105,8 +224,8 @@ void DrawInventory()
 							draggingItem = true;
 							previIndex = i;
 							draggedItem = item;
-							correntItem = item.itemID;
-							correntItemNum = item.itemNum;	
+						    slots[i] = new Item ();
+							//correntItem = item.itemID;
 
 							inventory [i] = new Item ();
 						mousedeley = Time.fixedTime + 0.1f;						
@@ -119,14 +238,10 @@ void DrawInventory()
 						draggingItem = false;
 						draggedItem = null;						
 					}
-
-
-						
-						
-						
-					}
+                    
+					}*/
 					
-				}else{
+				}/*else{
 				if(slotRect.Contains(new Vector2(Input.mousePosition.x,Screen.height - Input.mousePosition.y)))
 					{
 					if(Input.GetMouseButtonDown(0)&& draggingItem&&mousedeley<Time.fixedTime)
@@ -138,7 +253,7 @@ void DrawInventory()
 						}
 					}
 					
-				}
+				}*/
 				if(tooltip == "")
 				{
 					showTooltip = false;
@@ -148,17 +263,24 @@ void DrawInventory()
 				
 				
 			}
-			
+
 
 		
 	}
 	
 	string CreateTooltip(Item item)
 	{
-		tooltip =  item.itemName + "\n\n" + item.itemDesc + "\n";
-		//tooltip = item.itemName;
-		return tooltip;
-		
+        
+            if (PlayerPrefs.GetInt("Language") == 1)
+                tooltip = item.itemDescEN;
+            else
+                tooltip = item.itemDescRU;
+
+        //tooltip = item.itemName;
+        
+
+        return tooltip;
+        
 	}
 	
 	private void UseCons(Item item,int slot,bool deleteItem)
@@ -185,20 +307,7 @@ void DrawInventory()
 		}
 	}
 	
-public bool CheckItem (int id)
-	{
-		bool result = true;
-		 for(int i = 0; i<inventory.Count;i++)
-		{
-		if(inventory[i].itemID == id)
-			{
-		     result = true;
-			 break;}
-		else result = false;
-			
-	    }
-	return result;
-	}
+
 
 public bool CheckSlot()
 	{
@@ -214,28 +323,69 @@ public bool CheckSlot()
 		}
 		return result;
 	}
-	
-	
-	
-	public void AddItem(int id)
+
+    public int CheckCorrentItem()
+    {
+        
+        return inventory[correntSlot].itemID;
+    }
+    public int CheckCorrentItemNum()
+    {
+
+        return inventory[correntSlot].itemNum;
+    }
+
+
+    public bool CheckItem (int id)
 	{
-	   for(int i = 0; i<inventory.Count;i++)
+		bool result = true;
+		for(int i = 0; i<inventory.Count;i++)
 		{
-			if(inventory[i].itemName == null)
+			if(inventory[i].itemID == id)
 			{
-				for(int j = 0;j<database.items.Count; j++)
+				result = true;
+				break;}
+			else result = false;
+
+		}
+		return result;
+	}
+
+	public void AddItem(int id,int numplus)
+	{
+		if (CheckItem(database.items[id].itemID))
+		{
+			for (int i = 0; i < inventory.Count; i++)
+			{
+
+				if (inventory[i].itemID == id)
 				{
-					if(database.items[j].itemID == id)
-					{
-						inventory[i] = database.items[j];
-						
-					}
-					
+					inventory[i].itemNum+=numplus;
+					break;
 				}
-				break;
 			}
-			
-			
+		}
+		else
+		{
+			for (int i = 0; i < inventory.Count; i++)
+			{
+				if (inventory[i].itemName == null)
+				{
+					for (int j = 0; j < database.items.Count; j++)
+					{
+						if (database.items[j].itemID == id)
+						{
+							inventory[i] = database.items[j];
+							inventory[i].itemNum+=numplus;
+
+						}
+
+					}
+					break;
+				}
+
+
+			}
 		}
 	}
 	
@@ -269,27 +419,72 @@ public bool CheckSlot()
 	}
 	public void RemoveSlot(int i)
 	{
-			slots[i] = new Item();
-		    draggingItem = false;
-			draggedItem = null;	
+
+
+        if (slots[i].itemNum <= 1)
+        {
+            slots[i] = new Item();
+            inventory[i] = new Item();
+            draggingItem = false;
+            draggedItem = null;
+        }
+        else
+        {
+            slots[i].itemNum--;
+         
+        }
+
 		    
-	}	
-	 public void SaveInv()
+	}
+
+    public void RemoveMultiSlot(int i,int numrem)
+    {
+
+
+        if (slots[i].itemNum <= numrem)
+        {
+            slots[i] = new Item();
+            inventory[i] = new Item();
+            draggingItem = false;
+            draggedItem = null;
+        }
+        else
+        {
+            slots[i].itemNum-= numrem;
+
+        }
+
+
+    }
+    public void SaveInv()
 	{
-		for (int i = 0; i<inventory.Count; i++) {
-			
-						if (draggingItem && inventory [i].itemName == null) {
-								inventory [i] = draggedItem;
-								PlayerPrefs.SetInt ("Inv " + i, inventory [i].itemID);	
-								break;
-						}
-				}
+		for (int i = 0; i< inventory.Count; i++) {
 
+            if (_mouse.pointnclick)
+            {
+                if (draggingItem && inventory[i].itemName == null)
+                {
+                    slots[i] = draggedItem;
+                    PlayerPrefs.SetInt("Inv " + i, inventory[i].itemID);
+                    PlayerPrefs.SetInt("Invnum" + i, inventory[i].itemNum);
+                    break;
+                }
+                else {
 
-		for(int i = 0; i<inventory.Count;i++)
-		{
-			PlayerPrefs.SetInt("Inv " + i,inventory[i].itemID);	
-		}
+                    PlayerPrefs.SetInt("Inv " + i, inventory[i].itemID);
+                    PlayerPrefs.SetInt("Invnum" + i, inventory[i].itemNum);
+
+                }
+
+            }
+            else
+            {
+                
+                PlayerPrefs.SetInt("Inv " + i, inventory[i].itemID);
+                PlayerPrefs.SetInt("Invnum" + i, inventory[i].itemNum);
+                
+            }
+        }
 
 
 		//print("Saved Inv");
@@ -303,12 +498,16 @@ public bool CheckSlot()
 		}
 		//print("Saved Inv");
 	}
-	 public void LoadInv()
+	 private void LoadInv()
 	{
 		for(int i = 0; i<inventory.Count;i++)
 		{
-		inventory[i] = PlayerPrefs.GetInt("Inv " + i,-1)>= 0 ? database.items[PlayerPrefs.GetInt("Inv " + i)] : new Item();
-		}
+            
+            inventory[i] = PlayerPrefs.GetInt("Inv " + i,-1)>= 0 ? database.items[PlayerPrefs.GetInt("Inv " + i)] : new Item();
+
+            if(PlayerPrefs.GetInt("Invnum" + i)>0)inventory[i].itemNum = PlayerPrefs.GetInt("Invnum" + i);
+
+        }
 		//print("Load Inv");
 	}
 	
@@ -321,23 +520,15 @@ public bool CheckSlot()
 		
 	}
 
-public int GetCorrentItemMouse()
-	{
-	return correntItem;
-	}
-	
+
+
 	
 public bool isMultiple()
 	{	
 		return isMultipleT;
 	}
 
-	
-	
-public int GetItemNum()
-	{
-	 return correntItemNum;
-	}
+
 
 
 public int GetItemDataNum(int id)
@@ -346,21 +537,71 @@ public int GetItemDataNum(int id)
 	}
 
 
-public int GetInvCount()
+public int GetInvNum()
 	{
-		return inventory.Count;
+		return draggedItem.itemNum;
 	}
 
+	public void SetInvNum(int n)
+	{
+		draggedItem.itemNum += n;
+	}
 
 public void SetItemNum(int id,int num)
 	{
 	 database.items[id].itemNum = num;
-	print ("itemNum " + database.items[id].itemNum);
-	}
 	
+	}
+
+	public void ItemToContainer(int plus_minus)
+	{
+		if (draggedItem != null) {
+
+			int n = draggedItem.itemNum - plus_minus;
+			//print (n);
+				if (draggedItem.itemNum <= plus_minus) {
+					draggedItem = null;
+					draggingItem = false;
+				} 
+				else{
+				   // draggedItem.itemNum =  draggedItem.itemNum- plus_minus;
+
+				for (int i = 0; i < inventory.Count; i++)
+				{
+					if (inventory[i].itemName == null)
+					{
+						for (int j = 0; j < database.items.Count; j++)
+						{
+							if (database.items[j].itemID == draggedItem.itemID)
+							{
+								inventory[i] = draggedItem;
+								inventory[i].itemNum=n;
+
+							}
+
+						}
+						break;
+					}
+
+
+				}
+
+					draggedItem = null;
+					draggingItem = false;
+				} 
+			}
+			
+		
+
+	}
+
 public bool GetDraggingItem()
 	{
 		return draggingItem;
 	}
 
+	public Item GetDraggedItem()
+	{
+		return draggedItem;
+	}
 }

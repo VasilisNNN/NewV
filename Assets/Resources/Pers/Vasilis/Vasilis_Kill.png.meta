@@ -1,103 +1,125 @@
 fileFormatVersion: 2
 guid: 46b5d78fb6e675f478d3a20b85787d25
-timeCreated: 1428107363
-licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Vasilis_Kill_0
-    21300002: Vasilis_Kill_1
-    21300004: Vasilis_Kill_2
-    21300006: Vasilis_Kill_3
-    21300008: Vasilis_Kill_4
-    21300010: Vasilis_Kill_5
-    21300012: Vasilis_Kill_6
-    21300014: Vasilis_Kill_7
-    21300016: Vasilis_Kill_8
-    21300018: Vasilis_Kill_9
-    21300020: Vasilis_Kill_10
-    21300022: Vasilis_Kill_11
-    21300024: Vasilis_Kill_12
-    21300026: Vasilis_Kill_13
-    21300028: Vasilis_Kill_14
-    21300030: Vasilis_Kill_15
-    21300032: Vasilis_Kill_16
-    21300034: Vasilis_Kill_17
-    21300036: Vasilis_Kill_18
-    21300038: Vasilis_Kill_19
-    21300040: Vasilis_Kill_20
-    21300042: Vasilis_Kill_21
-    21300044: Vasilis_Kill_22
-    21300046: Vasilis_Kill_23
-    21300048: Vasilis_Kill_24
-    21300050: Vasilis_Kill_25
-    21300052: Vasilis_Kill_26
-    21300054: Vasilis_Kill_27
-    21300056: Vasilis_Kill_28
-    21300058: Vasilis_Kill_29
-    21300060: Vasilis_Kill_30
-    21300062: Vasilis_Kill_31
-    21300064: Vasilis_Kill_32
-    21300066: Vasilis_Kill_33
-    21300068: Vasilis_Kill_34
-    21300070: Vasilis_Kill_35
-    21300072: Vasilis_Kill_36
-    21300074: Vasilis_Kill_37
-    21300076: Vasilis_Kill_38
-    21300078: Vasilis_Kill_39
-    21300080: Vasilis_Kill_40
-    21300082: Vasilis_Kill_41
-    21300084: Vasilis_Kill_42
-    21300086: Vasilis_Kill_43
-    21300088: Vasilis_Kill_44
-    21300090: Vasilis_Kill_45
-    21300092: Vasilis_Kill_46
-    21300094: Vasilis_Kill_47
-  serializedVersion: 2
+    21300000: VK_0
+    21300002: VK_1
+    21300004: VK_2
+    21300006: VK_3
+    21300008: VK_16
+    21300010: VK_17
+    21300012: VK_18
+    21300014: VK_19
+    21300016: VK_32
+    21300018: VK_33
+    21300020: VK_34
+    21300022: VK_35
+    21300024: VK_4
+    21300026: VK_5
+    21300028: VK_6
+    21300030: VK_7
+    21300032: VK_20
+    21300034: VK_21
+    21300036: VK_22
+    21300038: VK_23
+    21300040: VK_36
+    21300042: VK_37
+    21300044: VK_38
+    21300046: VK_39
+    21300048: VK_8
+    21300050: VK_9
+    21300052: VK_10
+    21300054: VK_11
+    21300056: VK_24
+    21300058: VK_25
+    21300060: VK_26
+    21300062: VK_27
+    21300064: VK_40
+    21300066: VK_41
+    21300068: VK_42
+    21300070: VK_43
+    21300072: VK_12
+    21300074: VK_13
+    21300076: VK_14
+    21300078: VK_15
+    21300080: VK_28
+    21300082: VK_29
+    21300084: VK_30
+    21300086: VK_31
+    21300088: VK_44
+    21300090: VK_45
+    21300092: VK_46
+    21300094: VK_47
+  externalObjects: {}
+  serializedVersion: 5
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
     mipMapFadeDistanceStart: 1
     mipMapFadeDistanceEnd: 3
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
   cubemapConvolution: 0
-  cubemapConvolutionSteps: 8
-  cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -2
   maxTextureSize: 4096
   textureSettings:
+    serializedVersion: 2
     filterMode: -1
     aniso: 16
     mipBias: -1
-    wrapMode: 1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
   nPOTScale: 0
   lightmap: 0
-  rGBM: 0
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: 2
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: Vasilis_Kill_0
+    - serializedVersion: 2
+      name: VK_0
       rect:
         serializedVersion: 2
         x: 0
@@ -105,9 +127,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_1
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0551c73f82f05ae4291471c84d750506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_1
       rect:
         serializedVersion: 2
         x: 332
@@ -115,9 +147,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_2
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5441d6689fd806c48b9d359f7ea2d2a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_2
       rect:
         serializedVersion: 2
         x: 664
@@ -125,9 +167,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_3
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a449d4eb11b8504595aae63cdd1741c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_3
       rect:
         serializedVersion: 2
         x: 996
@@ -135,9 +187,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_4
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c417a14a839bb9848b769180c20543db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_16
       rect:
         serializedVersion: 2
         x: 1328
@@ -145,9 +207,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_5
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5877af7a5533c547b39220a92f81e20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_17
       rect:
         serializedVersion: 2
         x: 1660
@@ -155,9 +227,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_6
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ddab0b86a8fb6b4a8b8a41babb340d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_18
       rect:
         serializedVersion: 2
         x: 1992
@@ -165,9 +247,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_7
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c00a1c81e0a294e91938a7e3861214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_19
       rect:
         serializedVersion: 2
         x: 2324
@@ -175,9 +267,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_8
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0235dcf708325e4f9bb1548f73d6ec3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_32
       rect:
         serializedVersion: 2
         x: 2656
@@ -185,9 +287,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_9
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81de4128ec1875a4686b9ea448f6fd3a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_33
       rect:
         serializedVersion: 2
         x: 2988
@@ -195,9 +307,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_10
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29e842226bca7cd4ebffad0701da99dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_34
       rect:
         serializedVersion: 2
         x: 3320
@@ -205,9 +327,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_11
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1fe65c9226e55a4d837b6a7c4212753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_35
       rect:
         serializedVersion: 2
         x: 3652
@@ -215,9 +347,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_12
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56e757666c3c0624d836df7e8489c5ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_4
       rect:
         serializedVersion: 2
         x: 0
@@ -225,9 +367,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_13
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c617b2c8fd89db049ab756d2d0b73c28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_5
       rect:
         serializedVersion: 2
         x: 332
@@ -235,9 +387,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_14
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7de98f3495eb140b4e09242688278e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_6
       rect:
         serializedVersion: 2
         x: 664
@@ -245,9 +407,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_15
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1713fe49517a9174f8e9dcf2f2f92078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_7
       rect:
         serializedVersion: 2
         x: 996
@@ -255,9 +427,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_16
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a72d9844369c0bd459d897301b72e1f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_20
       rect:
         serializedVersion: 2
         x: 1328
@@ -265,9 +447,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_17
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ea1e8c21d0b84b459c028e3245bd9d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_21
       rect:
         serializedVersion: 2
         x: 1660
@@ -275,9 +467,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_18
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b47baea88a2dc46a9e2702062e4f8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_22
       rect:
         serializedVersion: 2
         x: 1992
@@ -285,9 +487,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_19
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e05d10536511c048bf3828599088d39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_23
       rect:
         serializedVersion: 2
         x: 2324
@@ -295,9 +507,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_20
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44fd9edcb0ef4d14c9b95607a0154688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_36
       rect:
         serializedVersion: 2
         x: 2656
@@ -305,9 +527,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_21
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef7a983817d130488903e62ff965cc0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_37
       rect:
         serializedVersion: 2
         x: 2988
@@ -315,9 +547,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_22
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60840b16063550a4785e797f7319c398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_38
       rect:
         serializedVersion: 2
         x: 3320
@@ -325,9 +567,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_23
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f7d8adee519c7c47987c2c3513bdca0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_39
       rect:
         serializedVersion: 2
         x: 3652
@@ -335,9 +587,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_24
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a38badedb57c5bf43a4d3469b1c4546b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_8
       rect:
         serializedVersion: 2
         x: 0
@@ -345,9 +607,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_25
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7354046058c6e3946a5ade03736ffdf3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_9
       rect:
         serializedVersion: 2
         x: 332
@@ -355,9 +627,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_26
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587d78fd0703ead49864f886ec1d5db1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_10
       rect:
         serializedVersion: 2
         x: 664
@@ -365,9 +647,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_27
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d81f0cce3a81ff41a58d6a5be5c9233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_11
       rect:
         serializedVersion: 2
         x: 996
@@ -375,9 +667,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_28
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5731c8548ae254fa6d08f86abda631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_24
       rect:
         serializedVersion: 2
         x: 1328
@@ -385,9 +687,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_29
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3237aced50ada2549b9b1ca13297f9f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_25
       rect:
         serializedVersion: 2
         x: 1660
@@ -395,9 +707,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_30
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8ca0159d9c8f740b9478a61ed92d55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_26
       rect:
         serializedVersion: 2
         x: 1992
@@ -405,9 +727,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_31
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3e440558103bb540805e449426cfe68
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_27
       rect:
         serializedVersion: 2
         x: 2324
@@ -415,9 +747,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_32
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccdbee64dcc767f408e3b8e6cf023715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_40
       rect:
         serializedVersion: 2
         x: 2656
@@ -425,9 +767,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_33
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9449f593e4ab99a42a868b183d131b2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_41
       rect:
         serializedVersion: 2
         x: 2988
@@ -435,9 +787,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_34
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbbc2da2dc8b77846b5327f5f3005d38
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_42
       rect:
         serializedVersion: 2
         x: 3320
@@ -445,19 +807,39 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_35
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3710ea5809ff30442b362efdb0dde399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_43
       rect:
         serializedVersion: 2
         x: 3652
-        y: 455
+        y: 449
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_36
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d82cbb8da9a39d143bd9c77db025b9f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_12
       rect:
         serializedVersion: 2
         x: 0
@@ -465,9 +847,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_37
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51f6c784e6f1782479c3680c80f1dcab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_13
       rect:
         serializedVersion: 2
         x: 332
@@ -475,9 +867,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_38
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c5edf77c140c247b6f39ff1ed06dcd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_14
       rect:
         serializedVersion: 2
         x: 664
@@ -485,9 +887,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_39
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b99bf75ed1d31c488d21b1db036d522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_15
       rect:
         serializedVersion: 2
         x: 996
@@ -495,9 +907,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_40
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05d74325d76f524a9ab91f254dadefb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_28
       rect:
         serializedVersion: 2
         x: 1328
@@ -505,9 +927,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_41
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8935f53b2bc668946957452e115bb69d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_29
       rect:
         serializedVersion: 2
         x: 1660
@@ -515,9 +947,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_42
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6708c82c1995274fa514c61e40be106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_30
       rect:
         serializedVersion: 2
         x: 1992
@@ -525,9 +967,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_43
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc4267d67b160c640aaf40075361cd8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_31
       rect:
         serializedVersion: 2
         x: 2324
@@ -535,9 +987,19 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_44
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c55b8ba39af483488b7365e835cbc8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_44
       rect:
         serializedVersion: 2
         x: 2656
@@ -545,19 +1007,39 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_45
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cf6ee7b9e197044db03b732d4c8aa97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_45
       rect:
         serializedVersion: 2
         x: 2988
-        y: 3
+        y: 6
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_46
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab0cf9c4415ead24394d36497796056c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_46
       rect:
         serializedVersion: 2
         x: 3320
@@ -565,18 +1047,45 @@ TextureImporter:
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Vasilis_Kill_47
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220de418bdcaf194dbe079c04015b558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VK_47
       rect:
         serializedVersion: 2
-        x: 3652
-        y: 3
+        x: 3649
+        y: 10
         width: 332
         height: 452
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd8d3ad915d635345976db58a759d3d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9b9e862258a9cc5468ad7ca702dd8174
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

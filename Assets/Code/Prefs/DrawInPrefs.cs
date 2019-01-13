@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class DrawInPrefs : MonoBehaviour {
     public GameObject[] Targets;
@@ -9,60 +10,53 @@ public class DrawInPrefs : MonoBehaviour {
 	public bool DestroyIfNotEquel;
 	public bool DestroyIfEquel;
 	public bool OnlyOnStart;
-	void Awake () {	
-		//print ("Death"+PlayerPrefs.GetInt (name+"Death"));
-		if (PlayerPrefs.GetInt ("AllDAreAlive") == 1) {
-			for (int i = 0; i < Targets.Length; i++) {
-				PlayerPrefs.DeleteKey (PrefName [i]); 
-			}
-		}
-	}
-	void Start()
-	{
-		if(OnlyOnStart)Floatonoff ();
-
-	}
-
+	void Awake () {
+        //print ("Death"+PlayerPrefs.GetInt (name+"Death"));
+        /*if (PlayerPrefs.GetInt(name + SceneManager.GetActiveScene().name + "Destroy") == 1&& DestroyIfEquel)
+            Destroy(gameObject);*/
+    }
 	void Update () {
-		if(!OnlyOnStart)Floatonoff ();
-		if (PrefString.Length > 0) 
+		
+		if (Targets.Length > 0) 
 	    {
 
 			for (int i = 0; i < Targets.Length; i++) {
-				if (PlayerPrefs.GetString (PrefName [i]) == PrefString [i]) {
-					Draw(true,i);
+				if (PlayerPrefs.GetInt (PrefName [i]) == PrefNum [i]) {
+                    {
+                       // Draw(true, Targets[i]);
+                        if (DestroyIfEquel)
+                        {
+                            Destroy(gameObject);
+                           // PlayerPrefs.SetInt(name+SceneManager.GetActiveScene().name+"Destroy",1);
+                        }
+                    }
 				} else {
-					Draw(false,i);
-				}
+					//Draw(false,Targets[i]);
+                    if (DestroyIfNotEquel)
+                    {
+                        Destroy(gameObject);
+                       // PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "Destroy", 1);
+                    }
+                }
 			}
 	
 		}
 	}
-	void Floatonoff()
-	{
-		if (PrefNum.Length > 0) {
-			for (int i = 0; i < Targets.Length; i++) {
-				if (PlayerPrefs.GetFloat (PrefName [i]) == PrefNum [i]) {
-					{
-						if(DestroyIfEquel)Destroy(Targets[i]);
-						else if(!DestroyIfNotEquel)Draw(true,i);
-					}
-					
-				} else {
-					
-					if(DestroyIfNotEquel)Destroy(Targets[i]);
-					else if(!DestroyIfEquel)Draw(false,i);
-				}
-			}
-			
-		}
-	}
-	void Draw(bool tf, int i )
-	{
-		if (Targets [i].GetComponent<SpriteRenderer> () != null)
-		Targets [i].GetComponent<SpriteRenderer> ().enabled = tf;
-		if (Targets [i].GetComponent<BoxCollider> () != null)
-			Targets [i].GetComponent<BoxCollider> ().enabled = tf;
 
+	void Draw(bool tf, GameObject i )
+	{
+		if (i.GetComponent<SpriteRenderer> () != null)
+		    i.GetComponent<SpriteRenderer> ().enabled = tf;
+		if (i.GetComponent<BoxCollider> () != null)
+			i.GetComponent<BoxCollider> ().enabled = tf;
+		if (i.GetComponent<PolygonCollider2D> () != null)
+			i.GetComponent<PolygonCollider2D> ().enabled = tf;
+		if (i.GetComponent<AudioSource> () != null) {
+			if(tf){
+				if(!i.GetComponent<AudioSource> ().isPlaying)
+				i.GetComponent<AudioSource> ().Play ();
+			}
+			else i.GetComponent<AudioSource> ().Stop ();
+		}
 	}
 }

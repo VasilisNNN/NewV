@@ -2,11 +2,11 @@
 using System.Collections;
 
 public class MouseExit : MonoBehaviour {
-	private TriggerMouse exit;
+	private Trigger exit;
 	public string levelname;
 	// Use this for initialization
 	void Start () {
-		exit = GetComponent<TriggerMouse> ();
+		exit = GetComponent<Trigger> ();
 	}
 	
 	// Update is called once per frame

@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Settings : MonoBehaviour {
-	private TriggerMouse exit;
-	private TriggerMouse screensize;
+	private Trigger exit;
+	private Trigger screensize;
 
 	private int screenNum ;
-	private TriggerMouse LT,RT,RU,EN;
+	private Trigger LT,RT,RU,EN;
 	private NumberCount NC;
 	private int ScrW;
 	public Sprite[] sprts;
@@ -23,15 +24,15 @@ public class Settings : MonoBehaviour {
 			screenNum = 2;
 	
 	
-		exit = GameObject.Find ("Exitset").GetComponent<TriggerMouse> ();
-		screensize = GameObject.Find ("Size").GetComponent<TriggerMouse> ();
+		exit = GameObject.Find ("Exitset").GetComponent<Trigger> ();
+		screensize = GameObject.Find ("Size").GetComponent<Trigger> ();
 		sizeRend = GameObject.Find ("Size").GetComponent<SpriteRenderer> ();
 
-		LT = GameObject.Find ("LeftTrigger").GetComponent<TriggerMouse> ();
-		RT = GameObject.Find ("RightTrigger").GetComponent<TriggerMouse> ();
+		LT = GameObject.Find ("LeftTrigger").GetComponent<Trigger> ();
+		RT = GameObject.Find ("RightTrigger").GetComponent<Trigger> ();
 		NC = GameObject.Find ("Sound").GetComponent<NumberCount> ();
-		RU = GameObject.Find ("RU").GetComponent<TriggerMouse> ();
-		EN = GameObject.Find ("EN").GetComponent<TriggerMouse> ();
+		RU = GameObject.Find ("RU").GetComponent<Trigger> ();
+		EN = GameObject.Find ("EN").GetComponent<Trigger> ();
 	}
 
 	void Update () {
@@ -67,7 +68,7 @@ public class Settings : MonoBehaviour {
 		
 
 			if (exit.GetClicked ()) {
-				Application.LoadLevel ("StartMenu");
+                SceneManager.LoadScene("StartMenu");
 					Screen.SetResolution (ScrW, 768, Screen.fullScreen);
 			}
 
