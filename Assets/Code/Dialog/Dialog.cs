@@ -93,7 +93,7 @@ public class Dialog : MonoBehaviour {
             if (coll_obj.Contains(gameObject))
             {
 
-                if (enter && MinDialogTime < Time.fixedTime&&!NoEnter&& pl.DayFinish>=1&&texB!=null)
+                if (enter && MinDialogTime < Time.fixedTime&& pl.DayFinish>=1&&texB!=null)
                 {
 
                     if (PlayIn && CorrentLine < texB.Length)
@@ -233,7 +233,10 @@ public class Dialog : MonoBehaviour {
 
         if (texB.Length > 0)
         {
-          
+            if (GetComponent<AudioSource>() != null && GetComponent<Trigger>() == null)
+            {
+                if(!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().Play();
+            }
 
             PosM(texB[PlayerPrefs.GetInt(name + "Dialog")].Length);
 
