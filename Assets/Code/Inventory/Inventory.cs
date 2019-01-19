@@ -73,7 +73,13 @@ public class Inventory : MonoBehaviour {
         AddItem(1, 2);*/
         /*AddItem (8, 4);
 		AddItem (9, 5);*/
-        AddItem(18, 300);
+
+        //AddPeterParts
+       /* AddItem (26, 1);
+       AddItem (27, 1);
+       AddItem (28, 1);
+       AddItem (29, 1);*/
+        //AddItem(18, 300);
     }
     private void Update()
     {

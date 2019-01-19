@@ -93,7 +93,7 @@ public class Dialog : MonoBehaviour {
             if (coll_obj.Contains(gameObject))
             {
 
-                if (enter && MinDialogTime < Time.fixedTime&&!NoEnter&& pl.DayFinish>=1&&texB!=null)
+                if (enter && MinDialogTime < Time.fixedTime&& pl.DayFinish>=1&&texB!=null)
                 {
 
                     if (PlayIn && CorrentLine < texB.Length)
@@ -209,7 +209,7 @@ public class Dialog : MonoBehaviour {
             }
 
             rectlable = new Rect(XPosD, YPosD, fwidth, fheight);
-            DrawLines();
+          if(!GameObject.Find("Vasilis").GetComponent<Inventory>().JournalDraw)DrawLines();
 
 
         }
@@ -221,7 +221,7 @@ public class Dialog : MonoBehaviour {
         if ((19 * (stringslength / 16)) >= 75)
             fheight = 35 + 19 * stringslength / 16;
         else
-            fheight = 110;
+            fheight = 140;
         fwidth = 30 * 10;
         
 
@@ -233,7 +233,10 @@ public class Dialog : MonoBehaviour {
 
         if (texB.Length > 0)
         {
-          
+            if (GetComponent<AudioSource>() != null && GetComponent<Trigger>() == null)
+            {
+                if(!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().Play();
+            }
 
             PosM(texB[PlayerPrefs.GetInt(name + "Dialog")].Length);
 
@@ -266,7 +269,9 @@ public class Dialog : MonoBehaviour {
                 if (PlayerPrefs.GetInt("Language") == 1) nextt = "(next - e)";
                 else nextt = "(далее - e)";
 
+                if(!VasilisMind)
                 GUI.Box(new Rect(rectlable.x + rectlable.width - 120, rectlable.y + rectlable.height - 30, 140, 30), nextt, skin.customStyles[5]);
+                else GUI.Box(new Rect(rectlable.x + rectlable.width - 150, rectlable.y + rectlable.height - 45, 140, 30), nextt, skin.customStyles[5]);
             }
         }
 
