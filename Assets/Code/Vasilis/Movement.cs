@@ -55,9 +55,13 @@ public class Movement : MonoBehaviour {
     private string StartLayerName, ForG;
     private Menu menu;
     public float menubackdeley { get; set; }
+    public float StepsVolume = 0;
+    public UnityEngine.Audio.AudioMixer mg;
 
     void Awake()
 	{
+        mg = Resources.Load<UnityEngine.Audio.AudioMixer>("PrefabObjects/NewAudioMixer");
+
         LocationStart = 1;
         EndDayLocation = null;
         StartLayerName = "Default";
@@ -152,7 +156,8 @@ public class Movement : MonoBehaviour {
 
 	void Update()
     {
-       // if (PlayerPrefs.GetString("CorrLoadingLevel") != SceneManager.GetActiveScene().name) PlayerPrefs.SetString("CorrLoadingLevel", SceneManager.GetActiveScene().name);
+        // if (PlayerPrefs.GetString("CorrLoadingLevel") != SceneManager.GetActiveScene().name) PlayerPrefs.SetString("CorrLoadingLevel", SceneManager.GetActiveScene().name);
+       if(StepsVolume>-80&& StepsVolume<20) mg.SetFloat("Steps", StepsVolume);
 
 
         if (GameObject.Find("5DayWave")==null&&PlayerPrefs.GetInt("Day") == 5&& PlayerPrefs.GetInt("KladbCrossEMPTYProspektPowerSPRT") == 1
