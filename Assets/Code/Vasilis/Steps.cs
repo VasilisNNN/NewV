@@ -13,10 +13,15 @@ public class Steps : MonoBehaviour {
     public AudioClip[] MetalClips;
 
     public AudioClip[] ConcreteClips;
+    public AudioClip[] WoodClips;
+    public AudioClip[] AsphaltClips;
+    public AudioClip[] CarpetClips;
+
+
     private AudioClip[] MainClipArray;
 
-    private int[] meatsteps,concretesteps,metalsteps;
-    private GameObject[] MeatFloor, ConcreteFloor,MetalFloor;
+    private int[] meatsteps,concretesteps,metalsteps, woodsteps, asphaltsteps, carpetsteps;
+    private GameObject[] MeatFloor, ConcreteFloor,MetalFloor, WoodFloor, AsphaltFloor, CarpetFloor;
     
 
     private int s;
@@ -26,12 +31,18 @@ public class Steps : MonoBehaviour {
         MeatFloor = GameObject.FindGameObjectsWithTag("Mud");
         ConcreteFloor = GameObject.FindGameObjectsWithTag("Concrete");
         MetalFloor = GameObject.FindGameObjectsWithTag("Metal");
+        WoodFloor = GameObject.FindGameObjectsWithTag("Wood");
+        AsphaltFloor = GameObject.FindGameObjectsWithTag("Asphalt");
+        CarpetFloor = GameObject.FindGameObjectsWithTag("Carpet");
 
         meatsteps = new int[MeatFloor.Length];
         concretesteps = new int[ConcreteFloor.Length];
         metalsteps = new int[MetalFloor.Length];
+        woodsteps = new int[WoodFloor.Length];
+        asphaltsteps = new int[AsphaltFloor.Length];
+        carpetsteps = new int[CarpetFloor.Length];
 
-		pl = GameObject.Find("Vasilis").GetComponent<Movement>();
+        pl = GameObject.Find("Vasilis").GetComponent<Movement>();
         AS = GetComponent<AudioSource>();
 
 
@@ -88,8 +99,50 @@ public class Steps : MonoBehaviour {
             
            
         }
+        if (WoodClips.Length > 0)
+        {
 
-        if (meatsteps.Sum() <= 0&& concretesteps.Sum() <= 0 && metalsteps.Sum() <= 0)
+            for (int i = 0; i < WoodFloor.Length; i++)
+            {
+                if (coll_obj.Contains(WoodFloor[i])) woodsteps[i] = 1;
+                else woodsteps[i] = 0;
+            }
+            if (MainClipArray != WoodClips && woodsteps.Sum() > 0)
+                ChangeToCorrentClipArray(WoodClips);
+
+
+
+
+        }
+        if (AsphaltClips.Length > 0)
+        {
+
+            for (int i = 0; i < AsphaltFloor.Length; i++)
+            {
+                if (coll_obj.Contains(AsphaltFloor[i])) asphaltsteps[i] = 1;
+                else asphaltsteps[i] = 0;
+            }
+            if (MainClipArray != AsphaltClips && asphaltsteps.Sum() > 0)
+                ChangeToCorrentClipArray(AsphaltClips);
+
+
+
+
+        }
+        if (CarpetClips.Length > 0)
+        {
+
+            for (int i = 0; i < CarpetFloor.Length; i++)
+            {
+                if (coll_obj.Contains(CarpetFloor[i])) carpetsteps[i] = 1;
+                else carpetsteps[i] = 0;
+            }
+            if (MainClipArray != CarpetClips && carpetsteps.Sum() > 0)
+                ChangeToCorrentClipArray(CarpetClips);
+        }
+
+
+        if (meatsteps.Sum() <= 0&& concretesteps.Sum() <= 0 && metalsteps.Sum() <= 0&& woodsteps.Sum() <= 0 && asphaltsteps.Sum() <= 0 && carpetsteps.Sum() <= 0)
         {
             if (MainClipArray != AC)
             ChangeToCorrentClipArray(AC);
