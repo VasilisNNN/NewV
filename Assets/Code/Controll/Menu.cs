@@ -53,8 +53,8 @@ public class Menu : MonoBehaviour {
 			MenuRects.Add(new Rect (Screen.width / 2 - 150, Screen.height / 8 + 80 * i, 300, 80));
 		
 		if(SceneManager.GetActiveScene().name == "StartMenu")Options = true;
-		EnterClip = Resources.Load<AudioClip> ("Sound/UI/Enter0");
-		ChoiseClip = Resources.Load<AudioClip> ("Sound/UI/Choise");
+		EnterClip = Resources.Load<AudioClip> ("Sound/UI/Accept");
+		ChoiseClip = Resources.Load<AudioClip> ("Sound/UI/Click");
 	
 
 		InnerOptions = new string[2]{"1","1"};
@@ -86,8 +86,7 @@ public class Menu : MonoBehaviour {
         
 		skin = Resources.Load<GUISkin>("Invent/Slot");
         //names = new string[4] { "Start", "Options", "Exit","Special" +"\n"+"act"};
-        if (GetComponent<AudioSource>() == null) gameObject.AddComponent<AudioSource>();
-	    AU = GetComponent<AudioSource> ();
+      
      
        
 	
@@ -110,8 +109,8 @@ public class Menu : MonoBehaviour {
 
        
         Load();
-        
-    
+
+        AU = GetComponent<AudioSource>();
     }
 
 
@@ -135,23 +134,6 @@ public class Menu : MonoBehaviour {
     void ControllerGeneral()
 	{
 
-        /*
-        if (PlayerPrefs.GetInt ("Language") == 1 )
-			OptionNamesInLine = new string[5] { "Screen Resolution", "Language", "Full Screen", "Back", "To Main Menu" };
-		if (PlayerPrefs.GetInt("Language") == -1)
-			OptionNamesInLine = new string[5] { "Разреш. экрана", "Язык", "Полный экран", "Назад", "В главное меню" };
-
-        */
-
-
-        /*if (PlayerPrefs.GetFloat ("Language") == 1 && names [2] != "Exit")
-			names = new string[4] { "Start", "Options", "Exit", "Special" + "\n" + "act" };
-		if (PlayerPrefs.GetFloat ("Language") == -1 && names [2] != "Выход")
-			names = new string[4] { "Старт", "Опции", "Выход", "Особое" + "\n" + "действие" };*/
-
-        /*	if (Options&&joystick&&Application.loadedLevelName =="StartMenu")
-		PlayerPrefs.SetFloat ("JoyStickType", ControllerCh);*/
-
 
         if (ChoisePositionY > InnerOptions.Length - 1)
 			ChoisePositionY = InnerOptions.Length - 1;
@@ -161,10 +143,18 @@ public class Menu : MonoBehaviour {
 
 
 		if (_horizontalScroll_button) {
-			if (ChoisePosition < ChoiseXMax && _horizontalScroll_axis > 0)
-				ChoisePosition++;
-			else if (ChoisePosition > 0 && _horizontalScroll_axis < 0)
-				ChoisePosition--;
+            if (ChoisePosition < ChoiseXMax && _horizontalScroll_axis > 0)
+            {
+                ChoisePosition++;
+                AU.clip = ChoiseClip;
+                AU.Play();
+            }
+            else if (ChoisePosition > 0 && _horizontalScroll_axis < 0)
+            {
+                ChoisePosition--;
+                AU.clip = ChoiseClip;
+                AU.Play();
+            }
 		}
 
         /*
@@ -174,13 +164,6 @@ public class Menu : MonoBehaviour {
 
             }*/
 
-        if (_horizontalScroll_button)
-        {
-            if (ChoisePosition < ChoiseXMax && _horizontalScroll_axis > 0)
-                ChoisePosition++;
-            else if (ChoisePosition > 0 && _horizontalScroll_axis < 0)
-                ChoisePosition--;
-        }
         if (_verticalScroll_button)
         {
             if (ChoisePositionY < InnerOptions.Length - 1 && _verticalScroll_axis < 0)

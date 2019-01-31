@@ -58,6 +58,12 @@ public class Movement : MonoBehaviour {
     public float StepsVolume = 0;
     public UnityEngine.Audio.AudioMixer mg;
 
+    private AudioSource AU,AUJournal;
+
+
+    private AudioClip OpenBook, CloseBook;
+    private List<AudioClip> Pages = new List<AudioClip>();
+
     void Awake()
 	{
         mg = Resources.Load<UnityEngine.Audio.AudioMixer>("PrefabObjects/NewAudioMixer");
@@ -82,12 +88,14 @@ public class Movement : MonoBehaviour {
         VA.GetComponent<BoxCollider2D>().isTrigger = true;
         VA.GetComponent<Rigidbody2D>().gravityScale = 0;
 
-        if (GameObject.Find ("Steps(Clone)") == null&&steps) {
+        if (GameObject.Find ("Steps") == null&&steps) {
 			GameObject Stepss  = new GameObject();
 			Stepss = (GameObject)Instantiate(Resources.Load("PrefabObjects/Steps"));
 			Stepss.transform.parent = GameObject.Find("VasilisA").transform;
-			GameObject.Find ("Steps(Clone)").transform.position = new Vector3(transform.position.x+0.3f,transform.position.y,0);
-		}
+            Stepss.transform.position = new Vector3(transform.position.x+0.3f,transform.position.y,0);
+
+            Stepss.name = "Steps";
+        }
 
        
 
@@ -100,8 +108,20 @@ public class Movement : MonoBehaviour {
         else DayFinish = 3.2f;
 
         if (SceneManager.GetActiveScene().name == "CarRide") draw = false;
-       
 
+        OpenBook = Resources.Load<AudioClip>("Sound/UI/Journal/OpenBook");
+        CloseBook = Resources.Load<AudioClip>("Sound/UI/Journal/CloseBook");
+
+        for (int i = 0; i < 6; i++)
+            Pages.Add(Resources.Load<AudioClip>("Sound/UI/Journal/Page_" + i) );
+
+        if (GetComponent<AudioSource>() == null)
+        {
+            gameObject.AddComponent<AudioSource>();
+            GetComponent<AudioSource>().outputAudioMixerGroup = Resources.Load<UnityEngine.Audio.AudioMixer>("PrefabObjects/NewAudioMixer").FindMatchingGroups("Object")[0];
+        }
+         
+                AU = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -112,10 +132,7 @@ public class Movement : MonoBehaviour {
         if (GameObject.Find("VasilisA").GetComponent<SpriteRenderer>()!=null)GameObject.Find("VasilisA").GetComponent<SpriteRenderer>().enabled = draw;
 		GetComponent<BoxCollider2D>().enabled = draw;
 
-        if (GetComponent<AudioSource>() == null) gameObject.AddComponent<AudioSource>();
-		Au = gameObject.GetComponent<AudioSource>(); 
-		if (Au != null)
-						Au.playOnAwake  =true;
+       
 
 
 		MovePers = true;
@@ -253,20 +270,41 @@ public class Movement : MonoBehaviour {
                
                 PlayerPrefs.SetInt("PickJournal", 1);
                 Inv.JournalDraw = true;
-        }
+                AUPLAY(OpenBook);
+            }
             if (PlayerPrefs.GetInt("PickJournal") == 1) Destroy(GameObject.Find("Journal"));
     }
 
-        if (journal&&PlayerPrefs.GetInt("PickJournal")==1)
-            Inv.JournalDraw =!Inv.JournalDraw;
+        if (journal && PlayerPrefs.GetInt("PickJournal") == 1)
+        {
+            Inv.JournalDraw = !Inv.JournalDraw;
+            if (Inv.showinvent) Inv.showinvent = false;
+
+            if (Inv.JournalDraw)
+            {
+                AUPLAY(OpenBook);
+                MovePers = false;
+            }
+            else
+            {
+                AUPLAY(CloseBook);
+                MovePers = true;
+            }
+        }
         if (Inv.JournalDraw)
         {
             if (ChoiseDeley < Time.fixedTime)
             {
-                if (_horizontal > 0&& PlayerPrefs.GetInt("CorrentPage")< (int)(PlayerPrefs.GetInt("LastSlot")/6))
-                 PlayerPrefs.SetInt("CorrentPage", PlayerPrefs.GetInt("CorrentPage")+1);
-                if (_horizontal < 0&& PlayerPrefs.GetInt("CorrentPage")>0)
+                if (_horizontal > 0 && PlayerPrefs.GetInt("CorrentPage") < (int)(PlayerPrefs.GetInt("LastSlot") / 6))
+                {
+                    PlayerPrefs.SetInt("CorrentPage", PlayerPrefs.GetInt("CorrentPage") + 1);
+                    AUPLAY(Pages[Random.Range(0, 6)]);
+                }
+                if (_horizontal < 0 && PlayerPrefs.GetInt("CorrentPage") > 0)
+                {
                     PlayerPrefs.SetInt("CorrentPage", PlayerPrefs.GetInt("CorrentPage") - 1);
+                    AUPLAY(Pages[Random.Range(0, 6)]);
+                }
                 ChoiseDeley = Time.fixedTime + 0.105f;
             }
         }
@@ -380,6 +418,8 @@ public class Movement : MonoBehaviour {
 
     private void OnGUI()
     {
+       
+
         if (LocationStart > 0)
         {
             Texture BlackFG = Resources.Load<Texture>("ItemIcons/GunPower");
@@ -508,26 +548,11 @@ public class Movement : MonoBehaviour {
         Inv.SaveInv();
     }
 
-
-    /*private void OnTriggerStay2D(Collider2D c)
-	{
-		
-		if(!coll_obj.Contains(c.gameObject))
-		{
-			coll_obj.Add(c.gameObject);
-		}
-		
-	}
-	
-	private void OnTriggerExit2D(Collider2D c)
-	{
-		
-		if(coll_obj.Contains(c.gameObject))
-		{
-			coll_obj.Remove(c.gameObject);
-		}
-		
-	}*/
+    private void AUPLAY(AudioClip clip)
+    {
+        AU.clip = clip;
+        AU.Play();
+    }
     public List<GameObject> Getcollob()
 	{
 		return coll_obj;

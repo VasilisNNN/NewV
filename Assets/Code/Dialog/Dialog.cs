@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using Steamworks;
 
 public class Dialog : MonoBehaviour {
 	public  List<TextA> LinesRu;
@@ -41,6 +41,9 @@ public class Dialog : MonoBehaviour {
     private float move_dialog = Screen.width;
     public bool WrightInJournal;
     public string FaceString = "";
+
+    public string AchivementName = "-";
+
     private void Start () {
        // MinDialogTime = -1;
         skin = Resources.Load<GUISkin> ("Invent/Slot");
@@ -229,6 +232,7 @@ public class Dialog : MonoBehaviour {
    
     void DrawLines()
     {
+        if (AchivementName.Length > 1) SetACH(AchivementName);
 
 
         if (texB.Length > 0)
@@ -304,9 +308,16 @@ public void SetDialogPartName(string PL)
 		DialogPartName = PL;
 	}
 
+    public void SetACH(string a)
+    {
+        if (SteamAPI.Init())
+        {
+            if(!SteamUserStats.GetAchievement(a, out bool Ach))
+            SteamUserStats.SetAchievement(a);
+        }
+    }
 
-
-public int GetFinalLine()
+    public int GetFinalLine()
 	{
 		return finalLine;
 	}

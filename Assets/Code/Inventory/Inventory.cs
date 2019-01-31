@@ -101,6 +101,7 @@ public class Inventory : MonoBehaviour {
     void OnGUI()
 	{
 
+
         if (JournalDraw)
             Journal();
 
@@ -122,17 +123,20 @@ public class Inventory : MonoBehaviour {
 			}
 			}
 
-        if(GameObject.Find("Mouse(Clone)").GetComponent<Mouse>().pointnclick)
-		GUI.DrawTexture(new Rect(Event.current.mousePosition.x, Event.current.mousePosition.y, 50, 50), 
-			GameObject.Find("Mouse(Clone)").GetComponent<Mouse>().GetTexture());
+        /* if(GameObject.Find("Mouse(Clone)").GetComponent<Mouse>().pointnclick)
+         GUI.DrawTexture(new Rect(Event.current.mousePosition.x, Event.current.mousePosition.y, 50, 50), 
+             GameObject.Find("Mouse(Clone)").GetComponent<Mouse>().GetTexture());
 
-		if(draggingItem&&draggedItem!=null)
-		{
-			GUI.DrawTexture(new Rect(Event.current.mousePosition.x,Event.current.mousePosition.y,50,50),draggedItem.itemIcon);
-			GUI.Box(new Rect(Event.current.mousePosition.x,Event.current.mousePosition.y,50,50),draggedItem.itemNum.ToString(),skin.customStyles[3]);
-		}
-		
-	}
+         if(draggingItem&&draggedItem!=null)
+         {
+             GUI.DrawTexture(new Rect(Event.current.mousePosition.x,Event.current.mousePosition.y,50,50),draggedItem.itemIcon);
+             GUI.Box(new Rect(Event.current.mousePosition.x,Event.current.mousePosition.y,50,50),draggedItem.itemNum.ToString(),skin.customStyles[3]);
+         }*/
+
+        GUI.Box(new Rect(0, 0, 200, 100), "Corrent Chapter " + PlayerPrefs.GetInt("Day"), skin.customStyles[6]);
+
+
+    }
 
 
 
