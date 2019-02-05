@@ -171,7 +171,7 @@ public class Movement : MonoBehaviour {
        
     }
 
-	void Update()
+	void FixedUpdate()
     {
         // if (PlayerPrefs.GetString("CorrLoadingLevel") != SceneManager.GetActiveScene().name) PlayerPrefs.SetString("CorrLoadingLevel", SceneManager.GetActiveScene().name);
        if(StepsVolume>-80&& StepsVolume<20) mg.SetFloat("Steps", StepsVolume);
@@ -213,20 +213,24 @@ public class Movement : MonoBehaviour {
 			else
 				joystick = false;
 		}
-        if (!menu.Options&& menubackdeley <= Time.fixedTime)
-            InputSets();
-
-
+       
 		if(isFacingRight)PlayerPrefs.SetInt ("FaceVector",1);
 		else PlayerPrefs.SetInt ("FaceVector",-1);
 
 	float move  = Input.GetAxis("Horizontal");
-        if(!menu.Options&& menubackdeley<=Time.fixedTime)
-		Controls();
-		
-    
-    }
+        if (!menu.Options && menubackdeley <= Time.fixedTime)
+            Controls();
 
+
+    }
+    private void Update()
+    {
+        if (!menu.Options && menubackdeley <= Time.fixedTime)
+        {
+            InputSets();
+            ControlsButton();
+        }
+    }
     private void LayerMove()
     {
         PlayerBox = GetComponent<BoxCollider2D>();
@@ -259,23 +263,21 @@ public class Movement : MonoBehaviour {
         }
     }
 
-
-    public void Controls()
+    void ControlsButton()
     {
-        //PersDialog ();
         if (GameObject.Find("Journal") != null)
-    { 
-        if (coll_obj.Contains(GameObject.Find("Journal"))&&enter_b)
         {
-               
+            if (coll_obj.Contains(GameObject.Find("Journal")) && enter_b)
+            {
+
                 PlayerPrefs.SetInt("PickJournal", 1);
                 Inv.JournalDraw = true;
                 AUPLAY(OpenBook);
             }
             if (PlayerPrefs.GetInt("PickJournal") == 1) Destroy(GameObject.Find("Journal"));
-    }
+        }
 
-        if (journal && PlayerPrefs.GetInt("PickJournal") == 1)
+        if (journal && PlayerPrefs.GetInt("PickJournal") == 1 && ChoiseDeley < Time.fixedTime)
         {
             Inv.JournalDraw = !Inv.JournalDraw;
             if (Inv.showinvent) Inv.showinvent = false;
@@ -290,40 +292,49 @@ public class Movement : MonoBehaviour {
                 AUPLAY(CloseBook);
                 MovePers = true;
             }
+            ChoiseDeley = Time.fixedTime + 0.007f;
         }
         if (Inv.JournalDraw)
         {
-            if (ChoiseDeley < Time.fixedTime)
-            {
-                if (_horizontal > 0 && PlayerPrefs.GetInt("CorrentPage") < (int)(PlayerPrefs.GetInt("LastSlot") / 6))
+            
+                if (_horizontal > 0 && PlayerPrefs.GetInt("CorrentPage") < (int)(PlayerPrefs.GetInt("LastSlot") / 6)&& ChoiseDeley < Time.fixedTime)
                 {
                     PlayerPrefs.SetInt("CorrentPage", PlayerPrefs.GetInt("CorrentPage") + 1);
                     AUPLAY(Pages[Random.Range(0, 6)]);
+                    ChoiseDeley = Time.fixedTime + 0.01f;
                 }
-                if (_horizontal < 0 && PlayerPrefs.GetInt("CorrentPage") > 0)
+                if (_horizontal < 0 && PlayerPrefs.GetInt("CorrentPage") > 0&& ChoiseDeley < Time.fixedTime)
                 {
                     PlayerPrefs.SetInt("CorrentPage", PlayerPrefs.GetInt("CorrentPage") - 1);
                     AUPLAY(Pages[Random.Range(0, 6)]);
+                    ChoiseDeley = Time.fixedTime + 0.01f;
                 }
-                ChoiseDeley = Time.fixedTime + 0.105f;
-            }
+             
         }
-        if (inventory_b && Inv!=null)
+        if (inventory_b && Inv != null && ChoiseDeley < Time.fixedTime)
         {
             Inv.showinvent = !Inv.showinvent;
 
-        if (Inv.showinvent) MovePers = false;
-        else MovePers = true;
+            if (Inv.showinvent) MovePers = false;
+            else MovePers = true;
+            ChoiseDeley = Time.fixedTime + 0.007f;
         }
 
-        if (Input.GetKeyDown ("l")) {
-			PlayerPrefs.SetString ("CorrLevel", Application.loadedLevelName);
+        if (Input.GetKeyDown("l"))
+        {
+            PlayerPrefs.SetString("CorrLevel", Application.loadedLevelName);
 
-			if (Input.GetKeyDown ("n"))
-			Application.LoadLevel(PlayerPrefs.GetString ("CorrLevel"));
+            if (Input.GetKeyDown("n"))
+                Application.LoadLevel(PlayerPrefs.GetString("CorrLevel"));
 
-		}
+        }
 
+
+    }
+    public void Controls()
+    {
+        //PersDialog ();
+        
 		
 
 		if (MovePers) {

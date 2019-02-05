@@ -26,7 +26,7 @@ public class Move_Right_Left : MonoBehaviour {
 
     }
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         if (!OneWay)
         {
             if ((transform.position.x > _max.x || transform.position.x < _min.x) && !Flipped)

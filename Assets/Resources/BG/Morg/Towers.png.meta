@@ -3,6 +3,7 @@ guid: 3317fcabc92aec14daa27832cf7b01e4
 TextureImporter:
   fileIDToRecycleName:
     21300000: Towers_0
+    21300002: Towers_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -115,13 +116,33 @@ TextureImporter:
         width: 1366
         height: 631
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 240968acf8701e143b970ecfdf4a1118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Towers_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1531
+        width: 191
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97832a90c8c1e964084f450fecfe4088
       vertices: []
       indices: 
       edges: []

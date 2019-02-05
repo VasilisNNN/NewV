@@ -133,7 +133,8 @@ public class Inventory : MonoBehaviour {
              GUI.Box(new Rect(Event.current.mousePosition.x,Event.current.mousePosition.y,50,50),draggedItem.itemNum.ToString(),skin.customStyles[3]);
          }*/
 
-        GUI.Box(new Rect(0, 0, 200, 100), "Corrent Chapter " + PlayerPrefs.GetInt("Day"), skin.customStyles[6]);
+      if(Input.GetKey(KeyCode.C))
+      GUI.Box(new Rect(0, 0, 200, 100), "Current Chapter " + PlayerPrefs.GetInt("Day"), skin.customStyles[6]);
 
 
     }

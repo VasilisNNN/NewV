@@ -188,6 +188,7 @@ new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>()
             {
                 inv.AddItem(AddedItem, AddedItemNum);
                 PlayerPrefs.SetInt(name+SceneManager.GetActiveScene().name+"AddedItem", 1);
+                inv.SaveInv();
             }
             
 
@@ -195,7 +196,11 @@ new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>()
         }
         else if (inv.CheckCorrentItem() == NeededItem && inv.showinvent && inv.CheckCorrentItemNum() >= NeededItemNum)
         {
-            if (AddedItem > -1) inv.AddItem(AddedItem, AddedItemNum);
+            if (AddedItem > -1)
+            {
+                inv.AddItem(AddedItem, AddedItemNum);
+                inv.SaveInv();
+            }
 
             if (Quest_NameLocationQuest.Length > 0) PlayerPrefs.SetInt(Quest_NameLocationQuest, 1);
         }
@@ -259,8 +264,11 @@ new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>()
 
                     }
                 }
-                PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "SPRT", 1);
-                
+                if (MultiCases.Length == 0)
+                    PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "SPRT", 1);
+                else if(MultiCasesNumbs.Sum()>= MultiCases.Length)
+                    PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "SPRT", 1);
+
             }
             else if (inv.CheckCorrentItem() == NeededItem && inv.showinvent&&inv.CheckCorrentItemNum()>=NeededItemNum)
             {

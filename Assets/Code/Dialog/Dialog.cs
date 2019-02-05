@@ -53,7 +53,7 @@ public class Dialog : MonoBehaviour {
 
         _mouse = GameObject.Find("Mouse(Clone)").GetComponent<Mouse>();
         if(FaceString.Length>1)
-        Face = Resources.Load<Texture2D>("Pers/Portrey" + FaceString);
+        Face = Resources.Load<Texture2D>("Pers/Portrey/" + FaceString);
     }
     
 
@@ -282,7 +282,6 @@ public class Dialog : MonoBehaviour {
         if (Face!=null)
         {
              GUI.DrawTexture(new Rect(rectlable.x - 110, rectlable.y, 110, 110), Face);
-           
         }
 
 

@@ -15,7 +15,7 @@ public class RotationTrigger : MonoBehaviour {
     }
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate () {
         if (rotate)
         {
             for (int i = 0; i < tr.Length; i++)

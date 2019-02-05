@@ -47,12 +47,7 @@ public class AddingItems: MonoBehaviour {
         if (pl.enter_b && pl.Getcollob().Contains(gameObject))
         {
 
-            if (!AU.isPlaying&& Clip!=null)
-            {
-                AU.clip = Clip;
-                AU.Play();
-                
-            }
+           
             
 
 
@@ -74,13 +69,20 @@ public class AddingItems: MonoBehaviour {
         for (int i = 0; i < ItemAdding.Length; i++) {
 
 				inv.AddItem(ItemAdding[i], ItemAddingCount[i]);
+            if (!AU.isPlaying && Clip != null)
+            {
+                AU.clip = Clip;
+                AU.Play();
+
+            }
 
             if (i == ItemAdding.Length - 1)
             {
                 if (!DontDestroy)
                 {
-                    Destroy(gameObject);
                     PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "DestroyAdd", 1);
+                    Destroy(gameObject);
+                    
                 }
                
 
