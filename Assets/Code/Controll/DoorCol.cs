@@ -102,14 +102,20 @@ public class DoorCol : MonoBehaviour {
             PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "SPRT",1);
             Inv.RemoveMultiSlot(Inv.correntSlot, 1);
         }
-        pl.DayFinish = 0;
-        pl.EndDayLocation = LevelName;
-        pl.PlusDay = false;
-        pl.Save();
-        SavePrev();
+        if (pl.DayFinish >1)
+        {
+            pl.DayFinish = 0;
+            pl.EndDayLocation = LevelName;
+            pl.PlusDay = false;
+            pl.Save();
+            SavePrev();
+            if(SceneManager.GetActiveScene().name!="6Day")
+            PlayerPrefs.SetString("CorrLoadingLevel", LevelName);
+            else PlayerPrefs.SetString("CorrLoadingLevel", "SecretLocation");
+        }
         //SceneManager.LoadScene(LevelName);
         //Cursor.SetCursor (ExitDoor, Vector2.zero, CursorMode.Auto);
-        PlayerPrefs.SetString("CorrLoadingLevel", LevelName);
+        
 
     }
 

@@ -83,6 +83,14 @@ public class Inventory : MonoBehaviour {
     }
     private void Update()
     {
+
+        if (Input.GetKeyDown("=") && PlayerPrefs.GetInt("Day") < 8)
+            PlayerPrefs.SetInt("Day", PlayerPrefs.GetInt("Day") + 1);
+
+        if (Input.GetKeyDown("-") && PlayerPrefs.GetInt("Day") > 0)
+            PlayerPrefs.SetInt("Day", PlayerPrefs.GetInt("Day") - 1);
+
+
         if (!_mouse.pointnclick&&showinvent)
         {
             if (pl._horizontal < 0 && mousedeley < Time.fixedTime&& correntSlot > 0)

@@ -66,6 +66,7 @@ public class Movement : MonoBehaviour {
 
     void Awake()
 	{
+        joystick = false;
         mg = Resources.Load<UnityEngine.Audio.AudioMixer>("PrefabObjects/NewAudioMixer");
 
         LocationStart = 1;
@@ -194,10 +195,6 @@ public class Movement : MonoBehaviour {
                 if (Cursor.visible)
         Cursor.visible = false;
      
-        if (Input.GetKeyDown("=") && PlayerPrefs.GetInt("Day") < 8)
-            PlayerPrefs.SetInt("Day", PlayerPrefs.GetInt("Day") + 1);
-        if (Input.GetKeyDown("-") && PlayerPrefs.GetInt("Day") > 0)
-            PlayerPrefs.SetInt("Day", PlayerPrefs.GetInt("Day") - 1);
 
 
         if (PlayerPrefs.GetInt("Day")>0) PlayerPrefs.SetInt("PickJournal", 1);
@@ -207,12 +204,12 @@ public class Movement : MonoBehaviour {
 
         LayerMove();
 
-        for (int i = 0; i<Input.GetJoystickNames ().Length; i++) {
+       /* for (int i = 0; i<Input.GetJoystickNames ().Length; i++) {
 			if (Input.GetJoystickNames () [i] != "")
 				joystick = true;
 			else
 				joystick = false;
-		}
+		}*/
        
 		if(isFacingRight)PlayerPrefs.SetInt ("FaceVector",1);
 		else PlayerPrefs.SetInt ("FaceVector",-1);
@@ -320,14 +317,14 @@ public class Movement : MonoBehaviour {
             ChoiseDeley = Time.fixedTime + 0.007f;
         }
 
-        if (Input.GetKeyDown("l"))
+       /* if (Input.GetKeyDown("l"))
         {
             PlayerPrefs.SetString("CorrLevel", Application.loadedLevelName);
 
             if (Input.GetKeyDown("n"))
                 Application.LoadLevel(PlayerPrefs.GetString("CorrLevel"));
 
-        }
+        }*/
 
 
     }
@@ -518,13 +515,13 @@ public class Movement : MonoBehaviour {
 			_horizontal = Input.GetAxis ("Horizontal_J");
 			_vertical = Input.GetAxis ("Vertical_J");
 			//atack_b = Input.GetKeyDown(KeyCode.JoystickButton2);
-			enter_b = Input.GetKeyDown (KeyCode.JoystickButton2);
+			enter_b = Input.GetKeyDown (KeyCode.JoystickButton0);
 
-            journal = Input.GetButtonDown("Journal_J");
+            journal = Input.GetKeyDown(KeyCode.JoystickButton2);
 
-            exit_b = Input.GetKey (KeyCode.JoystickButton1);
+            exit_b = Input.GetKeyDown(KeyCode.JoystickButton1);
 			menu_b = Input.GetKey (KeyCode.JoystickButton9);
-			inventory_b = Input.GetButtonDown ("Inventory_J");
+			inventory_b = Input.GetKeyDown(KeyCode.JoystickButton3);
 		
 			
 		}

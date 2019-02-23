@@ -496,7 +496,7 @@ public class Menu : MonoBehaviour {
 
     void Load()
 	{
-		int j = 0;
+		/*int j = 0;
 		for (int i = 0; i<Input.GetJoystickNames ().Length; i++) {
 			
 			if (Input.GetJoystickNames () [i] == "") {
@@ -506,7 +506,7 @@ public class Menu : MonoBehaviour {
 		if (j == Input.GetJoystickNames ().Length) 
 		{
 			PlayerPrefs.SetFloat ("JoyStickOn", 0);
-		}
+		}*/
 
 		if(PlayerPrefs.GetFloat("FullScreen")==0)
 		FullScreen = true;

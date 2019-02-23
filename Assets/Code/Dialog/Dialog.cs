@@ -31,7 +31,7 @@ public class Dialog : MonoBehaviour {
 	private Movement pl;
 	private Texture2D EnterDoor,ExitDoor;
 	//public bool Picked{ get; set;}
-	private float MinDialogTime;
+	//private float MinDialogTime;
     private Mouse _mouse;
     private List<GameObject> coll_obj = new List<GameObject>();
     private bool enter;
@@ -115,7 +115,7 @@ public class Dialog : MonoBehaviour {
 
 
     }
-
+   
 
     private void Update()
 	{
@@ -152,58 +152,33 @@ public class Dialog : MonoBehaviour {
             
         }
 
-        
 
 
 
-        if (CollisionCase) {
+
+        if (CollisionCase)
+        {
 
             if (coll_obj.Contains(gameObject))
             {
-                /* if (texBScroll.Length == 0)
-                 {
-                     texBScroll = null;
-                     for (int i = 0; i < texB[CorrentLine].Length; i++)
-                         texBScroll += " ";
-                 }*/
-            
+                
+                    if (enter && pl.DayFinish >= 1 && texB != null)
+                    {
+                       
 
-                if (enter && pl.DayFinish>=1&&texB!=null)
-                {
-
-                   
-
-                    
                         if (PlayIn && CorrentLine < texB.Length)
                         {
-
-                        if (NoEnter)
-                        {
-                            if (PlayIn && CorrentLine < texB.Length - 1)
-                            {
-                                if (MinDialogTime < Time.fixedTime)
-                                {
-                                    CorrentLine++;
-                                    MinDialogTime = Time.fixedTime + 0.2f;
-                                }
-                            }
-                        }
-                        else
-                        {
-
                             if (texBScroll[CorrentLine].Length >= texB[CorrentLine].Length)
-                            {
                                 CorrentLine++;
-                                //MinDialogTime = Time.fixedTime + 0.2f;
-                            }
-                            // else LineEnd = texB[CorrentLine].Length;
+                        }
+                        if (!PlayIn) PlayIn = true;
 
+                        if (PlayIn && CorrentLine >= texB.Length)
+                        {
+                            PlayIn = false;
+                            CorrentLine = 0;
                         }
 
-                        }
-
-                    if (!NoEnter)
-                    {
                         if (!isTyping)
                         {
                             if (CorrentLine <= texB.Length - 1)
@@ -217,38 +192,18 @@ public class Dialog : MonoBehaviour {
                             cancelTyping = true;
 
                         }
+                        
                     }
+                
 
-
-
-
-                        if (MinDialogTime < Time.fixedTime)
-                        {
-
-                            if (!PlayIn)
-                            {
-                                PlayIn = true;
-
-                                MinDialogTime = Time.fixedTime + 0.2f;
-                            }
-
-
-                            if (PlayIn && CorrentLine == texB.Length)
-                            {
-                                PlayIn = false;
-
-                                CorrentLine = 0;
-                                MinDialogTime = Time.fixedTime + 0.2f;
-                            }
-                        }
-                    
-                }
-
-                if (NoEnter)
+                if(NoEnter)
                 {
-                   
-                    texBScroll[CorrentLine] = texB[CorrentLine];
-                    
+                    if (CorrentLine <= texB.Length - 1)
+                    {
+                        StartCoroutine(TextScroll(texB[CorrentLine]));
+                    }
+                    // texBScroll[CorrentLine] = texB[CorrentLine];
+
                     if (PlayOnes)
                     {
                         if (PlayerPrefs.GetInt(name + SceneManager.GetActiveScene().name) != 1)
@@ -263,25 +218,24 @@ public class Dialog : MonoBehaviour {
 
                     Save();
                 }
-            
-            
-            
-
-                // if((pl._horizontal!=0|| pl._vertical != 0)&& PlayIn&& MinDialogTime < Time.fixedTime) PlayIn = false;
-
-
+                
             }
-            else 
-				if(PlayIn)
-				PlayIn = false;
-				
+            else
+                if (PlayIn)
+                PlayIn = false;
+            
 
-				
-			
+        }
+        else
+        {
+            typeSpeed = 0;
 
+            if (CorrentLine <= texB.Length - 1)
+            {
+                StartCoroutine(TextScroll(texB[CorrentLine]));
+            }
 
-		
-		}
+        }
 	}
 
 
@@ -352,20 +306,30 @@ public class Dialog : MonoBehaviour {
 	}
     void PosM(float stringslength)
     {
-        if ((19 * (stringslength / 20)) >= 75)
-            fheight = 35 + 19 * stringslength / 20;
-        else
-            fheight = 140;
+       
 
         if (!VasilisMind)
         {
+
+            if ((19 * (stringslength / 20)) >= 75)
+                fheight = 35 + 19 * stringslength / 20;
+            else
+                fheight = 140;
 
             if (stringslength < 17)
                 fwidth = 30 * 8;
             else
                 fwidth = 30 * 15;
         }
-        else fwidth = 300;
+        else
+        {
+            if ((19 * stringslength / 20) >=75)
+                fheight = 40 + 18 * stringslength / 15;
+            else
+                fheight = 150;
+
+            fwidth = 330;
+        }
 
 
     }
@@ -395,7 +359,7 @@ public class Dialog : MonoBehaviour {
                 if(!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().Play();
             }
 
-            PosM(texB[PlayerPrefs.GetInt(name + "Dialog")].Length);
+            PosM(AllText[CorrentLine].Length);
            // int t = 0;
 
             if (CorrentLine <= texB.Length - 1)
@@ -513,7 +477,11 @@ public class Dialog : MonoBehaviour {
             }
 
             leter++;
+
+            if (!NoEnter&&CollisionCase)
             yield return new WaitForSeconds(typeSpeed);
+                
+            
         }
 
         texBScroll[CorrentLine] = AllText[CorrentLine];
