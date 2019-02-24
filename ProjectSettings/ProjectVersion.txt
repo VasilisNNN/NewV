@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 m_EditorVersion: 2018.3.6f1
+=======
+m_EditorVersion: 2018.3.0f2
+>>>>>>> parent of 40dc0dc... Допиливание шагов
 =======
 m_EditorVersion: 2018.3.0f2
 >>>>>>> parent of 40dc0dc... Допиливание шагов
