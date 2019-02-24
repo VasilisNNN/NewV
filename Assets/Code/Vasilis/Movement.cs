@@ -66,6 +66,31 @@ public class Movement : MonoBehaviour {
 
     void Awake()
 	{
+
+        for (int i = 0; i < GameObject.FindGameObjectsWithTag("Concrete").Length; i++)
+        {
+            print("Concrete_FLOOR_NAME: "+GameObject.FindGameObjectsWithTag("Concrete")[i].name);
+        }
+
+        for (int i = 0; i < GameObject.FindGameObjectsWithTag("Metal").Length; i++)
+        {
+            print("Metal_FLOOR_NAME: " + GameObject.FindGameObjectsWithTag("Metal")[i].name);
+        }
+        for (int i = 0; i < GameObject.FindGameObjectsWithTag("Wood").Length; i++)
+        {
+            print("Wood_FLOOR_NAME: " + GameObject.FindGameObjectsWithTag("Wood")[i].name);
+        }
+        for (int i = 0; i < GameObject.FindGameObjectsWithTag("Asphalt").Length; i++)
+        {
+            print("Asphalt_FLOOR_NAME: " + GameObject.FindGameObjectsWithTag("Asphalt")[i].name);
+        }
+        for (int i = 0; i < GameObject.FindGameObjectsWithTag("Carpet").Length; i++)
+        {
+            print("Carpet_FLOOR_NAME: " + GameObject.FindGameObjectsWithTag("Carpet")[i].name);
+        }
+
+
+
         joystick = false;
         mg = Resources.Load<UnityEngine.Audio.AudioMixer>("PrefabObjects/NewAudioMixer");
 
