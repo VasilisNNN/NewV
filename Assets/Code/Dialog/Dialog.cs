@@ -50,20 +50,20 @@ public class Dialog : MonoBehaviour {
     public string AchivementName = "-";
 
     public bool Indifferent;
-    public bool Exited;
     public bool Anger;
 
     private List<AudioClip> IndifferentClips = new List<AudioClip>();
     private List<AudioClip> ExitedClips = new List<AudioClip>();
-    private List<AudioClip> AngerClips = new List<AudioClip>();
+    private List<AudioClip> AngryClips = new List<AudioClip>();
 
     private AudioSource AUSource;
     private bool cancelTyping, isTyping;
     private char EmptyLines;
     private float typeSpeed = 0.04f;
+    private Menu menu;
 
     private void Start () {
-        
+        AllText = new string[1] {""};
         // MinDialogTime = -1;
         skin = Resources.Load<GUISkin> ("Invent/Slot");
 	   
@@ -73,19 +73,20 @@ public class Dialog : MonoBehaviour {
         _mouse = GameObject.Find("Mouse(Clone)").GetComponent<Mouse>();
         if(FaceString.Length>1)
         Face = Resources.Load<Texture2D>("Pers/Portrey/" + FaceString);
-        if (Indifferent || Exited || Anger)
+        if (Indifferent || Anger)
         {
             if (GetComponent<AudioSource>() == null) gameObject.AddComponent<AudioSource>();
+            GetComponent<AudioSource>().playOnAwake = false ;
 
         }
         TextScrollTimerMax = 0.1f;
         TextScrollTimer = Time.fixedTime + TextScrollTimerMax;
         AUSource = GetComponent<AudioSource>();
-        /* for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 8; i++)
          {
-             IndifferentClips.Add(Resources.Load<AudioClip>("s" + i));
+             AngryClips.Add(Resources.Load<AudioClip>("SOUND_N/ANGRY_VOICES/TEST_VOICE-0" + i));
 
-         }*/
+         }
         if (LinesRu != null && PlayerPrefs.GetInt("Language") == -1 && LinesRu.Count > 0)
         {
 
@@ -113,7 +114,7 @@ public class Dialog : MonoBehaviour {
             print(texBScroll[j]);
         }*/
 
-
+        if (pl.gameObject.GetComponent<Menu>() != null) menu = pl.gameObject.GetComponent<Menu>();
     }
    
 
@@ -177,7 +178,9 @@ public class Dialog : MonoBehaviour {
                         {
                             PlayIn = false;
                             CorrentLine = 0;
-                        }
+                           // texBScroll[CorrentLine] = "";
+                          //  AllText[CorrentLine] = "";
+                    }
 
                         if (!isTyping)
                         {
@@ -237,7 +240,11 @@ public class Dialog : MonoBehaviour {
 
         }
 	}
-
+    private void FixedUpdate()
+    {
+        if (!GameObject.Find("Vasilis").GetComponent<Inventory>().JournalDraw&&!menu.Options&&PlayIn == true && CorrentLine < texB.Length)
+            PlayTaking();
+    }
 
     // Update is called once per frame
     private void OnGUI()
@@ -297,7 +304,7 @@ public class Dialog : MonoBehaviour {
             }
 
             rectlable = new Rect(XPosD, YPosD, fwidth, fheight);
-          if(!GameObject.Find("Vasilis").GetComponent<Inventory>().JournalDraw)DrawLines();
+          if(!GameObject.Find("Vasilis").GetComponent<Inventory>().JournalDraw&&!menu.Options) DrawLines();
 
 
         }
@@ -333,34 +340,46 @@ public class Dialog : MonoBehaviour {
 
 
     }
-   
-    void DrawLines()
+    void PlayTaking()
     {
-        if (AchivementName.Length > 1) SetACH(AchivementName);
-        if (!VasilisMind)
+        if (!VasilisMind && isTyping && texBScroll[CorrentLine].Length < AllText[CorrentLine].Length)
         {
             if (Anger)
             {
-                AUSource.clip = AngerClips[Random.Range(0, AngerClips.Count)];
-                AUSource.loop = true;
-                if(!AUSource.isPlaying) AUSource.Play();
+
+                //AUSource.loop = true;
+                if (!AUSource.isPlaying)
+                {
+                    AUSource.Play();
+                    AUSource.clip = AngryClips[Random.Range(0, AngryClips.Count)];
+                    print("PlayVoice");
+                }
             }
 
         }
-
+    }
+    void DrawLines()
+    {
+        if (AchivementName.Length > 1) SetACH(AchivementName);
+        
 
         if (texB.Length > 0)
         {
-            
-           
 
-            if (GetComponent<AudioSource>() != null && GetComponent<Trigger>() == null)
+
+
+            /* if (GetComponent<AudioSource>() != null && GetComponent<Trigger>() == null)
+             {
+                 if(!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().Play();
+             }*/
+            if (AllText != null)
             {
-                if(!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().Play();
+                if (CorrentLine < AllText.Length - 1)
+                    PosM(AllText[CorrentLine].Length);
+                else
+                    PosM(AllText[AllText.Length - 1].Length);
             }
-
-            PosM(AllText[CorrentLine].Length);
-           // int t = 0;
+            // int t = 0;
 
             if (CorrentLine <= texB.Length - 1)
             {
@@ -475,7 +494,7 @@ public class Dialog : MonoBehaviour {
                 texBScroll[CorrentLine] += "\n";
                 w = 0;
             }
-
+            
             leter++;
 
             if (!NoEnter&&CollisionCase)

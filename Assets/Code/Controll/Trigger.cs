@@ -164,7 +164,10 @@ new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>()
                 {
                     AllActions();
                     if (StopPlayer) pl.MovePers = false;
-                    //if (!AS.isPlaying) AS.Play();
+                    if (AS != null)
+                    {
+                        if (!AS.isPlaying) AS.Play();
+                    }
                 }
             }
             else

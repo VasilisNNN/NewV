@@ -317,15 +317,16 @@ public class Movement : MonoBehaviour {
             ChoiseDeley = Time.fixedTime + 0.007f;
         }
 
-       /* if (Input.GetKeyDown("l"))
-        {
-            PlayerPrefs.SetString("CorrLevel", Application.loadedLevelName);
+        /* if (Input.GetKeyDown("l"))
+         {
+             PlayerPrefs.SetString("CorrLevel", Application.loadedLevelName);
 
-            if (Input.GetKeyDown("n"))
-                Application.LoadLevel(PlayerPrefs.GetString("CorrLevel"));
+             if (Input.GetKeyDown("n"))
+                 Application.LoadLevel(PlayerPrefs.GetString("CorrLevel"));
 
-        }*/
-
+         }*/
+        if (Input.GetKey(KeyCode.F12)) PlayerPrefs.DeleteAll();
+        
 
     }
     public void Controls()
