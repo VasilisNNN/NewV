@@ -63,7 +63,8 @@ public class Dialog : MonoBehaviour {
     private Menu menu;
 
     private void Start () {
-        AllText = new string[1] {""};
+        Anger = true;
+        AllText = new string[1] {"."};
         // MinDialogTime = -1;
         skin = Resources.Load<GUISkin> ("Invent/Slot");
 	   
@@ -372,12 +373,13 @@ public class Dialog : MonoBehaviour {
              {
                  if(!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().Play();
              }*/
-            if (AllText != null)
+            if (AllText.Length >0)
             {
                 if (CorrentLine < AllText.Length - 1)
                     PosM(AllText[CorrentLine].Length);
-                else
-                    PosM(AllText[AllText.Length - 1].Length);
+                else 
+                    PosM(AllText
+                        [AllText.Length - 1].Length);
             }
             // int t = 0;
 

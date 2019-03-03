@@ -35,8 +35,9 @@ public class Movement : MonoBehaviour {
     
 	private bool menu_b;
 	public bool inventory_b{ get; set;}
-	
-	public bool enter_b{ get; set;}
+    public bool map { get; set; }
+
+    public bool enter_b{ get; set;}
 	public bool exit_b{ get; set;}
     public bool journal { get; set; }
     public float _horizontal { get; set; }
@@ -299,10 +300,29 @@ public class Movement : MonoBehaviour {
             if (PlayerPrefs.GetInt("PickJournal") == 1) Destroy(GameObject.Find("Journal"));
         }
 
+        if (map && ChoiseDeley < Time.fixedTime)
+        {
+            Inv.DrawMap = !Inv.DrawMap;
+            Inv.showinvent = Inv.JournalDraw = false;
+
+            if (Inv.DrawMap)
+            {
+                AUPLAY(OpenBook);
+                MovePers = false;
+            }
+            else
+            {
+                AUPLAY(CloseBook);
+                MovePers = true;
+            }
+            ChoiseDeley = Time.fixedTime + 0.007f;
+        }
+
+
         if (journal && PlayerPrefs.GetInt("PickJournal") == 1 && ChoiseDeley < Time.fixedTime)
         {
             Inv.JournalDraw = !Inv.JournalDraw;
-            if (Inv.showinvent) Inv.showinvent = false;
+            Inv.showinvent = Inv.DrawMap = false;
 
             if (Inv.JournalDraw)
             {
@@ -336,20 +356,18 @@ public class Movement : MonoBehaviour {
         if (inventory_b && Inv != null && ChoiseDeley < Time.fixedTime)
         {
             Inv.showinvent = !Inv.showinvent;
-
+            Inv.JournalDraw = Inv.DrawMap = false;
             if (Inv.showinvent) MovePers = false;
             else MovePers = true;
             ChoiseDeley = Time.fixedTime + 0.007f;
         }
 
-        /* if (Input.GetKeyDown("l"))
+         if (Input.GetKeyDown("l"))
          {
-             PlayerPrefs.SetString("CorrLevel", Application.loadedLevelName);
+           
+                 Application.LoadLevel(Application.loadedLevelName);
 
-             if (Input.GetKeyDown("n"))
-                 Application.LoadLevel(PlayerPrefs.GetString("CorrLevel"));
-
-         }*/
+         }
         if (Input.GetKey(KeyCode.F12)) PlayerPrefs.DeleteAll();
         
 
@@ -530,6 +548,7 @@ public class Movement : MonoBehaviour {
 			_vertical = Input.GetAxis ("Vertical");
             //atack_b = Input.GetButtonDown ("Atack");
             journal = Input.GetButtonDown("Journal");
+            map = Input.GetButtonDown("Map");
             enter_b = Input.GetButtonDown ("Enter");
 		
 			exit_b = Input.GetButtonDown ("Exit");
@@ -544,6 +563,7 @@ public class Movement : MonoBehaviour {
 			enter_b = Input.GetKeyDown (KeyCode.JoystickButton0);
 
             journal = Input.GetKeyDown(KeyCode.JoystickButton2);
+            map = Input.GetKeyDown(KeyCode.JoystickButton5);
 
             exit_b = Input.GetKeyDown(KeyCode.JoystickButton1);
 			menu_b = Input.GetKey (KeyCode.JoystickButton9);

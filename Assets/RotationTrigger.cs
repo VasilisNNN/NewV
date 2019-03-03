@@ -8,7 +8,8 @@ public class RotationTrigger : MonoBehaviour {
     public Transform[] tr;
     public float[] r;
     public bool rotate;
-    // Use this for initialization
+    private float timer;
+        
     void Start () {
         _mouse = GameObject.Find("Mouse(Clone)").GetComponent<Mouse>();
         pl = GameObject.Find("Vasilis").GetComponent<Movement>();
@@ -35,14 +36,16 @@ public class RotationTrigger : MonoBehaviour {
             }
         }
 
-        if (pl.Getcollob().Contains(gameObject) && pl.enter_b)
+        if (pl.Getcollob().Contains(gameObject) && pl.enter_b&&timer<Time.fixedTime)
         {
             rotate = !rotate;
 
             if (GetComponent<AudioSource>() != null&& !GetComponent<AudioSource>().isPlaying)
              GetComponent<AudioSource>().Play();
-            
-            
+            timer = Time.fixedTime + 0.1f;
+
+
+
         }
 	}
 }

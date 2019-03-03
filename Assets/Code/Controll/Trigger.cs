@@ -63,14 +63,17 @@ public class Trigger : MonoBehaviour {
 
     void Start()
 	{
-		_mouse = GameObject.Find ("Mouse(Clone)").GetComponent<Mouse> ();
+        MultiCasesNumbs = new int[1]{0};
+
+        _mouse = GameObject.Find ("Mouse(Clone)").GetComponent<Mouse> ();
         pl = GameObject.Find("Vasilis").GetComponent<Movement>();
         AS = GetComponent<AudioSource> ();
         inv = GameObject.Find("Vasilis").GetComponent<Inventory>();
         if(MultiCases!=null)
         MultiCasesNumbs = new int[MultiCases.Length];
+        else MultiCasesNumbs = new int[1] { 0 };
 
-        if(SPRT!=null)
+        if (SPRT!=null)
         AUPLAY = new bool[SPRT.Length];
         if (!DontLoad)
         {
@@ -118,7 +121,7 @@ new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>()
                 Destroy(gameObject);
             }
         }
-        if (MultiCasesNumbs!=null)
+        if (MultiCasesNumbs.Length>0)
         {
             for (int i = 0; i < MultiCases.Length; i++)
             {
@@ -164,9 +167,10 @@ new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>()
                 {
                     AllActions();
                     if (StopPlayer) pl.MovePers = false;
-                    if (AS != null)
+
+                    if (AS != null&&NeededItem<0)
                     {
-                        if (!AS.isPlaying) AS.Play();
+                        if (!AS.isPlaying) AS.Play(); 
                     }
                 }
             }
@@ -199,8 +203,14 @@ new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>()
         }
         else if (inv.CheckCorrentItem() == NeededItem && inv.showinvent && inv.CheckCorrentItemNum() >= NeededItemNum)
         {
-            if (AddedItem > -1)
+            if (AddedItem > -1&& PlayerPrefs.GetInt(name + SceneManager.GetActiveScene().name + "AddedItem") != 1)
             {
+                if (AS != null)
+                {
+                    if (!AS.isPlaying) AS.Play();
+                }
+
+                PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "AddedItem", 1);
                 inv.AddItem(AddedItem, AddedItemNum);
                 inv.SaveInv();
             }
@@ -238,6 +248,9 @@ new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>()
                 if (inv.CheckCorrentItem() == NeededItem && inv.showinvent)
                 {
                     pl.DayFinish = 0;
+
+                    if (MinusNeededItem)inv.RemoveMultiSlot(inv.correntSlot, NeededItemNum);
+                        
                     if (LoadLocationDayEnd != "-1")
                     {
                         inv.SaveInv();
@@ -269,8 +282,11 @@ new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>()
                 }
                 if (MultiCases.Length == 0)
                     PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "SPRT", 1);
-                else if(MultiCasesNumbs.Sum()>= MultiCases.Length)
-                    PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "SPRT", 1);
+                else if (MultiCases.Length > 0)
+                {
+                    if (MultiCasesNumbs.Sum() >= MultiCases.Length)
+                        PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "SPRT", 1);
+                }
 
             }
             else if (inv.CheckCorrentItem() == NeededItem && inv.showinvent&&inv.CheckCorrentItemNum()>=NeededItemNum)
@@ -288,6 +304,7 @@ new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>()
                 if (MinusNeededItem)
                 {
                     inv.RemoveMultiSlot(inv.correntSlot, NeededItemNum);
+
                    // inv.RemoveSlot(inv.correntSlot);
                 }
                 if (MinusNeededItemONES&& PlayerPrefs.GetInt(name + SceneManager.GetActiveScene().name + "SPRT")!=1)
@@ -385,6 +402,16 @@ new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>()
                 }
             }
 
+            if (PlayerPrefs.GetInt(name + SceneManager.GetActiveScene().name + "AUDIOPLAYED") != 1)
+            {
+                if (AS != null)
+                {
+                    if (!AS.isPlaying) AS.Play();
+                }
+            }
+            PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "AUDIOPLAYED", 1);
+
+
         }
     }
 
@@ -392,7 +419,16 @@ new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>()
     {
        for (int i = 0; i < Anims.Length; i++) Anims[i].SetBool(AnimsNames[i], AnimsBools[i]);
 
-       PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "Anim", 1);
+        if (PlayerPrefs.GetInt(name + SceneManager.GetActiveScene().name + "AUDIOPLAYED") != 1)
+        {
+            if (AS != null)
+            {
+                if (!AS.isPlaying) AS.Play();
+            }
+        }
+        PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "AUDIOPLAYED", 1);
+
+        PlayerPrefs.SetInt(name + SceneManager.GetActiveScene().name + "Anim", 1);
 
     }
 public bool GetClicked()

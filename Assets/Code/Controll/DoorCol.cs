@@ -92,7 +92,7 @@ public class DoorCol : MonoBehaviour {
     void Location()
     {
 
-        if (AU != null)
+        if (AU != null&&GetComponent<Trigger>()==null)
         {
             if (!AU.isPlaying) AU.Play();
 

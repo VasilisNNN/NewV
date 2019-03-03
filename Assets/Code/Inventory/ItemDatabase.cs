@@ -32,7 +32,7 @@ public class ItemDatabase : MonoBehaviour {
 		
 		items.Add(new Item("Money",18, "Money", "Деньги"));
 		items.Add(new Item("Rare book",19, "Rare book", "Редкая книга"));
-		items.Add(new Item("Old cup",20,"Old cup", "Сатаря чашка"));
+		items.Add(new Item("Old cup",20,"Old cup", "Антиквариатная чашка"));
 		
 		items.Add(new Item("HeartLocked", 21, "HeartLocked", "Запертое сердце"));
 		items.Add(new Item("Old crosses", 22, "Old crosses", "Кресты"));
