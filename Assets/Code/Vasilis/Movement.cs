@@ -23,7 +23,9 @@ public class Movement : MonoBehaviour {
 	public bool VerMove;
 
 	public bool MovePers{ get; set;}
+    public bool StopControlls { get; set; }
     public bool PlusDay { get; set; }
+    public bool MinusDay { get; set; }
     public bool flip = true;
 	private AudioSource Au;
 	public float NextFoot;
@@ -43,8 +45,12 @@ public class Movement : MonoBehaviour {
     public float _horizontal { get; set; }
 	public float _vertical { get; set; }
 
-    private bool joystick;
-	private float InvTimer, ChoiseDeley, LocationStart;
+    public float _horizontal_Right { get; set; }
+    public float _vertical_Right { get; set; }
+
+    public bool joystick { get; set; }
+
+    private float InvTimer, ChoiseDeley, LocationStart;
 	private CharacterController2D _controller;
 	private Vector3 CorrentPos, ExPos,camx;
 
@@ -64,10 +70,11 @@ public class Movement : MonoBehaviour {
 
     private AudioClip OpenBook, CloseBook;
     private List<AudioClip> Pages = new List<AudioClip>();
+    private float DayLimitPlus;
 
     void Awake()
 	{
-
+        StopControlls = false;
         for (int i = 0; i < GameObject.FindGameObjectsWithTag("Concrete").Length; i++)
         {
             print("Concrete_FLOOR_NAME: "+GameObject.FindGameObjectsWithTag("Concrete")[i].name);
@@ -92,7 +99,7 @@ public class Movement : MonoBehaviour {
 
 
 
-        joystick = false;
+      
         mg = Resources.Load<UnityEngine.Audio.AudioMixer>("PrefabObjects/NewAudioMixer");
 
         LocationStart = 1;
@@ -131,7 +138,7 @@ public class Movement : MonoBehaviour {
 		_controller = GetComponent<CharacterController2D>();
         
         speednormal = speed;
-       if(SceneManager.GetActiveScene().name!="CarRide") DayFinish = 1.2f;
+        if(SceneManager.GetActiveScene().name!="CarRide") DayFinish = 1.2f;
         else DayFinish = 3.2f;
 
         if (SceneManager.GetActiveScene().name == "CarRide") draw = false;
@@ -143,19 +150,18 @@ public class Movement : MonoBehaviour {
             Pages.Add(Resources.Load<AudioClip>("Sound/UI/Journal/Page_" + i) );
 
         if (GetComponent<AudioSource>() == null)
-        {
-            gameObject.AddComponent<AudioSource>();
-            GetComponent<AudioSource>().outputAudioMixerGroup = Resources.Load<UnityEngine.Audio.AudioMixer>("PrefabObjects/NewAudioMixer").FindMatchingGroups("Object")[0];
-        }
-         
-                AU = GetComponent<AudioSource>();
+        gameObject.AddComponent<AudioSource>();
+
+        GetComponent<AudioSource>().outputAudioMixerGroup = Resources.Load<UnityEngine.Audio.AudioMixer>("PrefabObjects/NewAudioMixer").FindMatchingGroups("Object")[0];
+        
+        AU = GetComponent<AudioSource>();
     }
 
     void Start()
     {
 
         if (GetComponent<Menu>() != null) menu = GetComponent<Menu>();
-
+ 
         if (GameObject.Find("VasilisA").GetComponent<SpriteRenderer>()!=null)GameObject.Find("VasilisA").GetComponent<SpriteRenderer>().enabled = draw;
 		GetComponent<BoxCollider2D>().enabled = draw;
 
@@ -200,8 +206,10 @@ public class Movement : MonoBehaviour {
 
 	void FixedUpdate()
     {
+        joystick = menu.joystick;
+
         // if (PlayerPrefs.GetString("CorrLoadingLevel") != SceneManager.GetActiveScene().name) PlayerPrefs.SetString("CorrLoadingLevel", SceneManager.GetActiveScene().name);
-       if(StepsVolume>-80&& StepsVolume<20) mg.SetFloat("Steps", StepsVolume);
+        if (StepsVolume>-80&& StepsVolume<20) mg.SetFloat("Steps", StepsVolume);
 
 
         if (GameObject.Find("5DayWave")==null&&PlayerPrefs.GetInt("Day") == 5&& PlayerPrefs.GetInt("KladbCrossEMPTYProspektPowerSPRT") == 1
@@ -212,6 +220,23 @@ public class Movement : MonoBehaviour {
             Wave.name = "5DayWave";
             Wave.transform.parent = transform;
             Wave.transform.position = new Vector3(transform.position.x, transform.position.y, 0);
+        }
+
+
+        if (Inv.DrawMap)
+        {
+            Transform VM = GameObject.Find("GlobalMapScale").transform;
+            float s = 0.05f;
+
+            if (_vertical_Right > 0 && VM.localScale.x < 2)
+            {
+                VM.localScale = new Vector3(VM.localScale.x + s, VM.localScale.y + s, VM.localScale.z);
+            }
+
+            if (_vertical_Right < 0 && VM.localScale.x > 1)
+                VM.localScale = new Vector3(VM.localScale.x - s, VM.localScale.y - s, VM.localScale.z);
+            
+
         }
 
 
@@ -230,12 +255,6 @@ public class Movement : MonoBehaviour {
 
         LayerMove();
 
-       /* for (int i = 0; i<Input.GetJoystickNames ().Length; i++) {
-			if (Input.GetJoystickNames () [i] != "")
-				joystick = true;
-			else
-				joystick = false;
-		}*/
        
 		if(isFacingRight)PlayerPrefs.SetInt ("FaceVector",1);
 		else PlayerPrefs.SetInt ("FaceVector",-1);
@@ -248,10 +267,22 @@ public class Movement : MonoBehaviour {
     }
     private void Update()
     {
+        if (menu.Options||journal||map)
+        {
+            _normalHSpeed = _normalVSpeed = 0;
+            _controller.SetHorizontalForce(
+            Mathf.Lerp(_controller.Velocity.x,
+                    _normalHSpeed * speed, 10));
+
+            if (VerMove)
+                _controller.SetVerticalForce(Mathf.Lerp(_controller.Velocity.y, _normalVSpeed * speed, 10));
+            anim.SetBool("Move", false);
+        }
+
         if (!menu.Options && menubackdeley <= Time.fixedTime)
         {
             InputSets();
-            ControlsButton();
+          if(!StopControlls)ControlsButton();
         }
     }
     private void LayerMove()
@@ -288,6 +319,25 @@ public class Movement : MonoBehaviour {
 
     void ControlsButton()
     {
+        
+
+        if (menu_b&& ChoiseDeley<Time.fixedTime)
+        {
+            if (!Inv.DrawMap && !Inv.JournalDraw && !Inv.showinvent)
+            {
+                menu.Options = !menu.Options;
+               
+                ChoiseDeley = Time.fixedTime + 0.01f;
+            }
+            else
+            {
+                Inv.DrawMap = Inv.JournalDraw = Inv.showinvent = false;
+                ChoiseDeley = Time.fixedTime + 0.01f;
+            }
+            
+        }
+
+
         if (GameObject.Find("Journal") != null)
         {
             if (coll_obj.Contains(GameObject.Find("Journal")) && enter_b)
@@ -299,9 +349,10 @@ public class Movement : MonoBehaviour {
             }
             if (PlayerPrefs.GetInt("PickJournal") == 1) Destroy(GameObject.Find("Journal"));
         }
-
+      
         if (map && ChoiseDeley < Time.fixedTime)
         {
+         
             Inv.DrawMap = !Inv.DrawMap;
             Inv.showinvent = Inv.JournalDraw = false;
 
@@ -339,17 +390,17 @@ public class Movement : MonoBehaviour {
         if (Inv.JournalDraw)
         {
             
-                if (_horizontal > 0 && PlayerPrefs.GetInt("CorrentPage") < (int)(PlayerPrefs.GetInt("LastSlot") / 6)&& ChoiseDeley < Time.fixedTime)
+                if (_horizontal > 0 && PlayerPrefs.GetInt("CorrentPage") < (int)((PlayerPrefs.GetInt("LastSlot")-1) / 8)&& ChoiseDeley < Time.fixedTime)
                 {
                     PlayerPrefs.SetInt("CorrentPage", PlayerPrefs.GetInt("CorrentPage") + 1);
                     AUPLAY(Pages[Random.Range(0, 6)]);
-                    ChoiseDeley = Time.fixedTime + 0.01f;
+                    ChoiseDeley = Time.fixedTime + 0.2f;
                 }
                 if (_horizontal < 0 && PlayerPrefs.GetInt("CorrentPage") > 0&& ChoiseDeley < Time.fixedTime)
                 {
                     PlayerPrefs.SetInt("CorrentPage", PlayerPrefs.GetInt("CorrentPage") - 1);
                     AUPLAY(Pages[Random.Range(0, 6)]);
-                    ChoiseDeley = Time.fixedTime + 0.01f;
+                    ChoiseDeley = Time.fixedTime + 0.2f;
                 }
              
         }
@@ -359,7 +410,7 @@ public class Movement : MonoBehaviour {
             Inv.JournalDraw = Inv.DrawMap = false;
             if (Inv.showinvent) MovePers = false;
             else MovePers = true;
-            ChoiseDeley = Time.fixedTime + 0.007f;
+            ChoiseDeley = Time.fixedTime + 0.01f;
         }
 
          if (Input.GetKeyDown("l"))
@@ -443,6 +494,7 @@ public class Movement : MonoBehaviour {
 			_normalHSpeed = _normalVSpeed = 0;
 			anim.SetBool ("Move", false);
 		}
+
 		_controller.SetHorizontalForce (
 			Mathf.Lerp (_controller.Velocity.x,
 		            _normalHSpeed * speed, 10));
@@ -481,11 +533,20 @@ public class Movement : MonoBehaviour {
             GUI.DrawTexture(new Rect(0, 0, Screen.width, Screen.height), BlackFG);
             GUI.color = guiColor; // Get back to previous GUI color
         }
+        
+        if (PlusDay) DayLimitPlus = 2;
+        if (MinusDay) DayLimitPlus = 2;
 
-        if (DayFinish < 1.2)
+        if (DayFinish < 1.2+ DayLimitPlus)
         {
             MovePers = false;
             Texture BlackFG = Resources.Load<Texture>("ItemIcons/GunPower");
+            int d = PlayerPrefs.GetInt("Day") + 1;
+            if(PlusDay) d = PlayerPrefs.GetInt("Day") + 1;
+            if (MinusDay) d = PlayerPrefs.GetInt("Day") - 1;
+
+            if (PlusDay||MinusDay) BlackFG = Resources.Load<Texture>("Days/Day"+ d);
+
             Color guiColor = GUI.color; // Save the current GUI color
             GUI.color = new Color(1, 1, 1, DayFinish);
             DayFinish += 0.01f;
@@ -493,13 +554,20 @@ public class Movement : MonoBehaviour {
             GUI.color = guiColor; // Get back to previous GUI color
 
 
-            if (DayFinish >=1f)
+            if (DayFinish >=1f+ DayLimitPlus)
             {
-                if (PlusDay)
+                if (PlusDay|| MinusDay)
                 {
-                    PlayerPrefs.SetInt("Day", PlayerPrefs.GetInt("Day") + 1);
-                    PlayerPrefs.SetFloat("DayStart", 1);
-                    PlusDay = false;
+                    if (SceneManager.GetActiveScene().name != "StartRoom")
+                    {
+                        if(PlusDay)
+                        PlayerPrefs.SetInt("Day", PlayerPrefs.GetInt("Day") + 1);
+                        if(MinusDay)
+                        PlayerPrefs.SetInt("Day", PlayerPrefs.GetInt("Day") -1);
+
+                        PlayerPrefs.SetFloat("DayStart", 1);
+                    }
+                    PlusDay = MinusDay = false;
                 }
                 if(EndDayLocation!=null&& EndDayLocation.Length>2)
                 SceneManager.LoadScene(EndDayLocation);
@@ -512,8 +580,8 @@ public class Movement : MonoBehaviour {
      
         if (PlayerPrefs.GetFloat("DayStart")> 0)
         {
-            
-            Texture BlackFG = Resources.Load<Texture>("ItemIcons/GunPower");
+
+            Texture BlackFG = Resources.Load<Texture>("Days/Day"+PlayerPrefs.GetInt("Day"));
             Color guiColor = GUI.color; // Save the current GUI color
             GUI.color = new Color(1, 1, 1, PlayerPrefs.GetFloat("DayStart"));
             PlayerPrefs.SetFloat("DayStart", PlayerPrefs.GetFloat("DayStart") - 0.0025f);
@@ -546,6 +614,11 @@ public class Movement : MonoBehaviour {
 		if (!joystick) {
 			_horizontal = Input.GetAxis ("Horizontal");
 			_vertical = Input.GetAxis ("Vertical");
+
+            _horizontal_Right = Input.GetAxis("Horizontal_Right");
+            _vertical_Right = Input.GetAxis("Vertical_Right");
+
+
             //atack_b = Input.GetButtonDown ("Atack");
             journal = Input.GetButtonDown("Journal");
             map = Input.GetButtonDown("Map");
@@ -559,15 +632,20 @@ public class Movement : MonoBehaviour {
 		} else {
 			_horizontal = Input.GetAxis ("Horizontal_J");
 			_vertical = Input.GetAxis ("Vertical_J");
-			//atack_b = Input.GetKeyDown(KeyCode.JoystickButton2);
-			enter_b = Input.GetKeyDown (KeyCode.JoystickButton0);
 
-            journal = Input.GetKeyDown(KeyCode.JoystickButton2);
+            _horizontal_Right= Input.GetAxis("Horizontal_Right_J");
+            _vertical_Right = Input.GetAxis("Vertical_Right_J");
+            
+
+            //atack_b = Input.GetKeyDown(KeyCode.JoystickButton2);
+            enter_b = Input.GetKeyDown (KeyCode.JoystickButton0);
+
+            journal = Input.GetKeyDown(KeyCode.JoystickButton3);
             map = Input.GetKeyDown(KeyCode.JoystickButton5);
 
             exit_b = Input.GetKeyDown(KeyCode.JoystickButton1);
-			menu_b = Input.GetKey (KeyCode.JoystickButton9);
-			inventory_b = Input.GetKeyDown(KeyCode.JoystickButton3);
+			menu_b = Input.GetKey (KeyCode.JoystickButton7);
+			inventory_b = Input.GetKeyDown(KeyCode.JoystickButton2);
 		
 			
 		}

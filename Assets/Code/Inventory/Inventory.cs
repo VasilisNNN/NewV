@@ -36,7 +36,8 @@ public class Inventory : MonoBehaviour {
     private Movement pl;
     private Mouse _mouse;
     private Texture Choise;
-    private Texture2D JournalBG,CrossFace,ITexture,JTexture, MTexture;
+    private Texture2D JournalBG,CrossFace,ITexture,JTexture, MTexture,
+        JournalBG_Gamepad, ITexture_Gamepad, JTexture_Gamepad, MTexture_Gamepad, JournalBG_KeyBoard, ITexture_KeyBoard, JTexture_KeyBoard, MTexture_KeyBoard, LeftArrow,RightArrow;
     private Transform VasPoint;
     void Awake()
 	{
@@ -46,23 +47,42 @@ public class Inventory : MonoBehaviour {
 			GameObject Stepss  = new GameObject();
 			Stepss = (GameObject)Instantiate(Resources.Load("PrefabObjects/Mouse"));
 		}
-        if (GameObject.Find("VasilisMap") == null)
+        if (SceneManager.GetActiveScene().name != "DemoEnd"&&SceneManager.GetActiveScene().name != "6Day" && SceneManager.GetActiveScene().name != "SecretLocation")
         {
-            GameObject Map = new GameObject();
-            Map = (GameObject)Instantiate(Resources.Load("PrefabObjects/VasilisMap"));
-            Map.name = "VasilisMap";
+            if (GameObject.Find("VasilisMap") == null)
+            {
+                GameObject Map = new GameObject();
+                Map = (GameObject)Instantiate(Resources.Load("PrefabObjects/VasilisMap"));
+                Map.name = "VasilisMap";
 
+            }
+            VasPoint = GameObject.Find("VasilisMapPoint").transform;
         }
-        VasPoint = GameObject.Find("VasilisMapPoint").transform;
+       
 
         _mouse = GameObject.Find("Mouse(Clone)").GetComponent<Mouse>();
         Choise = Resources.Load<Texture>("Invent/Seed");
-        JournalBG = Resources.Load<Texture2D>("Invent/Journal");
+       
         CrossFace = Resources.Load<Texture2D>("Invent/CrossFace");
 
+        JournalBG = Resources.Load<Texture2D>("Invent/Journal");
         ITexture = Resources.Load<Texture2D>("Interface/I");
         JTexture = Resources.Load<Texture2D>("Interface/J");
         MTexture = Resources.Load<Texture2D>("Interface/Map_info");
+
+        JournalBG_KeyBoard = Resources.Load<Texture2D>("Invent/Journal");
+        ITexture_KeyBoard = Resources.Load<Texture2D>("Interface/I");
+        JTexture_KeyBoard = Resources.Load<Texture2D>("Interface/J");
+        MTexture_KeyBoard = Resources.Load<Texture2D>("Interface/Map_info");
+
+        JournalBG_Gamepad = Resources.Load<Texture2D>("Invent/Journal_Gamepad");
+        ITexture_Gamepad = Resources.Load<Texture2D>("Interface/I_Gamepad");
+        JTexture_Gamepad = Resources.Load<Texture2D>("Interface/J_Gamepad");
+        MTexture_Gamepad = Resources.Load<Texture2D>("Interface/Map_info_Gamepad");
+        
+        LeftArrow = Resources.Load<Texture2D>("Invent/LeftArrow");
+        RightArrow = Resources.Load<Texture2D>("Invent/RightArrow");
+
     }
     // Use this for initialization
     void Start () {
@@ -95,14 +115,37 @@ public class Inventory : MonoBehaviour {
     }
     private void Update()
     {
+        if (!pl.joystick)
+        {
+            JournalBG = JournalBG_KeyBoard;
+            ITexture = ITexture_KeyBoard;
+            JTexture = JTexture_KeyBoard;
+            MTexture = MTexture_KeyBoard;
+        }
+        else
+        {
+            JournalBG = JournalBG_Gamepad;
+            ITexture = ITexture_Gamepad;
+            JTexture = JTexture_Gamepad;
+            MTexture = MTexture_Gamepad;
+        }
 
-        if (Input.GetKeyDown("=") && PlayerPrefs.GetInt("Day") < 8)
-            PlayerPrefs.SetInt("Day", PlayerPrefs.GetInt("Day") + 1);
 
-        if (Input.GetKeyDown("-") && PlayerPrefs.GetInt("Day") > 0)
-            PlayerPrefs.SetInt("Day", PlayerPrefs.GetInt("Day") - 1);
+        if (Input.GetKeyDown("=") && PlayerPrefs.GetInt("Day") < 5&&!pl.PlusDay)
+        {
+            pl.PlusDay = true;
+            pl.DayFinish = 0;
+            pl.EndDayLocation = SceneManager.GetActiveScene().name;
+        }
 
-
+        if (Input.GetKeyDown("-") && PlayerPrefs.GetInt("Day") > 0 && !pl.MinusDay)
+        {
+           
+                pl.MinusDay = true;
+                pl.DayFinish = 0;
+                pl.EndDayLocation = SceneManager.GetActiveScene().name;
+            
+        }
         if (!_mouse.pointnclick&&showinvent)
         {
             if (pl._horizontal < 0 && mousedeley < Time.fixedTime&& correntSlot > 0)
@@ -120,59 +163,70 @@ public class Inventory : MonoBehaviour {
 
     void OnGUI()
 	{
-        float IW = 150;
-
-        if (!JournalDraw && !showinvent && !DrawMap)
+        if (SceneManager.GetActiveScene().name != "DemoEnd"&&SceneManager.GetActiveScene().name != "6Day" && SceneManager.GetActiveScene().name != "SecretLocation"&&!pl.StopControlls)
         {
-            GUI.DrawTexture(new Rect(Screen.width - IW - 10, 10, IW, IW), JTexture);
-            GUI.DrawTexture(new Rect(Screen.width - IW * 2 - 20, 10, IW, IW), MTexture);
-            GUI.DrawTexture(new Rect(Screen.width - IW - 10, Screen.height - IW - 10, IW, IW), ITexture);
+            float IW = 150;
 
-        }
-        Map();
-        
-        if (JournalDraw)
-        Journal();
-       
-
-        tooltip = "";
-		GUI.skin = skin;
-
-        if (showinvent)
-        {
-            DrawInventory();
-
-            if (showTooltip)
+            if (!JournalDraw && !showinvent && !DrawMap)
             {
-                float W = 200;
-                if (Event.current.mousePosition.x < Screen.width - W)
-                    GUI.Box(new Rect(Event.current.mousePosition.x + 15f, Event.current.mousePosition.y - W, W, W), tooltip);
-                else
-                    GUI.Box(new Rect(Event.current.mousePosition.x + 15f - W, Event.current.mousePosition.y - W, W, W), tooltip);
+                GUI.DrawTexture(new Rect(Screen.width - IW - 10, 10, IW, IW), JTexture);
+                GUI.DrawTexture(new Rect(Screen.width - IW * 2 - 20, 10, IW, IW), MTexture);
+                GUI.DrawTexture(new Rect(Screen.width - IW - 10, Screen.height - IW - 10, IW, IW), ITexture);
 
+            }
+            Map();
+
+            if (JournalDraw)
+                Journal();
+
+
+            tooltip = "";
+            GUI.skin = skin;
+
+            if (showinvent)
+            {
+                DrawInventory();
+
+                if (showTooltip)
+                {
+                    float W = 200;
+                    if (Event.current.mousePosition.x < Screen.width - W)
+                        GUI.Box(new Rect(Event.current.mousePosition.x + 15f, Event.current.mousePosition.y - W, W, W), tooltip);
+                    else
+                        GUI.Box(new Rect(Event.current.mousePosition.x + 15f - W, Event.current.mousePosition.y - W, W, W), tooltip);
+
+
+                }
+            }
+
+
+            /* if(GameObject.Find("Mouse(Clone)").GetComponent<Mouse>().pointnclick)
+             GUI.DrawTexture(new Rect(Event.current.mousePosition.x, Event.current.mousePosition.y, 50, 50), 
+                 GameObject.Find("Mouse(Clone)").GetComponent<Mouse>().GetTexture());
+
+             if(draggingItem&&draggedItem!=null)
+             {
+                 GUI.DrawTexture(new Rect(Event.current.mousePosition.x,Event.current.mousePosition.y,50,50),draggedItem.itemIcon);
+                 GUI.Box(new Rect(Event.current.mousePosition.x,Event.current.mousePosition.y,50,50),draggedItem.itemNum.ToString(),skin.customStyles[3]);
+             }*/
+
+            if (Input.GetKey(KeyCode.C))
+            {
+                GUI.Box(new Rect(0, 0, 200, 100), "Current Chapter " + PlayerPrefs.GetInt("Day"), skin.customStyles[6]);
+                GUI.Box(new Rect(0, 110, 200, 50), "+ / - Day skip", skin.customStyles[6]);
+                GUI.Box(new Rect(0, 170, 200, 50), "L - Reload level", skin.customStyles[6]);
 
             }
         }
-        
-
-        /* if(GameObject.Find("Mouse(Clone)").GetComponent<Mouse>().pointnclick)
-         GUI.DrawTexture(new Rect(Event.current.mousePosition.x, Event.current.mousePosition.y, 50, 50), 
-             GameObject.Find("Mouse(Clone)").GetComponent<Mouse>().GetTexture());
-
-         if(draggingItem&&draggedItem!=null)
-         {
-             GUI.DrawTexture(new Rect(Event.current.mousePosition.x,Event.current.mousePosition.y,50,50),draggedItem.itemIcon);
-             GUI.Box(new Rect(Event.current.mousePosition.x,Event.current.mousePosition.y,50,50),draggedItem.itemNum.ToString(),skin.customStyles[3]);
-         }*/
-
-        if (Input.GetKey(KeyCode.C))
+        else
         {
-            GUI.Box(new Rect(0, 0, 200, 100), "Current Chapter " + PlayerPrefs.GetInt("Day"), skin.customStyles[6]);
-            GUI.Box(new Rect(0, 110, 200, 50), "+ / - Day skip", skin.customStyles[6]);
-            GUI.Box(new Rect(0, 170, 200, 50), "L - Reload level", skin.customStyles[6]);
+            if (GameObject.Find("VasilisMap") != null)
+            {
 
+                GameObject.Find("VasilisMap").GetComponent<SpriteRenderer>().enabled =
+           GameObject.Find("VasilisMapPoint").GetComponent<SpriteRenderer>().enabled = false;
+            }
         }
-
     }
 
     void Map()
@@ -180,8 +234,12 @@ public class Inventory : MonoBehaviour {
         GameObject.Find("VasilisMap").transform.position = new Vector3 (Camera.main.transform.position.x, Camera.main.transform.position.y,1);
 
         VasPoint.position = GameObject.Find(SceneManager.GetActiveScene().name).transform.position;
-        GameObject.Find("VasilisMap").GetComponent<SpriteRenderer>().enabled =
-        GameObject.Find("VasilisMapPoint").GetComponent<SpriteRenderer>().enabled = DrawMap;
+        GameObject.Find("VasilisMapSPRT").GetComponent<MoveWASD>().enabled = DrawMap;
+
+        GameObject.Find("VasilisMapSPRT").GetComponent<SpriteRenderer>().enabled =
+        GameObject.Find("VasilisMapPoint").GetComponent<SpriteRenderer>().enabled =
+        GameObject.Find("4Arrows").GetComponent<SpriteRenderer>().enabled =
+         GameObject.Find("2Arrows").GetComponent<SpriteRenderer>().enabled = DrawMap;
 
     }
     
@@ -193,50 +251,53 @@ public class Inventory : MonoBehaviour {
         
         float XPos = 0;
         Texture2D facet;
-        for (int i = 0; i < 6; i++)
+        float MaxOnList = 8;
+        for (int i = 0; i < MaxOnList; i++)
         {
-           
-           
-                if (i < 3) XPos = 0;
-                else if(i >= 3) XPos = 1;
+            float YMF = 1;
+            if (i == 0 || i == MaxOnList / 2) YMF = 0;
 
-            float Y = 20 + 150 * i - XPos * 150*3;
+            if (i < MaxOnList/2) XPos = 0;
+                else if(i >= MaxOnList/2) XPos = 1;
 
-            if (PlayerPrefs.GetString((CorrentPage * 6 + i) + "Face").Length > 1)
+            float Y = 20 + 150 * i - XPos * 150* (MaxOnList/2)+ (YMF * 10* (i - XPos * (MaxOnList / 2)));
+
+            if (PlayerPrefs.GetString((CorrentPage * MaxOnList + i) + "Face").Length > 1)
             {
-                facet = Resources.Load<Texture2D>("Pers/Portrey/" + PlayerPrefs.GetString((CorrentPage * 6 + i) + "Face"));
+                facet = Resources.Load<Texture2D>("Pers/Portrey/" + PlayerPrefs.GetString((CorrentPage * MaxOnList + i) + "Face"));
 
                 GUI.DrawTexture(new Rect(20 + (Screen.width / 2) * XPos, Y, 150, 150), facet);
 
-                if (PlayerPrefs.GetInt(PlayerPrefs.GetString((CorrentPage * 6 + i) + "Name") + "Quest") == 1)
+                if (PlayerPrefs.GetInt(PlayerPrefs.GetString((CorrentPage * MaxOnList + i) + "Name") + "Quest") == 1)
                 {
                     GUI.DrawTexture(new Rect(20 + (Screen.width / 2) * XPos, Y, 150, 150), CrossFace);
                     // print(PlayerPrefs.GetString((CorrentPage * 6 + i) + "Name") + "Quest");
                 }
 
-                if (PlayerPrefs.GetString((CorrentPage * 6 + i).ToString()).Length > 1)
+                if (PlayerPrefs.GetString((CorrentPage * MaxOnList + i).ToString()).Length > 1)
                     GUI.Box(new Rect(170 + (Screen.width / 2) * XPos, Y, Screen.width / 2 - 200, 150),
-                             PlayerPrefs.GetString((CorrentPage * 6 + i).ToString()), skin.customStyles[2]);
+                             PlayerPrefs.GetString((CorrentPage * MaxOnList + i).ToString()), skin.customStyles[2]);
 
             }
             else
             {
-                if (PlayerPrefs.GetString((CorrentPage * 6 + i).ToString()).Length > 1)
-                    GUI.Box(new Rect(20 + (Screen.width / 2) * XPos, Y, Screen.width / 2 - 50, 150),
-                             PlayerPrefs.GetString((CorrentPage * 6 + i).ToString()), skin.customStyles[2]);
+                float YM = 1;
+                if (i == 0 || i == MaxOnList / 2) YM = 0;
+
+                if (PlayerPrefs.GetString((CorrentPage * MaxOnList + i).ToString()).Length > 1)
+                    GUI.Box(new Rect(170 + (Screen.width / 2) * XPos, Y- YM*(15 * (i -XPos* (MaxOnList / 2))), Screen.width / 2 - 200, 150),
+                             PlayerPrefs.GetString((CorrentPage * MaxOnList + i).ToString()), skin.customStyles[2]);
             }
 
-            if (i < 3) XPos = 0;
+            if (i < MaxOnList / 2) XPos = 0;
             else XPos = 1;
 
           
-
-           
-
-
-
-
         }
+        if(CorrentPage>0)
+        GUI.DrawTexture(new Rect(50, Screen.height-60, 70, 50), LeftArrow);
+        if (PlayerPrefs.GetInt("CorrentPage") < (int)((PlayerPrefs.GetInt("LastSlot") - 1) / 8))
+            GUI.DrawTexture(new Rect(Screen.width- 110, Screen.height - 60, 70, 50), RightArrow);
 
 
 
@@ -248,7 +309,7 @@ void DrawInventory()
         float w = Screen.width / slotX - 10;
         if (!_mouse.pointnclick)
         {
-            GUI.DrawTexture(new Rect((w + 10) * correntSlot - 5f, Screen.height - 110, 80, 80), Choise);
+            GUI.DrawTexture(new Rect((w + 10) * correntSlot - 5f, Screen.height - 150, 80, 80), Choise);
         }
         
         for (int x= 0; x<slotX;x++)

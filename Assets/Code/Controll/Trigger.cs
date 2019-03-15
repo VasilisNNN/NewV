@@ -166,7 +166,11 @@ new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>()
                 if (enter)
                 {
                     AllActions();
-                    if (StopPlayer) pl.MovePers = false;
+                    if (StopPlayer)
+                    {
+                        pl.MovePers = false;
+                        pl.StopControlls = true;
+                    }
 
                     if (AS != null&&NeededItem<0)
                     {
@@ -177,8 +181,16 @@ new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>()
             else
             {
                 AllActions();
-                if (StopPlayer) pl.MovePers = false;
-                if (MovePlayer) pl.MovePers = true;
+                if (StopPlayer)
+                {
+                    pl.MovePers = false;
+                    pl.StopControlls = true;
+                }
+                if (MovePlayer)
+                {
+                    pl.MovePers = true;
+                    pl.StopControlls = false;
+                }
             }
 
 

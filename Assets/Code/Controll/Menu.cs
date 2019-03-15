@@ -1,97 +1,89 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
-
+using System.Linq;
 public class Menu : MonoBehaviour {
-	public UnityEngine.Audio.AudioMixer mg;
+    public UnityEngine.Audio.AudioMixer mg;
 
-   // private Rect[] controller_rect = new Rect[4];
+    // private Rect[] controller_rect = new Rect[4];
 
-	private bool Sound,Visuals,Languages,Costumes;
-	private int controllernum;
-    private Rect[] rect_options = new Rect[10];
-//	private string[] OptionNamesInLine;
-	private GUISkin skin;
+    private bool Sound, Visuals, Languages, SettingsBox, JoystickBool;
+    //	private string[] OptionNamesInLine;
+    private GUISkin skin;
+    public bool XBoxGamepad { get; set; }
+    public bool PSGamepad { get; set; }
+    public bool joystick { get; set; }
 
-	private int  ChoiseXMax;
-    private int ChoisePosition, ChoisePositionY, ChoisePositionScreen, ChoisePositionFullScreen, language;
+    private int ChoiseXMax;
+    private int ChoisePosition, ChoisePositionY, ChoisePositionScreen, ChoisePositionFullScreen, language, JoystickHorNum;
     private float timer_e;
 
-
-    private bool/* _vertical_button_Up, _vertical_button_Down,*/ _horizontalScroll_button, _verticalScroll_button;
     private float _horizontalScroll_axis, _verticalScroll_axis;
 
     public bool exit_b { get; set; }
     public bool enter_b { get; set; }
     public bool Options { get; set; }
-   // private bool Extras;
+    // private bool Extras;
    
+
+
     private int[] Sc_width, Sc_height;
 
-	private float MasterV, BGV, MusicV, InDoorV;
 
-    private bool MoveCh,FullScreen = true;
 
-    private string[] ScreenResStrings,FullScreenString, LanguageString;
+    private bool MoveCh, FullScreen = true;
 
-  
+    private string[] ScreenResStrings, FullScreenString, LanguageString, JoystickONOFF;
+
+
     private float starttimer;
 
-	private Texture2D ArrowLeft,ArrowRight,ChoiseTexture;
-	private float ControllTV,ControllTH;
-//	private float MaxInMenuOptions;
-	private int[] SoundVolume;
-	private string[] InnerOptions;
-	private float EnterDeley;
-	private string[] PrefsAccess,PrefsAccessDog;
-	private bool CustumeLocked,DogCustumeLocked;
-	private AudioSource AU;
-	private AudioClip EnterClip,ChoiseClip;
-	private List<Rect> MenuRects = new List<Rect>();
-    void Start () {
-		for(int i = 0 ; i<7;i++)
-			MenuRects.Add(new Rect (Screen.width / 2 - 150, Screen.height / 8 + 80 * i, 300, 80));
-		
-		if(SceneManager.GetActiveScene().name == "StartMenu")Options = true;
-		EnterClip = Resources.Load<AudioClip> ("Sound/UI/Accept");
-		ChoiseClip = Resources.Load<AudioClip> ("Sound/UI/Click");
-	
+    private Texture2D ArrowLeft, ArrowRight, ChoiseTexture, SliderBG, SliderFG;
+   
+    //	private float MaxInMenuOptions;
+    private int[] SoundVolume;
+    private string[] InnerOptions;
+    private float EnterDeley;
 
-		InnerOptions = new string[2]{"1","1"};
-		SoundVolume = new int[3]{8,7,7};
-		FullScreenString = new string[2];
-		//OptionNamesInLine = new string[5];
-	
+    private AudioSource AU;
+    private AudioClip EnterClip, ChoiseClip;
+    private List<Rect> MenuRects = new List<Rect>();
+    private int[] JINT;
+    void Start() {
+        JINT = new int[Input.GetJoystickNames().Length];
+        
 
-		Cursor.visible = true;
+        if (SceneManager.GetActiveScene().name == "StartMenu") Options = true;
+        EnterClip = Resources.Load<AudioClip>("Sound/UI/Accept");
+        ChoiseClip = Resources.Load<AudioClip>("Sound/UI/Click");
 
-		//ArrowUp = Resources.Load<Texture>("Sprites/UI/Arrow_Up");
-		//ArrowDown  = Resources.Load<Texture>("Sprites/UI/Arrow_Down");
-		ArrowLeft = Resources.Load<Texture2D>("Invent/LeftArrow");
-		ArrowRight  = Resources.Load<Texture2D>("Invent/RightArrow");
+
+        InnerOptions = new string[2] { "1", "1" };
+        SoundVolume = new int[3] { 8, 7, 7 };
+        FullScreenString = new string[2];
+        //OptionNamesInLine = new string[5];
+
+
+        Cursor.visible = true;
+
+        //ArrowUp = Resources.Load<Texture>("Sprites/UI/Arrow_Up");
+        //ArrowDown  = Resources.Load<Texture>("Sprites/UI/Arrow_Down");
+        ArrowLeft = Resources.Load<Texture2D>("Invent/LeftArrow");
+        ArrowRight = Resources.Load<Texture2D>("Invent/RightArrow");
         ChoiseTexture = Resources.Load<Texture2D>("Invent/Choise");
 
+        SliderBG = Resources.Load<Texture2D>("Invent/SliderBG");
+        SliderFG = Resources.Load<Texture2D>("Invent/SliderFG");
 
-        ScreenResStrings = new string[3] {"1366 * 768","1280 * 720","1024 * 768"};
-	
 
+        ScreenResStrings = new string[4] { "1920 * 1080","1366 * 768", "1280 * 720", "1024 * 768" };
         LanguageString = new string[2] { "RU", "EN" };
-        //AuC = new string[3] { "Master", "Background","Objects"};
 
-        Sc_width = new int[3] { 1366, 1280, 1024};
-        Sc_height = new int[3] { 768, 720, 768};
+        Sc_width = new int[4] { 1920,1366, 1280, 1024 };
+        Sc_height = new int[4] { 1080,768, 720, 768 };
 
-        /*En = Resources.Load<Texture>("Sprites/UI/English");
-        Ru = Resources.Load<Texture>("Sprites/UI/Russian");*/
-        
-		skin = Resources.Load<GUISkin>("Invent/Slot");
-        //names = new string[4] { "Start", "Options", "Exit","Special" +"\n"+"act"};
-      
-     
-       
-	
-		
-	
+        skin = Resources.Load<GUISkin>("Invent/Slot");
+
         if (PlayerPrefs.GetInt("Language") == 0) PlayerPrefs.SetInt("Language", 1);
 
         // Screen.SetResolution(Sc_width[(int)PlayerPrefs.GetFloat("RND_SpriteScreenSize")], Sc_height[(int)PlayerPrefs.GetFloat("RND_SpriteScreenSize")], true, 1);
@@ -104,27 +96,49 @@ public class Menu : MonoBehaviour {
               controller_rect[i] = new Rect(Screen.width / 2 - 150f, i * Screen.height / 6 + 50f, 300f, 60f);
           }*/
 
-        for (int i = 0; i < 10; i++)
-            rect_options[i] = new Rect(200f, 80f + 40f * i, 400f, 60f);
-
-       
         Load();
+
+        for (int i = 0; i < 7; i++)
+            MenuRects.Add(new Rect(Screen.width / 2 - (Screen.width / 7)/2, Screen.height / 8 + 80 * i, Screen.width / 7, Screen.width / 12));
+
 
         AU = GetComponent<AudioSource>();
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
+        for (int i = 0; i < 7; i++)
+            MenuRects[i] = new Rect(Screen.width / 2 - Screen.width / 8, Screen.height / 8 + (Screen.width / 16) * i, Screen.width / 4, Screen.width / 16);
+
+
+        for (int i = 0; i < Input.GetJoystickNames().Length; i++)
+        {
+            if (Input.GetJoystickNames()[i] != "")
+                JINT[i] = 1; 
+            else JINT[i] = 0;
+
+            if(JINT.Sum()==0)
+            joystick = false;
+            else joystick = true;
+
+        }
+        XBoxGamepad = joystick;
+
         if (PlayerPrefs.GetInt("Language") == 0 && language != 0) PlayerPrefs.SetInt("Language", language);
         InputSets();
-       
-        if (Input.GetKeyDown (KeyCode.Escape))
-			Options = !Options;
-		if (Options) {
-			ControllerGeneral ();
-		}
-           
+
+        if (SceneManager.GetActiveScene().name == "SecretLocation")
+        {
+            if (exit_b)
+                Options = !Options;
+
+        }
+
+        if (Options) {
+            ControllerGeneral();
+        }
+
     }
 
 
@@ -132,17 +146,18 @@ public class Menu : MonoBehaviour {
 
 
     void ControllerGeneral()
-	{
+    {
 
 
         if (ChoisePositionY > InnerOptions.Length - 1)
-			ChoisePositionY = InnerOptions.Length - 1;
-		if (ChoisePosition > ChoiseXMax)
-			ChoisePosition = ChoiseXMax;
+            ChoisePositionY = InnerOptions.Length - 1;
+        if (ChoisePosition > ChoiseXMax)
+            ChoisePosition = ChoiseXMax;
 
 
+        if (EnterDeley < Time.fixedTime)
+        {
 
-		if (_horizontalScroll_button) {
             if (ChoisePosition < ChoiseXMax && _horizontalScroll_axis > 0)
             {
                 ChoisePosition++;
@@ -155,7 +170,7 @@ public class Menu : MonoBehaviour {
                 AU.clip = ChoiseClip;
                 AU.Play();
             }
-		}
+        }
 
         /*
             for (int i = 0; i < MenuRects.Count; i++) {
@@ -164,46 +179,54 @@ public class Menu : MonoBehaviour {
 
             }*/
 
-        if (_verticalScroll_button)
-        {
+        if (EnterDeley <Time.fixedTime) {
             if (ChoisePositionY < InnerOptions.Length - 1 && _verticalScroll_axis < 0)
             {
                 ChoisePositionY++;
                 AU.clip = ChoiseClip;
                 AU.Play();
+                EnterDeley = Time.fixedTime + 0.1f;
             }
             else if (ChoisePositionY > 0 && _verticalScroll_axis > 0)
             {
                 ChoisePositionY--;
                 AU.clip = ChoiseClip;
                 AU.Play();
+                EnterDeley = Time.fixedTime + 0.1f;
             }
 
         }
 
 
 
-        SetOptions ();
-	}
-	
-	
+
+        SetOptions();
+    }
+
+
     void SetOptions()
     {
         if (Options)
         {
-			if (enter_b&& EnterDeley < Time.fixedTime)
+            if (enter_b && EnterDeley < Time.fixedTime)
             {
-				if (ChoisePositionY == 0&&!Visuals&&!Sound&&!Languages)
+                if (!SettingsBox && !Visuals && !Sound && !Languages && !JoystickBool)
                 {
-					if (SceneManager.GetActiveScene ().name != "StartMenu") {
-						Options = false;
-                        GetComponent<Movement>().menubackdeley = Time.fixedTime +0.2f;
+                    if (ChoisePositionY == 0 )
+                {
+                    if (SceneManager.GetActiveScene().name != "StartMenu")
+                    {
+                        Options = false;
+                        GetComponent<Movement>().menubackdeley = Time.fixedTime + 0.2f;
 
-                        if (!AU.isPlaying) {
-							AU.clip = EnterClip;
-							AU.Play ();
-						}
-					} else {
+                        if (!AU.isPlaying)
+                        {
+                            AU.clip = EnterClip;
+                            AU.Play();
+                        }
+                    }
+                    else
+                    {
                         if (PlayerPrefs.GetInt("FirstRun") == 0)
                         {
                             SceneManager.LoadScene("StartRoom");
@@ -211,119 +234,146 @@ public class Menu : MonoBehaviour {
                         }
                         else
                             SceneManager.LoadScene(PlayerPrefs.GetString("CorrLoadingLevel"));
-						
-					}
 
-					if (!AU.isPlaying) {
-						AU.clip = EnterClip;
-						AU.Play ();
-					}
-					
-                }
-				if (ChoisePositionY == 4&&!Visuals&&!Sound&&!Languages)
-				{
-					
-					if (SceneManager.GetActiveScene ().name == "StartMenu")
-						Application.Quit ();
-					else SceneManager.LoadScene ("StartMenu");
+                    }
 
-					if (!AU.isPlaying) {
-						AU.clip = EnterClip;
-						AU.Play ();
-					}
-					
-				}
-				if (ChoisePositionY == 5&&!Visuals&&!Sound&&!Languages)
-				{
-					Forget ();
-                    EnterDeley = Time.fixedTime + 0.05f;
-
-                    if (!AU.isPlaying) {
-						AU.clip = EnterClip;
-						AU.Play ();
-					}
-
-				}
-				if (ChoisePositionY == InnerOptions.Length-1){
-
-                    if (Sound)
+                    if (!AU.isPlaying)
                     {
-                        Sound = false;
-                        EnterDeley = Time.fixedTime + 0.05f;
                         AU.clip = EnterClip;
                         AU.Play();
                     }
-				}
-				
-					if (ChoisePositionY == 1&&!Visuals) {
-						Visuals = true;
-                        EnterDeley = Time.fixedTime + 0.05f;
-                    AU.clip = EnterClip;
-						AU.Play ();
-					}
-					if (ChoisePositionY == 2&&!Sound) {
-						Sound = true;
-                        EnterDeley = Time.fixedTime + 0.05f;
-                    AU.clip = EnterClip;
-						AU.Play ();
-					}
-					if (ChoisePositionY == 3&&!Languages)
+
+                }
+                if (ChoisePositionY == 2 )
                 {
-						Languages = true;
-                        EnterDeley = Time.fixedTime + 0.05f;
-                    AU.clip = EnterClip;
-						AU.Play ();
-					}
-				
+
+                    if (SceneManager.GetActiveScene().name == "StartMenu")
+                        Application.Quit();
+                    else SceneManager.LoadScene("StartMenu");
+
+                    if (!AU.isPlaying)
+                    {
+                        AU.clip = EnterClip;
+                        AU.Play();
+                    }
+
+                }
+                if (ChoisePositionY == 3 )
+                {
+                    Forget();
+                    EnterDeley = Time.fixedTime + 0.05f;
+
+                    if (!AU.isPlaying)
+                    {
+                        AU.clip = EnterClip;
+                        AU.Play();
+                    }
+
+                }
             }
-			if(Languages)SetLanguages();
-			if(Visuals) SetVisuals();
-			if(Sound) SetSounds();
-		
-		}
-	}
+                if (SettingsBox && EnterDeley < Time.fixedTime&& !Visuals && !Sound && !Languages && !JoystickBool)
+                {
+                    if (ChoisePositionY == InnerOptions.Length - 1)
+                    {
+                        if (!Sound&&!Languages&&!Visuals&&!JoystickBool)
+                        {
+                            SettingsBox = false;
+                            EnterDeley = Time.fixedTime + 0.1f;
+                            AU.clip = EnterClip;
+                            AU.Play();
+                        }
+                        
+                    }
+
+                    if (ChoisePositionY == 0 && !Visuals)
+                    {
+                        Visuals = true;
+                       
+                        EnterDeley = Time.fixedTime + 0.1f;
+                        AU.clip = EnterClip;
+                        AU.Play();
+                    }
+                    if (ChoisePositionY == 1 && !Sound)
+                    {
+                        Sound = true;
+                        EnterDeley = Time.fixedTime + 0.1f;
+                        AU.clip = EnterClip;
+                        AU.Play();
+                    }
+                    if (ChoisePositionY == 2 && !Languages)
+                    {
+                        Languages = true;
+                        EnterDeley = Time.fixedTime + 0.1f;
+                        AU.clip = EnterClip;
+                        AU.Play();
+                    }
+                    if (ChoisePositionY == 3 && !JoystickBool)
+                    {
+                        JoystickBool = true;
+                        EnterDeley = Time.fixedTime + 0.1f;
+                        AU.clip = EnterClip;
+                        AU.Play();
+                    }
+                }
+                else
+                     if (ChoisePositionY == 1 && !SettingsBox)
+                {
+                    SettingsBox = true;
+                    EnterDeley = Time.fixedTime + 0.1f;
+                    AU.clip = EnterClip;
+                    AU.Play();
+                }
+
+                }
+            if (Languages) SetLanguages();
+            if (Visuals) SetVisuals();
+            if (Sound) SetSounds();
+            if (JoystickBool) SetJoystick();
+
+        }
+    }
 
 
 
-    
 
-        void DrawOP()
-	{
-       
 
-        if (SceneManager.GetActiveScene ().name == "StartMenu") {
-            
+    void DrawOP()
+    {
+
+
+        if (SceneManager.GetActiveScene().name == "StartMenu") {
+
             if (PlayerPrefs.GetInt("Language") == 1)
-				InnerOptions = new string[6]
-			{"Back","Visual","Sound","Language","Exit","Forget everything."};
-			else
-				InnerOptions = new string[6]
-			{"Назад","Экран","Звук","Язык","Выход","Забыть все."};
-
-
-			if (PlayerPrefs.GetInt("Language") == -1) {
-				if (PlayerPrefs.GetInt ("FirstRun") == 1)
-					InnerOptions [0] = "Продолжить";
-				else
-					InnerOptions [0] = "Новая игра";
-
-				InnerOptions [InnerOptions.Length - 1] = "Забыть все";
-
-			} else {
-				if (PlayerPrefs.GetInt ("FirstRun") == 1)
-					InnerOptions [0] = "Continue";
-				else
-					InnerOptions [0] = "Start";
-
-				InnerOptions [InnerOptions.Length - 1] = "Forget all this";
-			}
-		} else {
-            if (PlayerPrefs.GetInt("Language") == 1)
-                InnerOptions = new string[5]
-            {"Back","Visual","Sound","Language","To main menu"};
+                InnerOptions = new string[4]
+            {"Back","Options","Exit","Forget everything"};
             else
-                InnerOptions = new string[5]
-            {"Назад","Экран","Звук","Язык","В меню"};
+                InnerOptions = new string[4]
+            {"Назад","Опции","Выход","Забыть все"};
+
+
+            if (PlayerPrefs.GetInt("Language") == -1) {
+                if (PlayerPrefs.GetInt("FirstRun") == 1)
+                    InnerOptions[0] = "Продолжить";
+                else
+                    InnerOptions[0] = "Новая игра";
+
+                InnerOptions[InnerOptions.Length - 1] = "Забыть все";
+
+            } else {
+                if (PlayerPrefs.GetInt("FirstRun") == 1)
+                    InnerOptions[0] = "Continue";
+                else
+                    InnerOptions[0] = "Start";
+
+                InnerOptions[InnerOptions.Length - 1] = "Forget all this";
+            }
+        } else {
+            if (PlayerPrefs.GetInt("Language") == 1)
+                InnerOptions = new string[3]
+            {"Back","Options","To main menu"};
+            else
+                InnerOptions = new string[3]
+            {"Назад","Опции","В главное меню"};
 
         }
 
@@ -332,40 +382,111 @@ public class Menu : MonoBehaviour {
 
 
 
-		DrawBoxInnerOptions (InnerOptions.Length-1,false);
-	}
-    
+        DrawBoxInnerOptions(InnerOptions.Length - 1, false);
+    }
+
 
     void OnGUI()
     {
-	
 
+
+
+        if (Options)
+        {
+            skin.customStyles[2].fontSize = Screen.width / 67;
+            skin.customStyles[6].fontSize = Screen.width / 67;
+
+            GUI.Box(new Rect(Screen.width - Screen.width / 6, Screen.height - Screen.width / 11, Screen.width / 7, Screen.width / 12), "Made by: Marginal act", skin.customStyles[2]);
+
+            
+            //if(new Rect(Screen.width - 200,Screen.height - 90,200,80).Contains(Input.mousePosition)&&Input.GetMouseButtonDown(2))
+
+            if (Sound) DrawSound();
+            else if (Languages) DrawLanguage();
+            else if (Visuals) DrawVisuals();
+            else if (JoystickBool) DrawJoystick();
+            else {
+                
+                if (SettingsBox) DrawSettings();
+                else DrawOP();
+            }
+            
+        }
+
+    }
+    void DrawJoystick()
+    {
+        if (PlayerPrefs.GetInt("Language") == 1 && JoystickONOFF[1] != "Gamepad PS")
+            JoystickONOFF = new string[2] { "Gamepad XBox", "Gamepad PS" };
+        if (PlayerPrefs.GetInt("Language") != 1 && JoystickONOFF[1] != "Геймпад PS")
+            JoystickONOFF = new string[2] { "Геймпад XBox", "Геймпад PS" };
+
+        if (PlayerPrefs.GetInt("Language") == 1 )
+            InnerOptions = new string[2] { JoystickONOFF[JoystickHorNum], "Back" };
+        if (PlayerPrefs.GetInt("Language") != 1)
+            InnerOptions = new string[2] { JoystickONOFF[JoystickHorNum], "Назад" };
         
-		if(Options)
-		{
-			GUI.Box(new Rect(Screen.width - 200,Screen.height -180,200,80), "Produced by: Marginal act", skin.customStyles[2]);
 
-			if(PlayerPrefs.GetInt("Language")==1)
-				GUI.Box(new Rect(Screen.width - 200,Screen.height - 90,200,80), "Language: English", skin.customStyles[2]);
-			else
-				GUI.Box(new Rect(Screen.width - 200,Screen.height - 90,200,80), "Язык: Русский", skin.customStyles[2]);
+        DrawBoxInnerOptions(InnerOptions.Length - 1, true);
 
-			//if(new Rect(Screen.width - 200,Screen.height - 90,200,80).Contains(Input.mousePosition)&&Input.GetMouseButtonDown(2))
-				
-			if(Sound)DrawSound();
-			else if(Languages)DrawLanguage();
-			else if(Visuals)DrawVisuals();
-			else DrawOP();
-		}
+    }
+    void SetJoystick()
+    {
+        if (ChoisePositionY == 0)
+        {
+
+            ChoiseXMax = 1;
+            JoystickHorNum = SetInHorPlusMinus(JoystickHorNum);
+        }
+
+    
+
+        if (ChoisePositionY == InnerOptions.Length - 1 && enter_b&&EnterDeley<Time.fixedTime)
+        {
+            if (!AU.isPlaying)
+            {
+                AU.clip = EnterClip;
+                AU.Play();
+            }
+
+            if (JoystickHorNum == 0)
+            {
+                XBoxGamepad = true;
+                PSGamepad = false;
+                PlayerPrefs.SetInt("JoystickINT", 0);
+            }
+            if (JoystickHorNum == 1)
+            {
+                XBoxGamepad = false;
+                PSGamepad = true;
+                PlayerPrefs.SetInt("JoystickINT", 1);
+            }
+
+            
+
+            EnterDeley = Time.fixedTime + 0.1f;
+            JoystickBool = false;
+        }
+    }
+    void DrawSettings()
+    {
+
+        if (PlayerPrefs.GetInt("Language") == 1 && InnerOptions[0] != "Visuals")
+            InnerOptions = new string[5] { "Visuals", "Sound","Language", "Gamepad", "Back" };
+        if (PlayerPrefs.GetInt("Language") != 1 && InnerOptions[0] != "Экран")
+            InnerOptions = new string[5] { "Экран", "Звук","Язык", "Геймпад","Назад" };
+
   
+
+        DrawBoxInnerOptions(InnerOptions.Length - 1, false);
     }
 
-//VISUALS
-	void SetVisuals()
+    //VISUALS
+    void SetVisuals()
 	{
 		if (ChoisePositionY == 0) {
 
-			ChoiseXMax = 2;
+			ChoiseXMax = 3;
 			ChoisePositionScreen =	SetInHorPlusMinus(ChoisePositionScreen);
 		}
 		if (ChoisePositionY == 1) {
@@ -387,11 +508,11 @@ public class Menu : MonoBehaviour {
 			PlayerPrefs.SetFloat("ScreenSize", ChoisePositionScreen);
 			Screen.SetResolution(Sc_width[ChoisePositionScreen], Sc_height[ChoisePositionScreen], FullScreen, 1);
 		    Visuals = false;
-
            
-		}
-	
-	}
+           
+        }
+
+    }
    void DrawVisuals()
 	{
 		if(PlayerPrefs.GetInt("Language")==1&&FullScreenString[1]!="Fullscreen Off")
@@ -461,19 +582,66 @@ public class Menu : MonoBehaviour {
 				SetInHorPlusMinus (SoundVolume [ChoisePositionY]);
 		}
 
-	}
+        if (ChoisePositionY == 3&&enter_b)
+        {
+            Sound = false;
+            EnterDeley = Time.fixedTime + 0.1f;
+            AU.clip = EnterClip;
+            AU.Play();
+        }
+    }
 
 	void DrawSound()
 	{
-		if(PlayerPrefs.GetInt("Language")==1)InnerOptions = new string[4]{"Master"+" "+SoundVolume[0]*10,"BG"+" "+SoundVolume[1]*10,"Objects"+" "+SoundVolume[2]*10,"Accept"};
-		else InnerOptions = new string[4]{"Master" +" "+SoundVolume[0]*10,"Фон"+" "+SoundVolume[1]*10,"Объекты"+" "+SoundVolume[2]*10,"Подтвердить"};
+		if(PlayerPrefs.GetInt("Language")==1)InnerOptions = new string[4]{"Master","BG","Objects","Accept"};
+		else InnerOptions = new string[4]{"Master","Фон","Объекты","Подтвердить"};
 
-		DrawBoxInnerOptions (InnerOptions.Length-1,true);
-	}
+        float[] FS = new float[3] { SoundVolume[0]* MenuRects[0].width/10, SoundVolume[1] * MenuRects[0].width / 10, SoundVolume[2] * MenuRects[0].width / 10 };
+
+        DrawSliders(InnerOptions.Length - 1, true, FS);
+
+        //DrawBoxInnerOptions (InnerOptions.Length-1,true);
+    }
+
+    void DrawSliders(int MaxArrows, bool DrawArrows,float[] SliderPosition)
+    {
+        float SH = Screen.height / 4;
+        float YPos = 30 + MenuRects[ChoisePositionY].y + MenuRects[ChoisePositionY].height + MenuRects[ChoisePositionY].height * ChoisePositionY;
+        if (ChoisePositionY < InnerOptions.Length - 1)
+         GUI.DrawTexture(new Rect(MenuRects[0].x - 10, YPos - 30, MenuRects[0].width + 20, MenuRects[0].height + 10), ChoiseTexture);
+        else GUI.DrawTexture(new Rect(MenuRects[0].x - 10, MenuRects[ChoisePositionY].y + MenuRects[ChoisePositionY].height * ChoisePositionY-5f, MenuRects[0].width + 20, MenuRects[0].height + 10), ChoiseTexture);
+        
+       
+        for (int i = 0; i < InnerOptions.Length; i++)
+        {
+                GUI.Box(new Rect(MenuRects[i].x, MenuRects[i].y + MenuRects[i].height * i, MenuRects[i].width, MenuRects[i].height), InnerOptions[i], skin.customStyles[6]);
+            if (i < InnerOptions.Length - 1)
+            {
+                float h = MenuRects[i].width / 10;
+                GUI.DrawTexture(new Rect(MenuRects[i].x, MenuRects[i].height/2-h/4+ MenuRects[i].y + MenuRects[i].height + MenuRects[i].height * i, MenuRects[i].width, h/2), SliderBG);
+                GUI.DrawTexture(new Rect(MenuRects[i].x + SliderPosition[i], MenuRects[i].height / 2 - h/2 + MenuRects[i].y + MenuRects[i].height + MenuRects[i].height * i, h, h), SliderFG);
+
+            }
+        }
 
 
+        if (DrawArrows)
+        {
+            if (ChoisePositionY < MaxArrows)
+            {
+                
+                GUI.DrawTexture(new Rect(MenuRects[0].x - 70, YPos, 70, 50), ArrowLeft);
+                GUI.DrawTexture(new Rect(MenuRects[0].x + MenuRects[0].width, YPos, 70, 50), ArrowRight);
+            }
 
-	void DrawBoxInnerOptions(int MaxArrows,bool DrawArrows)
+
+        }
+       
+
+    }
+
+
+    void DrawBoxInnerOptions(int MaxArrows,bool DrawArrows)
 	{
 		float SH = Screen.height / 4;
 
@@ -496,7 +664,7 @@ public class Menu : MonoBehaviour {
 
     void Load()
 	{
-		/*int j = 0;
+        /*int j = 0;
 		for (int i = 0; i<Input.GetJoystickNames ().Length; i++) {
 			
 			if (Input.GetJoystickNames () [i] == "") {
@@ -508,21 +676,36 @@ public class Menu : MonoBehaviour {
 			PlayerPrefs.SetFloat ("JoyStickOn", 0);
 		}*/
 
-		if(PlayerPrefs.GetFloat("FullScreen")==0)
+        if (PlayerPrefs.GetFloat("JoystickINT") == 1)
+
+        {
+            XBoxGamepad = true;
+            PSGamepad = false;
+        }
+        else
+        {
+            XBoxGamepad = false;
+            PSGamepad = true;
+        }
+
+        if (PlayerPrefs.GetFloat("FullScreen")==0)
 		FullScreen = true;
 		else 
 			FullScreen = false;
 
 		Screen.SetResolution(Sc_width[(int)PlayerPrefs.GetFloat("ScreenSize")], Sc_height[(int)PlayerPrefs.GetFloat("ScreenSize")], FullScreen, 1);
 
+        if (PlayerPrefs.GetInt("Language") == 1 )
+            JoystickONOFF = new string[2] { "Gamepad OFF", "Gamepad ON" };
+        if (PlayerPrefs.GetInt("Language") != 1)
+            JoystickONOFF = new string[2] { "Геймпад Выкл", "Геймпад Вкл" };
 
-		if(PlayerPrefs.GetFloat("Master_V")!=0)
-		SoundVolume [0] = (int)PlayerPrefs.GetFloat ("Master_V")/10+8;
-		if(PlayerPrefs.GetFloat("BG_V")!=0)
-			SoundVolume [1] = (int)PlayerPrefs.GetFloat ("BG_V")/10+8;
-		if(PlayerPrefs.GetFloat("Objects_V")!=0)
-			SoundVolume [2] = (int)PlayerPrefs.GetFloat ("Objects_V")/10+8;
 
+        SoundVolume[0] = PlayerPrefs.GetInt("SoundVolume[0]");
+        SoundVolume[1] = PlayerPrefs.GetInt("SoundVolume[1]");
+        SoundVolume[2] = PlayerPrefs.GetInt("SoundVolume[2]");
+
+    
         mg = Resources.Load<UnityEngine.Audio.AudioMixer>("PrefabObjects/NewAudioMixer");
 
         mg.SetFloat ("Master", PlayerPrefs.GetFloat("Master_V"));
@@ -546,14 +729,32 @@ public class Menu : MonoBehaviour {
 
 	void SetMixer()
 	{
-		mg.SetFloat ("Master", -80+SoundVolume [0]*10);
-		PlayerPrefs.SetFloat("Master_V",-80+SoundVolume [0]*10);
-		
-		mg.SetFloat ("BG",-80+SoundVolume [1]*10);
-		PlayerPrefs.SetFloat("BG_V",-80+SoundVolume [1]*10);
+        if (SoundVolume[0] == 0)
+            PlayerPrefs.SetFloat("Master_V", -80);
+        else
+            PlayerPrefs.SetFloat("Master_V", -15 + SoundVolume[0] * 2);
 
-		mg.SetFloat ("Objects", -80+SoundVolume [2]*10);
-		PlayerPrefs.SetFloat("Objects_V",-80+ SoundVolume [2]*10);
+        if (SoundVolume[1] == 0)
+            PlayerPrefs.SetFloat("BG_V", -80);
+        else
+            PlayerPrefs.SetFloat("BG_V", -15 + SoundVolume[1] * 2);
+
+        if (SoundVolume[2] == 0)
+            PlayerPrefs.SetFloat("Objects_V", -80);
+        else
+            PlayerPrefs.SetFloat("Objects_V", -15 + SoundVolume[2] * 2);
+
+
+        PlayerPrefs.SetInt("SoundVolume[0]", SoundVolume[0]);
+        PlayerPrefs.SetInt("SoundVolume[1]", SoundVolume[1]);
+        PlayerPrefs.SetInt("SoundVolume[2]", SoundVolume[2]);
+
+        mg.SetFloat("Master", PlayerPrefs.GetFloat("Master_V"));
+        
+        mg.SetFloat ("BG", PlayerPrefs.GetFloat("BG_V"));
+        
+        mg.SetFloat ("Objects", PlayerPrefs.GetFloat("Objects_V"));
+		
 	}
 
 
@@ -561,14 +762,19 @@ public class Menu : MonoBehaviour {
 	{
 		if (t > ChoiseXMax)
 			t = ChoiseXMax;
-		if (_horizontalScroll_button)
-		{
-			if (t < ChoiseXMax && _horizontalScroll_axis > 0)
-				t++;
-			else if (t > 0 && _horizontalScroll_axis < 0)
-				t--;
+        if (t < 0)
+            t = 0;
+
+        if (EnterDeley < Time.fixedTime)
+        {
+            if (t < ChoiseXMax && _horizontalScroll_axis > 0)
+                t++;
+            else if (t > 0 && _horizontalScroll_axis < 0)
+                t--;
+            EnterDeley = Time.fixedTime + 0.1f;
+        }
 			
-		}
+		
 		return t;
 	}
 
@@ -651,20 +857,34 @@ public class Menu : MonoBehaviour {
 	}
     void InputSets()
     {
+        if (!joystick)
+        {
 
-        _horizontalScroll_button = Input.GetButtonDown("Horizontal");
-        _horizontalScroll_axis = Input.GetAxis("Horizontal");
-        _verticalScroll_button = Input.GetButtonDown("Vertical");
-        _verticalScroll_axis = Input.GetAxis("Vertical");
+            _horizontalScroll_axis = Input.GetAxis("Horizontal");
+            _verticalScroll_axis = Input.GetAxis("Vertical");
+            
+            enter_b = Input.GetButtonDown("Enter");
+
+            exit_b = Input.GetButtonDown("Exit");
+
+        }
+       
+        else
+        {
+            _horizontalScroll_axis = Input.GetAxis("Horizontal_J");
+           
+            _verticalScroll_axis = Input.GetAxis("Vertical_J");
+            
+            enter_b = Input.GetKeyDown(KeyCode.JoystickButton0);
+            
+            exit_b = Input.GetKeyDown(KeyCode.JoystickButton1);
 
 
-        enter_b = Input.GetButtonDown("Enter");
-
-        exit_b = Input.GetButtonDown("Exit");
-
-
+        }
 
     }
+
+   
 }
 
 

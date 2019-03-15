@@ -101,8 +101,9 @@ public class Dialog : MonoBehaviour {
             else texB = LinesEn[LinesEn.Count - 1].line;
 
         }
+        if (texB == null) texB = new string[1] { "..." };
 
-        texBScroll = new string[texB.Length];
+         texBScroll = new string[texB.Length];
        
         AllText = new string[texB.Length];
 
@@ -295,7 +296,12 @@ public class Dialog : MonoBehaviour {
                 SkinNum = 4;
 
                 XPosD = Camera.main.WorldToScreenPoint(pl.transform.position).x - 150;
-                    Vector3 np = new Vector3(pl.transform.position.x, pl.transform.position.y+4.5f,1);
+                    float YCAM_PLUS = 0;
+                    if (Camera.main.orthographicSize >= 3.5f) YCAM_PLUS = Camera.main.orthographicSize;
+                    else YCAM_PLUS = 4;
+
+                         Vector3 np = new Vector3(pl.transform.position.x, pl.transform.position.y+ YCAM_PLUS, 1);
+                   
 
                 if (Screen.height - Camera.main.WorldToScreenPoint(np).y > 0)
                     YPosD = Screen.height - Camera.main.WorldToScreenPoint(np).y;
@@ -319,24 +325,18 @@ public class Dialog : MonoBehaviour {
         if (!VasilisMind)
         {
 
-            if ((19 * (stringslength / 20)) >= 75)
-                fheight = 35 + 19 * stringslength / 20;
-            else
-                fheight = 140;
+           fheight = Screen.width / 10;
 
             if (stringslength < 17)
-                fwidth = 30 * 8;
+                fwidth = Screen.width / 40 * 8;
             else
-                fwidth = 30 * 15;
+                fwidth = Screen.width/40 * 15;
         }
         else
         {
-            if ((19 * stringslength / 20) >=75)
-                fheight = 40 + 18 * stringslength / 15;
-            else
-                fheight = 150;
+            fheight = Screen.width / 8;
 
-            fwidth = 330;
+            fwidth = Screen.width / 4;
         }
 
 
@@ -353,7 +353,7 @@ public class Dialog : MonoBehaviour {
                 {
                     AUSource.Play();
                     AUSource.clip = AngryClips[Random.Range(0, AngryClips.Count)];
-                    print("PlayVoice");
+                   // print("PlayVoice");
                 }
             }
 
@@ -373,13 +373,13 @@ public class Dialog : MonoBehaviour {
              {
                  if(!GetComponent<AudioSource>().isPlaying) GetComponent<AudioSource>().Play();
              }*/
+             
             if (AllText.Length >0)
             {
                 if (CorrentLine < AllText.Length - 1)
                     PosM(AllText[CorrentLine].Length);
-                else 
-                    PosM(AllText
-                        [AllText.Length - 1].Length);
+                else if(AllText[AllText.Length - 1]!=null)
+                    PosM(AllText[AllText.Length - 1].Length);
             }
             // int t = 0;
 
@@ -416,6 +416,8 @@ public class Dialog : MonoBehaviour {
                      TextScrollTimer = Time.fixedTime + TextScrollTimerMax;
                  }*/
                 //texBScroll.
+                skin.customStyles[SkinNum].fontSize = Screen.width / 67;
+
                 GUI.Box(rectlable, texBScroll[CorrentLine], skin.customStyles[SkinNum]);
 
                 if (WrightInJournal && PlayerPrefs.GetInt(name + SceneManager.GetActiveScene().name + "InJournal") == 0)
